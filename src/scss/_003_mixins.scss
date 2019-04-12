@@ -1,1 +1,9 @@
 /*mixins*/
+
+@mixin gradBluViolet($direction) {
+  background-image: linear-gradient($direction, $lightBlue, $darkViolet, $darkPink)
+}
+
+@mixin gradOrangePurple($direction) {
+  background-image: linear-gradient($direction, $deepOrange, $purple)
+}
