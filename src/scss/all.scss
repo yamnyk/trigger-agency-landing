@@ -1,0 +1,18 @@
+@import "001_reset";
+@import "002_vars";
+@import "003_mixins";
+@import "004_fonts";
+html {
+  font-size: 10px;
+}
+.container {
+  box-sizing: border-box;
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+section {
+  padding: 5rem 0;
+}
+@import "sections/header";
+@import "media/999_all-media";
