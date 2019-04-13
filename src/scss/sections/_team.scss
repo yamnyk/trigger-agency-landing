@@ -1,0 +1,20 @@
+.services-title {
+  font-family: Ralaway, sans-serif;
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.services-title::after {
+  //position: relative;
+  content: "";
+  display: inline-block;
+  width: 10rem;
+  height: 0.2rem;
+  background-color: #7c55bb;
+}
+
+.services-item > p {
+  font-size: 2rem;
+  color: black;
+}
