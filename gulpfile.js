@@ -30,7 +30,7 @@ const path = {
 		img: 'src/img/**/*.*',
 		fonts: 'src/fonts/**/*.*'
 	},
-	clean: 'build/'
+	clean: './build/'
 };
 
 
@@ -98,7 +98,7 @@ const watcher = () => {
 };
 
 const cleanBuild = () => (
-	gulp.src(path.clean, {read: false})
+	gulp.src(path.clean, {allowEmpty: true})
 		.pipe(clean())
 );
 
