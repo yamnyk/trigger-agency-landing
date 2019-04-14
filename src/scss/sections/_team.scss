@@ -1,29 +1,31 @@
-.services {
-  width: 80rem;
+* {
+  font-family: Ralaway, sans-serif;
 }
 
 .services-title {
   font-family: Ralaway, sans-serif;
   color: black;
-  font-size: 2rem;
+  font-size: 4rem;
   text-align: center;
 }
 
-.services-title::after {
-  position: relative;
-  top: 1rem;
-  left: 66.9rem;
-  content: "";
-  //display: inline-block;
-  display: block;
-  width: 10rem;
-  height: 0.2rem;
-  //background-color: $darkPink, $darkViolet, $deepOrange, $lightBlue, $purple;
-  //background-color: red;
-  //@include gradBluViolet($direction, $lightBlue, $darkViolet, $darkPink);
-gradBluViolet()
-
-}
+//.services-title::after {
+//  //position: relative;
+//  top: 16rem;
+//  //right: 60rem;
+//  right: 63.1rem;
+//  content: "";
+//  //display: inline-block;
+//  //display: block;
+//  width: 18rem;
+//  position: absolute;
+//  height: 0.4rem;
+//  //background-image: linear-gradient(to right, #00b3f9, #f900a9);
+//  //background-color: $darkPink, $darkViolet, $deepOrange, $lightBlue, $purple;
+//  background-color: red;
+//  //@include gradBluViolet($direction, $lightBlue, $darkViolet, $darkPink);
+//  //@include gradBluViolet : (to right, #00b3f9, #f900a9)
+//}
 
 .services-item > p {
   font-size: 2rem;
@@ -33,22 +35,59 @@ gradBluViolet()
 .services-item-logo {
   width: 5rem;
   height: 5rem;
-gradBluViolet()
+  //gradBluViolet()
 }
 
 .services-items {
-  display: flex;
-  justify-content: center;
   text-align: center;
-  align-items: center;
+  //display: flex;
+  //justify-content: center;
+  //text-align: center;
+  //align-items: center;
 }
 
 .services-item {
-  margin: 5rem;
+  margin: 3rem;
   //display: flex;
   //flex-wrap: wrap;
   //justify-content: center;
   //align-items: center;
   //display: flex;
   //justify-content: center;
+}
+
+.team-description {
+  margin-bottom: 6rem;
+  margin-left: 25rem;
+}
+
+.team-description-title {
+  font-size: 3.5rem;
+  font-family: Ralaway, sans-serif;
+  color: #07002c;
+  width: 60rem;
+  margin-bottom: 3rem;
+}
+
+.team-description-subtitle {
+  font-size: 2rem;
+  width: 70rem;
+  font-family: Ralaway, sans-serif;
+  color: #07002c;
+  margin-bottom: 3rem;
+}
+
+.team-description-bonus {
+  font-size: 2rem;
+  //box-sizing: border-box;
+  color: black;
+  width: 70rem;
+}
+
+.team-description-bonus > span {
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+  background-color: $purple;
+  text-transform: uppercase;
 }
