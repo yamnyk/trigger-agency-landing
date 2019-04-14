@@ -1,3 +1,7 @@
+.services {
+  width: 80rem;
+}
+
 .services-title {
   font-family: Ralaway, sans-serif;
   color: black;
@@ -6,15 +10,45 @@
 }
 
 .services-title::after {
-  //position: relative;
+  position: relative;
+  top: 1rem;
+  left: 66.9rem;
   content: "";
-  display: inline-block;
+  //display: inline-block;
+  display: block;
   width: 10rem;
   height: 0.2rem;
-  //background-image: @include
+  //background-color: $darkPink, $darkViolet, $deepOrange, $lightBlue, $purple;
+  //background-color: red;
+  //@include gradBluViolet($direction, $lightBlue, $darkViolet, $darkPink);
+gradBluViolet()
+
 }
 
 .services-item > p {
   font-size: 2rem;
   color: black;
+}
+
+.services-item-logo {
+  width: 5rem;
+  height: 5rem;
+gradBluViolet()
+}
+
+.services-items {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.services-item {
+  margin: 5rem;
+  //display: flex;
+  //flex-wrap: wrap;
+  //justify-content: center;
+  //align-items: center;
+  //display: flex;
+  //justify-content: center;
 }
