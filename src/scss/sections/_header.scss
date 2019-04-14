@@ -1,2 +1,38 @@
 /*header*/
 
+.top-menu{
+  display: flex;
+  height: 9.8rem;
+  padding: 3.4rem 9.2rem 0;
+  &__logo-item{
+    height: 7.3rem;
+    width: 25rem;
+  }
+  &__nav-menu{
+    display: flex;
+    justify-content: space-around;
+    width: 46.7rem;
+    margin-left: 10rem;
+    &__item {
+      color: #07002c;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 2rem;
+    }
+  }
+  &__phone {
+    width: 50rem;
+    height: 2.4rem;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #007ca2;
+  }
+  &__languages-item{
+    border: none;
+    font-weight: 700;
+    //width: 2.8rem;
+    //height: 2.4rem;
+    font-size: 2rem;
+    color: #08012c;
+  }
+}
