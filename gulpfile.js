@@ -84,6 +84,12 @@ const fontsBuild = () => (
 		.pipe(browserSync.stream())
 );
 
+const phpBuild = () => (
+	gulp.src("./src/js/email.php")
+		.pipe(gulp.dest(path.build.js))
+		.pipe(browserSync.stream())
+);
+
 const watcher = () => {
 	browserSync.init({
 		server: {
@@ -118,6 +124,7 @@ gulp.task('default', gulp.series(
 	htmlBuild,
 	scssBuild,
 	jsBuild,
+	phpBuild,
 	gulp.parallel(fontsBuild,imgBuild),
 	watcher
 ));
