@@ -1,12 +1,10 @@
 .team-description-test-team-title {
-  display: inline;
   font-family: Ralaway, sans-serif;
+  display: inline;
   font-size: 3rem;
-  background-color: #7c55bb;
+  background-image: linear-gradient(to right, #ff7200, #d8268d);
   color: white;
-  font-weight: 600;
-  //padding-left: 8rem;
-  padding: 0.3rem 0.3rem 0.3rem 8rem;
+  padding: 0.5rem 2rem 0.5rem 8rem;
 }
 
 .services-title {
@@ -71,7 +69,6 @@
   }
 }
 
-
 .team-description-title {
   font-size: 3.5rem;
   font-family: Ralaway, sans-serif;
@@ -101,4 +98,33 @@
     padding: 0.2rem;
     color: #fe7102;
   }
+}
+
+.team-description-images {
+  position: relative;
+}
+
+.team-description-photo-sharon,
+.team-description-photo-eddie,
+.team-description-photo-olga {
+  width: 20rem;
+  height: 18rem;
+}
+
+.team-description-photo-sharon {
+  position: absolute;
+  right: 20rem;
+  bottom: 15rem;
+}
+
+.team-description-photo-eddie {
+  position: absolute;
+  right: 0;
+  bottom: 10rem;
+}
+
+.team-description-photo-olga {
+  position: absolute;
+  right: 20rem;
+  bottom: -5rem;
 }
