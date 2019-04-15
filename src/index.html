@@ -30,11 +30,11 @@
         </div>
 
         <div class="order__form-wrapper">
-            <form action="/" class="order__form-wrapper__form">
-                <input type="text" placeholder="Your name" class="order__form-wrapper__form__name-input inputs-stylization">
-                <input type="email" placeholder="Email" class="order__form-wrapper__form__email inputs-stylization">
-                <input type="tel" placeholder="+3 (80) 123-45-67" class="order__form-wrapper__form__name-input inputs-stylization" pattern="\+3\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
-                <input type="submit" value="ЗАКАЗАТЬ СЕЙЧАС" class="order__form-wrapper__form__order-now-button">
+            <form action="/" class="order__form-wrapper__form" id="orderForm">
+                <input type="text" placeholder="Your name" minlength="3" name="name" class="order__form-wrapper__form__name-input inputs-stylization">
+                <input type="email" placeholder="Email" name="email" class="order__form-wrapper__form__email inputs-stylization">
+                <input type="tel" placeholder="Phone number" name="phone" id="phone" class="order__form-wrapper__form__name-input inputs-stylization">
+                <input type="submit" value="ЗАКАЗАТЬ СЕЙЧАС" id="submitBtn" class="order__form-wrapper__form__order-now-button test">
             </form>
         </div>
 
@@ -47,6 +47,12 @@
 
 
 <footer class="contacts"></footer>
+
+
+<!--JQUERY-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

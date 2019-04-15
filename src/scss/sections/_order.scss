@@ -1,3 +1,7 @@
+.order{
+  box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.27);
+}
+
 .container-for-flex{
   font-family: sans-serif;
   height: 31.5rem;
@@ -37,12 +41,12 @@
   }
 
   &__slogan{
+    position: absolute;
     width: 68.6rem;
     height: 9rem;
     line-height: 9.5rem;
     padding-left: 7.4rem;
     padding-right: 1rem;
-    position: absolute;
     left: -10.2rem;
     bottom: -5.7rem;
     font-size: 5.7rem;
@@ -85,4 +89,24 @@
   border-radius:0.7rem;
   outline: none;
   font-size: 1.7rem;
+}
+
+
+.error{
+  font-size: 1.7rem;
+  color: red;
+}
+
+.test{
+  width: 20.4rem;
+  height: 5.5rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
+  background-color: green;
+  color: #ffffff;
+  font-size: 18px;
+  border-width: 0;
+  border-radius: 3rem;
+  box-shadow: 3px 1px 5px 0px $darkPink, -3px -1px 5px 0px $lightBlue;
+  cursor: pointer;
 }
