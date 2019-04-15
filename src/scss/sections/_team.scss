@@ -6,11 +6,10 @@
   font-weight: 600;
 }
 
-.team-description-test-team-title {
+.team-description-top-main-title {
   font-family: Raleway, sans-serif;
   display: inline;
   font-size: 3rem;
-  //background-image: linear-gradient(to right, #ff7200, #d8268d);
   @include gradOrangePurple(to right);
   color: white;
   padding: 0.5rem 2rem 0.5rem 22rem;
@@ -22,7 +21,6 @@
   font-size: 4rem;
   text-align: center;
   font-weight: 600;
-  //margin-top: 12rem;
   margin: 12rem 0 4rem 0;
 }
 
@@ -30,21 +28,11 @@
   content: "";
   position: absolute;
   top: 64rem;
-  //right: 15rem;
   left: 63rem;
   width: 18rem;
   height: 0.5rem;
   @include gradBluViolet(to right);
 }
-
-//.services-items-row-1, .services-items-row-2 {
-  //display: flex;
-  //justify-content: center;
-  //align-items: center;
-  //text-align: center;
-  //margin: 5rem auto;
-  //width: 90rem;
-//}
 
 .services-items-row-1, .services-items-row-2 {
   display: flex;
@@ -55,9 +43,6 @@
 .services-item {
   width: 27rem;
   margin: 2rem;
-  //display: flex;
-  //justify-content: center;
-  //flex-direction: row;
 }
 
 .services-item > p {
@@ -74,26 +59,25 @@
 
 .team-description {
   margin-bottom: 6rem;
-  //margin-left: 25rem;
+
   p {
     margin-left: 22rem;
   }
 }
 
 .team-description-title {
+  font-family: Raleway, sans-serif;
   line-height: 1.35;
   font-size: 3.5rem;
-  font-family: Raleway, sans-serif;
   color: #07002c;
   width: 65rem;
-  margin-bottom: 3rem;
-  margin-top: 5rem;
+  margin: 5rem 0 3rem 0;
   font-weight: 600;
 }
 
 .team-description-subtitle {
-  line-height: 1.35;
   font-family: Raleway, sans-serif;
+  line-height: 1.35;
   font-size: 2rem;
   width: 68rem;
   color: #07002c;
@@ -101,18 +85,18 @@
 }
 
 .team-description-bonus {
-  line-height: 1.35;
   font-family: Raleway, sans-serif;
+  line-height: 1.35;
   font-size: 2rem;
   color: black;
   width: 68rem;
 
   .team-description-bonus-highlight {
-    line-height: 1.35;
     @include gradBluViolet(to left);
-    padding: 0.3rem;
     color: #fff;
     font-weight: 100;
+    line-height: 1.35;
+    padding: 0.3rem;
   }
 }
 
@@ -146,6 +130,7 @@
   bottom: 2rem;
 }
 
+//______For Test start_______
 //.cubic-1 {
 //  width: 4rem;
 //  height: 4rem;
@@ -187,3 +172,4 @@
 //  bottom: -25px;
 //  border-top: 25px solid #ffffff;
 //}
+//______For Test end_______
