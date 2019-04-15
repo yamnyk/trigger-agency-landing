@@ -57,13 +57,16 @@
 
 .order__form-wrapper{
   width: 46%;
+  height: 31.6rem;
   display: flex;
   align-items: flex-end;
 
   &__form{
     width: 41rem;
+    height: 33rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     &__order-now-button{
       width: 20.4rem;
@@ -97,7 +100,7 @@
   color: red;
 }
 
-.test{
+.success{
   width: 20.4rem;
   height: 5.5rem;
   margin: 2rem 0;

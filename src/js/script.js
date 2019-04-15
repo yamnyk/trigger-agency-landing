@@ -3,7 +3,7 @@ const notGogi = 'not gogi';
 
 $( document ).ready(function() {
 
-    $('#phone').mask('+38(999) 999-99-99')
+    $('#form__phone').mask('+38(999) 999-99-99')
 
     $('#orderForm').validate({
         rules: {
@@ -30,6 +30,26 @@ $( document ).ready(function() {
         }
     });
 
+    $(function() {
+        $("#submitBtn").click(function(event) {
+            event.preventdefault();
+            let data = {
+                name: $("#form__name").val(),
+                email: $("#form__email").val(),
+                phone: $("#form__phone").val()
+            };
+            $.ajax({
+                type: "POST",
+                url: "email.php",
+                data: data,
+                success: function(){
+                    $('.success').fadeIn(1000);
+                }
+            });
+
+            return false;
+        });
+    });
 
 
 });
