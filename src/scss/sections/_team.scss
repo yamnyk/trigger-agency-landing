@@ -2,8 +2,12 @@
   overflow-x: hidden;
 }
 
+.bold-text {
+  font-weight: 600;
+}
+
 .team-description-test-team-title {
-  font-family: Ralaway, sans-serif;
+  font-family: Raleway, sans-serif;
   display: inline;
   font-size: 3rem;
   //background-image: linear-gradient(to right, #ff7200, #d8268d);
@@ -17,13 +21,15 @@
   color: black;
   font-size: 4rem;
   text-align: center;
-  margin-top: 12rem;
+  font-weight: 600;
+  //margin-top: 12rem;
+  margin: 12rem 0 4rem 0;
 }
 
 .services-title:after {
   content: "";
   position: absolute;
-  top: 56.7rem;
+  top: 64rem;
   //right: 15rem;
   left: 63rem;
   width: 18rem;
@@ -31,17 +37,31 @@
   @include gradBluViolet(to right);
 }
 
+//.services-items-row-1, .services-items-row-2 {
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  //text-align: center;
+  //margin: 5rem auto;
+  //width: 90rem;
+//}
+
 .services-items-row-1, .services-items-row-2 {
   display: flex;
-  justify-content: space-around;
-  //flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin: 5rem auto;
-  width: 90rem;
+}
+
+.services-item {
+  width: 27rem;
+  margin: 2rem;
+  //display: flex;
+  //justify-content: center;
+  //flex-direction: row;
 }
 
 .services-item > p {
+  font-family: Raleway, sans-serif;
   font-size: 2rem;
   color: black;
   line-height: 1.35;
@@ -63,28 +83,29 @@
 .team-description-title {
   line-height: 1.35;
   font-size: 3.5rem;
-  font-family: Ralaway, sans-serif;
+  font-family: Raleway, sans-serif;
   color: #07002c;
-  width: 60rem;
+  width: 65rem;
   margin-bottom: 3rem;
   margin-top: 5rem;
+  font-weight: 600;
 }
 
 .team-description-subtitle {
   line-height: 1.35;
-  font-family: Ralaway, sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 2rem;
-  width: 65rem;
+  width: 68rem;
   color: #07002c;
   margin-bottom: 3rem;
 }
 
 .team-description-bonus {
   line-height: 1.35;
-  font-family: Ralaway, sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 2rem;
   color: black;
-  width: 65rem;
+  width: 68rem;
 
   .team-description-bonus-highlight {
     line-height: 1.35;
@@ -108,7 +129,7 @@
 .team-description-photo-sharon {
   position: absolute;
   right: 27rem;
-  bottom: 15rem;
+  bottom: 24rem;
 }
 
 .team-description-photo-eddie {
@@ -116,13 +137,13 @@
   height: 30rem;
   position: absolute;
   right: -3rem;
-  bottom: 1rem;
+  bottom: 10rem;
 }
 
 .team-description-photo-olga {
   position: absolute;
   right: 25rem;
-  bottom: -7rem;
+  bottom: 2rem;
 }
 
 //.cubic-1 {
