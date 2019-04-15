@@ -1,3 +1,7 @@
+.team {
+  overflow-x: hidden;
+}
+
 .team-description-test-team-title {
   font-family: Ralaway, sans-serif;
   display: inline;
@@ -37,14 +41,14 @@
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: center;
-  margin: 3rem auto;
+  margin: 5rem auto;
   width: 60rem;
   //margin: 1rem;
 }
 
-.services-item {
-  //margin: 5rem;
-}
+//.services-item {
+//  margin: 4rem;
+//}
 
 .services-item > p {
   font-size: 2rem;
@@ -94,9 +98,10 @@
   width: 70rem;
 
   .team-description-bonus-highlight {
-    background-color: #7c55bb;
-    padding: 0.2rem;
-    color: #fe7102;
+    background-image: linear-gradient(to left, #df139d, #09a2de);
+    padding: 0.3rem;
+    color: #fff;
+    font-weight: 100;
   }
 }
 
@@ -105,26 +110,71 @@
 }
 
 .team-description-photo-sharon,
-.team-description-photo-eddie,
 .team-description-photo-olga {
-  width: 20rem;
-  height: 18rem;
+  width: 22rem;
+  height: 20rem;
 }
 
 .team-description-photo-sharon {
   position: absolute;
-  right: 20rem;
+  right: 27rem;
   bottom: 15rem;
 }
 
 .team-description-photo-eddie {
+  width: 32rem;
+  height: 30rem;
   position: absolute;
-  right: 0;
-  bottom: 10rem;
+  right: -3rem;
+  //overflow-x: hidden;
+  bottom: 1rem;
 }
 
 .team-description-photo-olga {
   position: absolute;
-  right: 20rem;
-  bottom: -5rem;
+  right: 25rem;
+  bottom: -7rem;
+}
+
+//.cubic-1 {
+//  width: 4rem;
+//  height: 4rem;
+//  opacity: 0.97;
+//  background-image: linear-gradient(88deg, #df139d, #0ba5d4);
+//}
+
+//.cubic-2 {
+//  width: 5rem;
+//  height: 5rem;
+//  opacity: 0.97;
+//  background-image: linear-gradient(to right, #f17100, #c82d8e)
+//}
+
+.d16 {
+  margin: 20px 0;
+  width: 100px;
+  height: 55px;
+  background: #F1CCAE;
+  position: relative;
+}
+
+.d16:before,
+.d16:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.d16:before {
+  top: -25px;
+  border-bottom: 25px solid #F1CCAE;
+}
+
+.d16:after {
+  bottom: -25px;
+  border-top: 25px solid #F1CCAE;
 }
