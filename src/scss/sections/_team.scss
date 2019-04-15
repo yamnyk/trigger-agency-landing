@@ -6,9 +6,10 @@
   font-family: Ralaway, sans-serif;
   display: inline;
   font-size: 3rem;
-  background-image: linear-gradient(to right, #ff7200, #d8268d);
+  //background-image: linear-gradient(to right, #ff7200, #d8268d);
+  @include gradOrangePurple(to right);
   color: white;
-  padding: 0.5rem 2rem 0.5rem 8rem;
+  padding: 0.5rem 2rem 0.5rem 22rem;
 }
 
 .services-title {
@@ -18,23 +19,16 @@
   text-align: center;
 }
 
-//.services-title::after {
-//  //position: relative;
-//  top: 16rem;
-//  //right: 60rem;
-//  right: 63.1rem;
-//  content: "";
-//  //display: inline-block;
-//  //display: block;
-//  width: 18rem;
-//  position: absolute;
-//  height: 0.4rem;
-//  //background-image: linear-gradient(to right, #00b3f9, #f900a9);
-//  //background-color: $darkPink, $darkViolet, $deepOrange, $lightBlue, $purple;
-//  background-color: red;
-//  //@include gradBluViolet($direction, $lightBlue, $darkViolet, $darkPink);
-//  //@include gradBluViolet : (to right, #00b3f9, #f900a9)
-//}
+.services-title:after {
+  content: "";
+  position: absolute;
+  top: 50.7rem;
+  //right: 15rem;
+  left: 63rem;
+  width: 18rem;
+  height: 0.5rem;
+  @include gradBluViolet(to right);
+}
 
 .services-items-row-1, .services-items-row-2 {
   display: flex;
@@ -43,12 +37,7 @@
   text-align: center;
   margin: 5rem auto;
   width: 60rem;
-  //margin: 1rem;
 }
-
-//.services-item {
-//  margin: 4rem;
-//}
 
 .services-item > p {
   font-size: 2rem;
@@ -56,14 +45,8 @@
 }
 
 .services-item-logo {
-  width: 5rem;
-  height: 5rem;
-  //color: #7c55bb;
-  //color: red;
-  //fill: red;
-  //fill: linear-gradient(to right, #09a2de, #df139d);;
-  //color: linear-gradient(to right, #09a2de, #df139d);;
-  //background: url("/src/img/complex.svg");
+  width: 6rem;
+  height: 6rem;
 }
 
 .team-description {
@@ -84,9 +67,9 @@
 }
 
 .team-description-subtitle {
-  font-size: 2rem;
-  width: 70rem;
   font-family: Ralaway, sans-serif;
+  font-size: 2rem;
+  width: 65rem;
   color: #07002c;
   margin-bottom: 3rem;
 }
@@ -94,12 +77,11 @@
 .team-description-bonus {
   font-family: Ralaway, sans-serif;
   font-size: 2rem;
-  //box-sizing: border-box;
   color: black;
-  width: 70rem;
+  width: 65rem;
 
   .team-description-bonus-highlight {
-    background-image: linear-gradient(to left, #df139d, #09a2de);
+    @include gradBluViolet(to left);
     padding: 0.3rem;
     color: #fff;
     font-weight: 100;
@@ -127,7 +109,6 @@
   height: 30rem;
   position: absolute;
   right: -3rem;
-  //overflow-x: hidden;
   bottom: 1rem;
 }
 
@@ -151,31 +132,30 @@
 //  background-image: linear-gradient(to right, #f17100, #c82d8e)
 //}
 
-.d16 {
-  margin: 20px 0;
-  width: 100px;
-  height: 55px;
-  background: #F1CCAE;
-  position: relative;
-}
-
-.d16:before,
-.d16:after {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-}
-
-.d16:before {
-  top: -25px;
-  border-bottom: 25px solid #F1CCAE;
-}
-
-.d16:after {
-  bottom: -25px;
-  border-top: 25px solid #F1CCAE;
-}
+//.d16 {
+//  margin: 20px 0;
+//  width: 95.6px;
+//  height: 96.8px;
+//  opacity: 0.97;
+//  background-image: linear-gradient(to right, #f17100, #c82d8e);
+//  position: relative;
+//}
+//
+//.d16:before,
+//.d16:after {
+//  content: "";
+//  position: absolute;
+//  left: 0;
+//  border-left: 50px solid transparent;
+//  border-right: 50px solid transparent;
+//}
+//
+//.d16:before {
+//  top: -25px;
+//  border-bottom: 25px solid #ffffff;
+//}
+//
+//.d16:after {
+//  bottom: -25px;
+//  border-top: 25px solid #ffffff;
+//}
