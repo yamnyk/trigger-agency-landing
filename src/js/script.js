@@ -31,19 +31,28 @@ $( document ).ready(function() {
     });
 
     $(function() {
-        $("#submitBtn").click(function(event) {
-            event.preventdefault();
+        $("#orderForm").submit(function(event) {
+            event.preventDefault();
             let data = {
-                name: $("#form__name").val(),
-                email: $("#form__email").val(),
-                phone: $("#form__phone").val()
+                message:`
+                Заказ индивидуальной консультации:
+                Имя - ${$('#form__name').val()},
+                Email - ${$('#form__email').val()},
+                Телефон - ${$('#form__phone').val()},
+                `,
+
             };
             $.ajax({
                 type: "POST",
                 url: "email.php",
                 data: data,
                 success: function(){
-                    $('.success').fadeIn(1000);
+                    alert(`
+                Индивидуальная консультация на
+                Имя - ${$('#form__name').val()},
+                Email - ${$('#form__email').val()},
+                Телефон - ${$('#form__phone').val()},
+                Была успешно заказана `,);
                 }
             });
 
