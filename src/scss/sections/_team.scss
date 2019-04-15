@@ -32,11 +32,12 @@
 
 .services-items-row-1, .services-items-row-2 {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  //flex-wrap: wrap;
+  align-items: center;
   text-align: center;
   margin: 5rem auto;
-  width: 60rem;
+  width: 90rem;
 }
 
 .services-item > p {
