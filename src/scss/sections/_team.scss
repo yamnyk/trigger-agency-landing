@@ -17,12 +17,13 @@
   color: black;
   font-size: 4rem;
   text-align: center;
+  margin-top: 12rem;
 }
 
 .services-title:after {
   content: "";
   position: absolute;
-  top: 50.7rem;
+  top: 56.7rem;
   //right: 15rem;
   left: 63rem;
   width: 18rem;
@@ -43,6 +44,7 @@
 .services-item > p {
   font-size: 2rem;
   color: black;
+  line-height: 1.35;
 }
 
 .services-item-logo {
@@ -59,6 +61,7 @@
 }
 
 .team-description-title {
+  line-height: 1.35;
   font-size: 3.5rem;
   font-family: Ralaway, sans-serif;
   color: #07002c;
@@ -68,6 +71,7 @@
 }
 
 .team-description-subtitle {
+  line-height: 1.35;
   font-family: Ralaway, sans-serif;
   font-size: 2rem;
   width: 65rem;
@@ -76,12 +80,14 @@
 }
 
 .team-description-bonus {
+  line-height: 1.35;
   font-family: Ralaway, sans-serif;
   font-size: 2rem;
   color: black;
   width: 65rem;
 
   .team-description-bonus-highlight {
+    line-height: 1.35;
     @include gradBluViolet(to left);
     padding: 0.3rem;
     color: #fff;
