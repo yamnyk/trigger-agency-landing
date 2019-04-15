@@ -85,7 +85,7 @@
     &__title {
       padding-left: 5rem;
       @include gradOrangePurple(to right);
-      width: 80rem;
+      width: 100%;
       height: 12rem;
       font-size: 7.6rem;
       font-weight: bold;
@@ -101,7 +101,6 @@
     &__subtitle {
       margin-top: 5rem;
       width: 55.3rem;
-      height: 13.2rem;
       font-size: 2.4rem;
       font-weight: 600;
       font-style: normal;
@@ -130,6 +129,58 @@
       background-clip: padding-box, border-box;
     }
 
+  }
+}
+
+.header-advantages{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 9.8rem;
+  &__icons{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    &-wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &__item{
+        //width: 10rem;
+        height: 11.6rem;
+
+      }
+
+      &__description{
+        width: 15rem;
+        height: 4.8rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: #090036;
+      }
+    }
+  }
+  &__subtitle{
+    margin-top: 6.8rem;
+    width: 1132px;
+    font-size: 2.8rem;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    text-align: center;
+    color: #07002c;
+    &_selected-text{
+      display: inline-block;
+      @include gradBluViolet(to right);
+    }
   }
 }
 
