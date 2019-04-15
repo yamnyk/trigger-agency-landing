@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
 <header class="container head-slogan"></header>
@@ -21,28 +23,27 @@
 
     <div class="container">
 
-        <div class="contacts__location">
+        <section class="contacts__location">
 
             <div class="contacts__location__address">
-                <div class="contacts__location__address__cover">
-                    <h3 class="contacts__location__address__cover_headline">Контакты</h3>
-                    <i class="contacts__location__address__cover_gradient"></i>
-                    <p class="contacts__location__address__cover_place">г. Киев, пр. Павла Тычины, 1в,</p>
-                    <p class="contacts__location__address__cover_place">ТОЦ Silver Breeze,</p>
-                    <p class="contacts__location__address__cover_place">офис А, 6-й этаж</p>
-                    <p class="contacts__location__address__cover_number">
-                        тел.: <span class="contacts__location__address__cover-coloring">+38 097-649-84-67</span>
+                    <h3 class="contacts__location__address__headline">Контакты</h3>
+                    <i class="contacts__location__address__gradient"></i>
+                    <p class="contacts__location__address__paragraph">г. Киев, пр. Павла Тычины, 1в,ТОЦ Silver Breeze,офис А, 6-й этаж</p>
+                    <p class="contacts__location__address__paragraph">
+                        тел.: <span class="contacts__location__address__paragraph-coloring">+38 097-649-84-67</span>
                     </p>
-                    <p class="contacts__location__address__cover_email">
-                        Email: <span class="contacts__location__address__cover-coloring">info@trigger.com.ua</span>
+                    <p class="contacts__location__address__paragraph">
+                        Email: <span class="contacts__location__address__paragraph-coloring">info@trigger.com.ua</span>
                     </p>
-                </div>
             </div>
 
-            <div class="contacts__location__map"></div>
+            <div class="contacts__location__map">
+                <div class="contacts__location__map__shape" id="map"></div>
+            </div>
+
+        </section>
 
         </div>
-    </div>
 
     <nav class="contacts__navigation">
 

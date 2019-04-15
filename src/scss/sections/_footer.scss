@@ -1,43 +1,56 @@
 .contacts {
-  height: 41.5rem;
   border: 0.1rem solid black;
   font-family: Raleway, sans-serif;
 
   .contacts__location {
-    height: 29.8rem;
     display: flex;
 
     .contacts__location__address {
       width: 50%;
       display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: flex-end;
-      justify-content: flex-end;
     }
 
-    .contacts__location__address__cover {
-      text-align: center;
+    .contacts__location__address__paragraph {
+      text-align: right;
       font-weight: bold;
       line-height: 2.5rem;
       font-size: 1.9rem;
-      padding-right: 10rem;
-      height: 22.5rem;
-      width: 27.4rem;
+      width: 27rem;
+    }
 
-      .contacts__location__address__cover_headline {
-        font-size: 29px;
+      .contacts__location__address__headline {
+        font-size: 2.9rem;
         padding-bottom: 0.6rem;
+        font-weight: bold;
+        text-align: right;
       }
 
-      .contacts__location__address__cover_gradient {
-        width: 9.8rem;
-        display: block;
+      .contacts__location__address__gradient {
+        width: 11.8rem;
+        display: inline-block;
+        align-self: flex-end;
         height: 0.4rem;
-        margin: 0 auto 2.2rem auto;
-        gradBluViolet(right);
+        margin-bottom: 2.2rem;
+        background-image: linear-gradient(to right, $lightBlue, $darkViolet, $darkPink);
       }
 
-      .contacts__location__address__cover-coloring {
+      .contacts__location__address__paragraph-coloring {
         color: #0ba5d4;
+      }
+
+    .contacts__location__map{
+      width: 50%;
+      display: flex;
+      align-items: center;
+      padding-left: 5rem;
+
+      .contacts__location__map__shape{
+        width: 45rem;
+        height: 35rem;
+        border: 0.2rem solid black;
       }
     }
   }
@@ -69,7 +82,7 @@
         align-self: flex-end;
         font-size: 1.2rem;
         padding-bottom: 3.1rem;
-        padding-right: 28rem;
+        padding-right: 35rem;
         font-weight: 300;
         color: #9582f6;
       }
