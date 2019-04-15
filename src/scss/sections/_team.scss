@@ -1,5 +1,12 @@
-* {
+.team-description-test-team-title {
+  display: inline;
   font-family: Ralaway, sans-serif;
+  font-size: 3rem;
+  background-color: #7c55bb;
+  color: white;
+  font-weight: 600;
+  //padding-left: 8rem;
+  padding: 0.3rem 0.3rem 0.3rem 8rem;
 }
 
 .services-title {
@@ -27,6 +34,20 @@
 //  //@include gradBluViolet : (to right, #00b3f9, #f900a9)
 //}
 
+.services-items-row-1, .services-items-row-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 3rem auto;
+  width: 60rem;
+  //margin: 1rem;
+}
+
+.services-item {
+  //margin: 5rem;
+}
+
 .services-item > p {
   font-size: 2rem;
   color: black;
@@ -35,31 +56,21 @@
 .services-item-logo {
   width: 5rem;
   height: 5rem;
-  //gradBluViolet()
-}
-
-.services-items {
-  text-align: center;
-  //display: flex;
-  //justify-content: center;
-  //text-align: center;
-  //align-items: center;
-}
-
-.services-item {
-  margin: 3rem;
-  //display: flex;
-  //flex-wrap: wrap;
-  //justify-content: center;
-  //align-items: center;
-  //display: flex;
-  //justify-content: center;
+  //color: #7c55bb;
+  //color: red;
+  //fill: red;
+  fill: #fe7102;
+  //background: url("/src/img/complex.svg");
 }
 
 .team-description {
   margin-bottom: 6rem;
-  margin-left: 25rem;
+  //margin-left: 25rem;
+  p {
+    margin-left: 25rem;
+  }
 }
+
 
 .team-description-title {
   font-size: 3.5rem;
@@ -67,6 +78,7 @@
   color: #07002c;
   width: 60rem;
   margin-bottom: 3rem;
+  margin-top: 5rem;
 }
 
 .team-description-subtitle {
@@ -78,16 +90,15 @@
 }
 
 .team-description-bonus {
+  font-family: Ralaway, sans-serif;
   font-size: 2rem;
   //box-sizing: border-box;
   color: black;
   width: 70rem;
-}
 
-.team-description-bonus > span {
-  font-size: 2rem;
-  color: white;
-  font-weight: 700;
-  background-color: $purple;
-  text-transform: uppercase;
+  .team-description-bonus-highlight {
+    background-color: #7c55bb;
+    padding: 0.2rem;
+    color: #fe7102;
+  }
 }
