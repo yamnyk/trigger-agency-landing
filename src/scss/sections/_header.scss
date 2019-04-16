@@ -28,8 +28,16 @@
       text-decoration: none;
       text-transform: uppercase;
       font-size: 2rem;
+
+      &_active {
+        color: #4c4184;
+        font-weight: bold;
+        background: linear-gradient(to left, $deepOrange, $purple) left bottom no-repeat;
+        background-size:100% 5px;
+      }
     }
   }
+
 
   &__phone {
     width: 19rem;
@@ -64,7 +72,7 @@
         clip-path: polygon(45% 1.33975%, 46.5798% 0.60307%, 48.26352% 0.15192%, 50% 0%, 51.73648% 0.15192%, 53.4202% 0.60307%, 55% 1.33975%, 89.64102% 21.33975%, 91.06889% 22.33956%, 92.30146% 23.57212%, 93.30127% 25%, 94.03794% 26.5798%, 94.48909% 28.26352%, 94.64102% 30%, 94.64102% 70%, 94.48909% 71.73648%, 94.03794% 73.4202%, 93.30127% 75%, 92.30146% 76.42788%, 91.06889% 77.66044%, 89.64102% 78.66025%, 55% 98.66025%, 53.4202% 99.39693%, 51.73648% 99.84808%, 50% 100%, 48.26352% 99.84808%, 46.5798% 99.39693%, 45% 98.66025%, 10.35898% 78.66025%, 8.93111% 77.66044%, 7.69854% 76.42788%, 6.69873% 75%, 5.96206% 73.4202%, 5.51091% 71.73648%, 5.35898% 70%, 5.35898% 30%, 5.51091% 28.26352%, 5.96206% 26.5798%, 6.69873% 25%, 7.69854% 23.57212%, 8.93111% 22.33956%, 10.35898% 21.33975%);
       }
 
-      &_clip-solid{
+      &_clip-solid {
         width: 65rem;
         height: 65rem;
         background-image: url("../img/header/alesia-kazantceva-283291-unsplash@2x.png");
@@ -74,7 +82,7 @@
         transform: rotateZ(-8deg);
       }
 
-      &_top-left{
+      &_top-left {
         width: 13rem;
         height: 13rem;
         position: absolute;
@@ -84,7 +92,7 @@
         transform: rotateZ(-8deg);
       }
 
-      &_top-right{
+      &_top-right {
         width: 10rem;
         height: 10rem;
         position: absolute;
@@ -93,7 +101,8 @@
         @include gradOrangePurple(to bottom);
         transform: rotateZ(-10deg);
       }
-      &_bottom-left{
+
+      &_bottom-left {
         width: 6rem;
         height: 6rem;
         position: absolute;
@@ -102,7 +111,8 @@
         @include gradOrangePurple(to left);
         transform: rotateZ(-10deg);
       }
-      &_bottom{
+
+      &_bottom {
         width: 8rem;
         height: 8rem;
         position: absolute;
@@ -111,7 +121,8 @@
         @include gradBluViolet(to bottom);
         transform: rotateZ(-43deg);
       }
-      &_bottom-right{
+
+      &_bottom-right {
         width: 8rem;
         height: 8rem;
         position: absolute;
@@ -120,7 +131,8 @@
         @include gradBluViolet(to bottom);
         transform: rotateZ(-43deg);
       }
-      &_bottom-deep-right{
+
+      &_bottom-deep-right {
         width: 10rem;
         height: 10rem;
         position: absolute;
@@ -181,7 +193,7 @@
       cursor: pointer;
 
       border: double 5px transparent;
-      background-image:linear-gradient(to right, rgba(57,170,214,1), rgba(124,85,187,1), rgba(205,76,159,1)), radial-gradient(circle at top left, rgba(57,170,214,.5), rgba(124,85,187,.5), rgba(205,76,159,.5));
+      background-image: linear-gradient(to right, rgba(57, 170, 214, 1), rgba(124, 85, 187, 1), rgba(205, 76, 159, 1)), radial-gradient(circle at top left, rgba(57, 170, 214, .5), rgba(124, 85, 187, .5), rgba(205, 76, 159, .5));
       background-origin: border-box;
       background-clip: padding-box, border-box;
     }
@@ -189,27 +201,30 @@
   }
 }
 
-.header-advantages{
+.header-advantages {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 9.8rem;
-  &__icons{
+  margin-top: 14.8rem;
+
+  &__icons {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    &-wrapper{
+
+    &-wrapper {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
 
-      &__item{
+      &__item {
         //width: 10rem;
         height: 11.6rem;
 
       }
 
-      &__description{
+      &__description {
         width: 15rem;
         height: 4.8rem;
         font-size: 1.8rem;
@@ -223,7 +238,8 @@
       }
     }
   }
-  &__subtitle{
+
+  &__subtitle {
     margin-top: 6.8rem;
     width: 1132px;
     font-size: 2.8rem;
@@ -234,9 +250,12 @@
     letter-spacing: normal;
     text-align: center;
     color: #07002c;
-    &_selected-text{
+
+    &_selected-text {
       display: inline-block;
       @include gradBluViolet(to right);
+      color: #ffffff;
     }
   }
 }
+
