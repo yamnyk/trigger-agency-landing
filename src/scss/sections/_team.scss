@@ -17,22 +17,43 @@
 
 .services-title {
   font-family: Ralaway, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   color: black;
+  align-items: center;
   font-size: 4rem;
   text-align: center;
   font-weight: 600;
   margin: 12rem 0 4rem 0;
 }
 
-.services-title:after {
-  content: "";
-  position: relative;
-  top: 64rem;
-  left: 63rem;
+.services-title-text {
+  //margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.services-title-line {
+  display: flex;
+  justify-content: center;
+  //box-sizing: border-box;
   width: 18rem;
   height: 0.5rem;
+  margin-top: 1rem;
   @include gradBluViolet(to right);
 }
+
+//.services-title:before {
+//  position: absolute;
+//  content: "";
+//  top: 64rem;
+//  left: 63rem;
+//  box-sizing: border-box;
+//  min-width: 18rem;
+//  min-height: 0.5rem;
+//  @include gradBluViolet(to right);
+//}
 
 .services-items-row-1, .services-items-row-2 {
   display: flex;
