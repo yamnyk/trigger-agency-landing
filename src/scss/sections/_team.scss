@@ -101,7 +101,7 @@
   width: 68rem;
 
   .team-description-bonus-highlight {
-    gradBluViolet(to left);
+    @include gradBluViolet(to left);
     color: #fff;
     font-weight: 100;
     line-height: 1.35;
@@ -152,14 +152,14 @@
   height: 4.5rem;
   bottom: 20rem;
   right: 45rem;
-  gradBluViolet(to top right);
+  @include gradBluViolet(to top right);
   transform: rotateZ(15deg);
 }
 
 .cubic-2 {
   width: 5.3rem;
   height: 5.3rem;
-  gradOrangePurple(to bottom);
+  @include gradOrangePurple(to bottom);
   transform: rotateZ(33deg);
   right: 18rem;
   top: -8rem;
