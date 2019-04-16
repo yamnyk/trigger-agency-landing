@@ -29,7 +29,6 @@
 }
 
 .services-title-text {
-  //margin-top: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -37,25 +36,14 @@
 .services-title-line {
   display: flex;
   justify-content: center;
-  //box-sizing: border-box;
   width: 18rem;
   height: 0.5rem;
   margin-top: 1rem;
   @include gradBluViolet(to right);
 }
 
-//.services-title:before {
-//  position: absolute;
-//  content: "";
-//  top: 64rem;
-//  left: 63rem;
-//  box-sizing: border-box;
-//  min-width: 18rem;
-//  min-height: 0.5rem;
-//  @include gradBluViolet(to right);
-//}
-
-.services-items-row-1, .services-items-row-2 {
+.services-items-row-1,
+.services-items-row-2 {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -176,33 +164,3 @@
   right: 18rem;
   top: -8rem;
 }
-
-//______For Test start_______
-//.d16 {
-//  margin: 20px 0;
-//  width: 95.6px;
-//  height: 96.8px;
-//  opacity: 0.97;
-//  background-image: linear-gradient(to right, #f17100, #c82d8e);
-//  position: relative;
-//}
-//
-//.d16:before,
-//.d16:after {
-//  content: "";
-//  position: absolute;
-//  left: 0;
-//  border-left: 50px solid transparent;
-//  border-right: 50px solid transparent;
-//}
-//
-//.d16:before {
-//  top: -25px;
-//  border-bottom: 25px solid #ffffff;
-//}
-//
-//.d16:after {
-//  bottom: -25px;
-//  border-top: 25px solid #ffffff;
-//}
-//______For Test end_______
