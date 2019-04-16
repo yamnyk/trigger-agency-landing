@@ -1,6 +1,5 @@
 .contacts {
-  border: 0.1rem solid black;
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
 
   .contacts__location {
     display: flex;
@@ -35,7 +34,7 @@
         align-self: flex-end;
         height: 0.4rem;
         margin-bottom: 2.2rem;
-        background-image: linear-gradient(to right, $lightBlue, $darkViolet, $darkPink);
+        @include gradBluViolet(to right);
       }
 
       .contacts__location__address__paragraph-coloring {
@@ -52,13 +51,14 @@
       .contacts__location__map__shape{
         width: 45rem;
         height: 35rem;
-        border: 0.2rem solid black;
+        border: 0.3rem solid transparent;
+        border-radius: 1%;
+        box-shadow: 0 0 0.4rem 0.1rem darkgrey;
       }
     }
   }
 
   .contacts__navigation {
-    height: 11.7rem;
     background-color: #4c4184;
     position: relative;
 
@@ -67,6 +67,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: relative;
 
     .contacts__navigation__cover__menu {
       width: 42rem;
@@ -96,7 +97,7 @@
         display: flex;
 
         .contacts__navigation__cover__social__inst{
-          padding-left: 19px;
+          padding-left: 1.9rem;
         }
       }
     }
