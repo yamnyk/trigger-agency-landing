@@ -9,7 +9,10 @@ if (!mapboxgl.supported()) {
     let map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
-        center: [30.594, 50.428],
-        zoom: 11
+        center: [30.5933111, 50.4284607],
+        zoom: 15
     });
+    let marker = new mapboxgl.Marker()
+        .setLngLat([30.5933111, 50.4284607])
+        .addTo(map);
 }

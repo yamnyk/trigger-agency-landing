@@ -11,6 +11,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-end;
+      padding-right: 2rem;
     }
 
     .contacts__location__address__paragraph {
@@ -45,7 +46,8 @@
       width: 50%;
       display: flex;
       align-items: center;
-      padding-left: 5rem;
+      padding-left: 2rem;
+
 
       .contacts__location__map__shape{
         width: 45rem;
@@ -58,6 +60,7 @@
   .contacts__navigation {
     height: 11.7rem;
     background-color: #4c4184;
+    position: relative;
 
     .contacts__navigation__cover{
       height: 11.7rem;
@@ -82,7 +85,9 @@
         align-self: flex-end;
         font-size: 1.2rem;
         padding-bottom: 3.1rem;
-        padding-right: 35rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         font-weight: 300;
         color: #9582f6;
       }
@@ -94,7 +99,6 @@
           padding-left: 19px;
         }
       }
-
     }
   }
 }
