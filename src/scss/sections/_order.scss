@@ -62,7 +62,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    &__order-now-button{
+    &__order-btn{
       width: 22.5rem;
       margin: 1rem 0;
       padding: 1.6rem 1rem;
@@ -76,6 +76,7 @@
       background-origin: border-box;
       background-clip: padding-box, border-box;
       cursor: pointer;
+      outline: none;
     }
   }
 }
