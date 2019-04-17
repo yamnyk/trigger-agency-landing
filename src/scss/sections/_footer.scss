@@ -1,0 +1,125 @@
+.contacts {
+  font-family: 'Raleway', sans-serif;
+
+  &__location {
+    display: flex;
+
+    &__address {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      padding-right: 2rem;
+
+      &__paragraph {
+        text-align: right;
+        font-weight: 400;
+        margin-top: 1.5rem;
+        font-size: 1.9rem;
+        width: 27rem;
+      }
+
+      &__sub-paragraph{
+        display: flex;
+        flex-direction: column;
+
+        &-item:nth-child(2){
+          margin-top: 1.5rem;
+        }
+      }
+
+      &__headline {
+        font-size: 2.9rem;
+        padding-bottom: 0.6rem;
+        font-weight: bold;
+        text-align: right;
+      }
+
+      &__gradient {
+        width: 11.8rem;
+        display: inline-block;
+        align-self: flex-end;
+        height: 0.4rem;
+        margin-bottom: 2.2rem;
+        @include gradBluViolet(to right);
+      }
+
+      &__paragraph-coloring {
+        color: #0ba5d4;
+      }
+    }
+
+    &__map{
+      width: 50%;
+      display: flex;
+      align-items: center;
+      padding-left: 2rem;
+
+
+      &__shape{
+        width: 45rem;
+        height: 35rem;
+        border: 0.3rem solid transparent;
+        border-radius: 1%;
+        box-shadow: 0 0 0.4rem 0.1rem darkgrey;
+      }
+    }
+  }
+
+  &__navigation {
+    background-color: #4c4184;
+    position: relative;
+
+    &__cover{
+      height: 11.7rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      &__menu {
+        width: 42rem;
+        text-transform: uppercase;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+
+        &__item {
+          font-size: 1.8rem;
+
+          &-link{
+            text-decoration: none;
+            color: #ffffff;
+          }
+        }
+      }
+
+      &__copyright{
+        align-self: flex-end;
+        font-size: 1.2rem;
+        padding-bottom: 3.1rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 300;
+        color: #9582f6;
+      }
+
+      &__social{
+        display: inline-block;
+
+        &__fb{
+          width: 30px;
+          height: 30px;
+        }
+
+        &__inst{
+          padding-left: 1.9rem;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
