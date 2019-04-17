@@ -27,6 +27,7 @@
     &__modifier{
       @include gradBluViolet(to right);
       color: #ffffff;
+      padding: 0 1rem;
     }
   }
 
@@ -35,7 +36,7 @@
     margin-top: 2.8rem;
     margin-bottom: 4.8rem;
     font-size: 1.8rem;
-    line-height: 2.7rem;
+    line-height: 1.5;
     color: #4c4184;
   }
 
@@ -45,7 +46,7 @@
     padding: 1.5rem 2rem 1.5rem 7.4rem;
     left: -8.2rem;
     bottom: -5.7rem;
-    font-size: 5.7rem;
+    font-size: 3vw;
     color: #ffffff;
     @include gradOrangePurple(to right);
   }
