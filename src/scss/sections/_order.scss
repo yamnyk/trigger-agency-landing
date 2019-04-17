@@ -10,11 +10,12 @@
 }
 
 .order__info{
-  position: relative;
+  //position: relative;
   width: 50%;
-  height: 25.8rem;
+  //height: 25.8rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
 
@@ -33,22 +34,31 @@
 
   &__text{
     width: 40%;
-    margin-top: 2.8rem;
-    margin-bottom: 4.8rem;
+    //margin-top: 2.8rem;
+    //margin-bottom: 6.3rem;
     font-size: 1.8rem;
     line-height: 1.5;
     color: #4c4184;
   }
 
   &__slogan{
-    position: absolute;
     width: 97%;
-    padding: 1.5rem 2rem 1.5rem 7.4rem;
-    left: -8.2rem;
-    bottom: -5.7rem;
+    position: relative;
+    padding: 1.5rem 3rem 1.5rem 1.5rem;
+    //padding: 1.5rem 2rem 1.5rem 7.4rem;
     font-size: 5.7rem;
     color: #ffffff;
     @include gradOrangePurple(to right);
+
+    &::before{
+      content: "";
+      position: absolute;
+      width: 2rem;
+      height: 8.6rem;
+      background-color: #fe7102;
+      top:0;
+      left: -2rem;
+    }
   }
 }
 

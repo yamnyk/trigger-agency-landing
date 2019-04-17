@@ -1,0 +1,30 @@
+@media screen and (max-width: 1418px){
+  .order__info__slogan{
+    font-size: 4.7rem;
+  }
+}
+
+@media screen and (max-width: 1169px){
+  .order__info__slogan{
+    font-size: 3.7rem;
+  }
+}
+
+@media screen and (max-width: 960px){
+  .order__info{
+    justify-content: space-around;
+  }
+
+  .order__info__slogan{
+    display: none;
+  }
+
+//  order__info вместо justify-content: space-between делаем space-around
+}
+
+@media screen and (max-width: 320px) {
+  .container-info-form-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+}
