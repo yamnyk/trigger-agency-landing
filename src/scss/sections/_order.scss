@@ -1,0 +1,114 @@
+.order{
+  box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.27);
+  font-family: 'Releway',sans-serif;
+}
+
+.container-info-form-wrapper{
+  font-weight: 900;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order__info{
+  position: relative;
+  width: 50%;
+  height: 25.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__headline{
+    width: 80%;
+    color: black;
+    font-size: 3.5rem;
+
+
+    &__modifier{
+      @include gradBluViolet(to right);
+      color: #ffffff;
+      padding: 0 1rem;
+    }
+  }
+
+  &__text{
+    width: 40%;
+    margin-top: 2.8rem;
+    margin-bottom: 4.8rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #4c4184;
+  }
+
+  &__slogan{
+    position: absolute;
+    width: 97%;
+    padding: 1.5rem 2rem 1.5rem 7.4rem;
+    left: -8.2rem;
+    bottom: -5.7rem;
+    font-size: 3vw;
+    color: #ffffff;
+    @include gradOrangePurple(to right);
+  }
+}
+
+.order__form-wrapper{
+  width: 44%;
+
+  &__form{
+    width: 41rem;
+    height: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__order-btn{
+      width: 22.5rem;
+      margin: 1rem 0;
+      padding: 1.6rem 1rem;
+      color: #ffffff;
+      font-family: inherit;
+      font-weight: 900;
+      font-size: 18px;
+      border-radius: 3rem;
+      border: solid 5px transparent;
+      background-image:linear-gradient(to right, rgba(57,170,214,1), rgba(124,85,187,1), rgba(205,76,159,1)), radial-gradient(circle at top left, rgba(57,170,214,.5), rgba(124,85,187,.5), rgba(205,76,159,.5));
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+}
+
+.inputs-stylization{
+  height: 5.1rem;
+  padding-left: 2rem;
+  margin-bottom: 0.93rem;
+  border: 1px solid #7a7a7a;
+  border-radius:0.7rem;
+  outline: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+
+.error{
+  font-size: 1.7rem;
+  color: red;
+}
+
+//.success{
+//  width: 20.4rem;
+//  height: 5.5rem;
+//  margin: 2rem 0;
+//  padding: 0 1rem;
+//  background-color: green;
+//  color: #ffffff;
+//  font-size: 18px;
+//  border-width: 0;
+//  border-radius: 3rem;
+//  box-shadow: 3px 1px 5px 0px $darkPink, -3px -1px 5px 0px $lightBlue;
+//  cursor: pointer;
+//}
