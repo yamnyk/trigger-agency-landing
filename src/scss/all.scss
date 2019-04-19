@@ -2,11 +2,9 @@
 @import "002_vars";
 @import "003_mixins";
 @import "004_fonts";
-
 html {
   font-size: 10px;
 }
-
 .container {
   box-sizing: border-box;
   max-width: 144rem;
@@ -16,7 +14,8 @@ html {
 section {
   padding: 5rem 0;
 }
-
 @import "sections/header";
 @import "sections/team";
+@import "sections/order";
+@import "sections/footer";
 @import "media/999_all-media";

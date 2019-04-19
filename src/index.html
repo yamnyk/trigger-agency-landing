@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Trigger</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
 <header class="container head-slogan"></header>
@@ -68,8 +70,76 @@
     <div class="advantages-description"></div>
     <div class="projects"></div>
 </section>
-<section class="order"></section>
-<footer class="contacts"></footer>
+<section class="order">
+    <div class="container container-info-form-wrapper">
+        <div class="order__info">
+            <h3 class="order__info__headline"><span class="order__info__headline__modifier">Хотите раскрыть</span> потенциал вашего бизнеса?</h3>
+            <p class="order__info__text">Закажите индивидуальную консультацию у команды Trigger Marketing</p>
+            <h2 class="order__info__slogan">Because we push it right!</h2>
+        </div>
+
+        <div class="order__form-wrapper">
+            <form action="js/email.php" class="order__form-wrapper__form" id="orderForm">
+                <input type="text" placeholder="Your name" minlength="3" name="name" id="form__name" class="order__form-wrapper__form__name-input inputs-stylization">
+                <input type="email" placeholder="Email" name="email" id="form__email" class="order__form-wrapper__form__email inputs-stylization">
+                <input type="tel" placeholder="Phone number" name="phone" id="form__phone" class="order__form-wrapper__form__name-input inputs-stylization">
+                <input type="submit" value="ЗАКАЗАТЬ СЕЙЧАС" id="submitBtn" class="order__form-wrapper__form__order-btn success">
+            </form>
+        </div>
+
+    </div>
+</section>
+<footer class="contacts">
+    <section class="contacts__location container">
+        <div class="contacts__location__address">
+            <h3 class="contacts__location__address__headline">Контакты</h3>
+            <i class="contacts__location__address__gradient"></i>
+            <p class="contacts__location__address__paragraph contacts__location__address__sub-paragraph">
+                <span class="contacts__location__address__sub-paragraph-item">г. Киев, пр. Павла Тычины, 1в,</span>
+                <span class="contacts__location__address__sub-paragraph-item">ТОЦ Silver Breeze,офис А, 6-й этаж</span>
+            </p>
+            <p class="contacts__location__address__paragraph">
+                тел.: <span class="contacts__location__address__paragraph-coloring">+38 097-649-84-67</span>
+            </p>
+            <p class="contacts__location__address__paragraph">
+                Email: <span class="contacts__location__address__paragraph-coloring">info@trigger.com.ua</span>
+            </p>
+        </div>
+        <div class="contacts__location__map">
+            <div class="contacts__location__map__shape" id="map"></div>
+        </div>
+    </section>
+    <nav class="contacts__navigation">
+        <div class="container contacts__navigation__cover">
+            <menu class="contacts__navigation__cover__menu">
+                <li class="contacts__navigation__cover__menu__item">
+                    <a href="#" class="contacts__navigation__cover__menu__item-link">о нас</a>
+                </li>
+                <li class="contacts__navigation__cover__menu__item">
+                    <a href="#" class="contacts__navigation__cover__menu__item-link">услуги</a>
+                </li>
+                <li class="contacts__navigation__cover__menu__item">
+                    <a href="#" class="contacts__navigation__cover__menu__item-link">проекты</a>
+                </li>
+                <li class="contacts__navigation__cover__menu__item">
+                    <a href="#" class="contacts__navigation__cover__menu__item-link">контакты</a>
+                </li>
+            </menu>
+
+            <p class="contacts__navigation__cover__copyright">&copy; All rights reserved, DAN.IT 2019</p>
+
+            <div class="contacts__navigation__cover__social">
+                <img src="img/facebook-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__fb">
+                <img src="img/instagram-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__inst">
+            </div>
+        </div>
+    </nav>
+</footer>
+
+<!--JQUERY-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
