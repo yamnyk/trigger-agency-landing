@@ -4,6 +4,7 @@
   &__location {
     display: flex;
     padding-top: 10rem;
+    padding-bottom: 10rem;
 
     &__address {
       width: 50%;
@@ -11,7 +12,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-end;
-      padding-right: 2rem;
+      margin-right: 2rem;
 
       &__paragraph {
         text-align: right;
@@ -26,22 +27,25 @@
       }
 
       &__headline {
+        position: relative;
         font-size: 2.9rem;
-        padding-bottom: 0.6rem;
+        margin-bottom: 1.5rem;
         font-weight: bold;
         text-align: right;
-      }
 
-      &__gradient {
-        width: 14rem;
-        display: inline-block;
-        align-self: flex-end;
-        height: 0.4rem;
-        margin-bottom: 2.2rem;
-        @include gradBluViolet(to right);
+        &:after {
+          content: '';
+          position: absolute;
+          top: 3rem;
+          left: 0;
+          width: 14rem;
+          height: 0.4rem;
+          @include gradBluViolet(to right);
+        }
       }
 
       &__paragraph-coloring {
+        text-decoration: none;
         color: #0ba5d4;
       }
     }
@@ -69,7 +73,7 @@
     position: relative;
 
     &__cover {
-      height: 11.7rem;
+      padding: 4rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -93,26 +97,23 @@
       }
 
       &__copyright {
-        align-self: flex-end;
         font-size: 1.2rem;
-        padding-bottom: 3.1rem;
         position: absolute;
+        top: 7rem;
         left: 50%;
         transform: translateX(-50%);
-        font-weight: 300;
+        font-weight: 400;
         color: #9582f6;
       }
 
       &__social {
-        display: inline-block;
-
         &__fb {
           width: 3rem;
           height: 3rem;
         }
 
         &__inst {
-          padding-left: 1.9rem;
+          margin-left: 1.9rem;
           width: 3rem;
           height: 3rem;
         }
@@ -123,7 +124,8 @@
 
 
 .contacts__location__map__shape{
-  position: absolute;
+  position: relative;
+  top: 400px;
 }
 
 .contacts__location__map__shape__each {
