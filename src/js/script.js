@@ -1,44 +1,6 @@
 const gogi = 'gogi';
 const notGogi = 'not gogi';
 
-//_____________________________SlickResponsCode______________________________
-
-function widthControl() {
-	$(".center").slick(
-		{
-			responsive: [
-				{
-					breakpoint: 1440,
-					settings: {
-						infinite: true,
-						centerMode: true,
-						slidesToShow: 3,
-						slidesToScroll: 3
-					}
-				},
-				{
-					breakpoint: 980,
-					settings: {
-						infinite: true,
-						centerMode: true,
-						slidesToShow: 2,
-						slidesToScroll: 3
-					}
-				},
-				{
-					breakpoint: 480,
-					settings: {
-						infinite: true,
-						centerMode: true,
-						slidesToShow: 1,
-						slidesToScroll: 3
-					}
-				}]
-		});
-}
-
-$(document).on('ready', widthControl);
-
 
 //_____________________________SlickWorckCode______________________________
 (function(factory) {
