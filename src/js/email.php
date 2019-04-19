@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: yamnyk
- * Date: 15.04.19
- * Time: 17:55
- */
+if($_POST){
+    $message = $_POST['message'];
+
+    mail("denvradiy@gmail.com", "ЗАКАЗ ИНДИВИДУАЛЬНОЙ КОНСУЛЬТАЦИИ" .$message);
+}
+?>
