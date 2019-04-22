@@ -2,17 +2,145 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-
-    <link rel="stylesheet" href="css/style.css">
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <meta name="viewport" content="width=1550"> <!--for hosting without adaptive-->
+    <title>Trigger Marketing Agency</title>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/style.css" >
+
 </head>
 <body>
-<header class="container head-slogan"></header>
+<header class="header container head-slogan">
+    <div class="top-menu">
+        <img src="img/header/logo_trigger.jpg" alt="" class="top-menu__logo-item">
+        <div class="top-menu__wrapper">
+            <nav class="top-menu__nav-menu">
+                <a href="#about" id="about-btn" class="top-menu__nav-menu__item top-menu__nav-menu__item_active">о нас</a>
+                <a href="#services" id="services-btn" class="top-menu__nav-menu__item">услуги</a>
+                <a href="#projects" id="projects-btn" class="top-menu__nav-menu__item">проекты</a>
+                <a href="#contacts" id="contacts-btn" class="top-menu__nav-menu__item">контакты</a>
+            </nav>
+            <a href="tel: (097) 649 84 67" class="top-menu__phone">
+                +38 097-649-84-67
+            </a>
+            <div class="top-menu__languages">
+                <select data-placeholder="RU" class="top-menu__languages-item">
+                    <option value="Russian">RU</option>
+                    <option value="English">EN</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="header-main">
+        <div class="header-main__img">
+            <div class="header-main__img__hexagon">
+                <div class="header-main__img__hexagon_clip-each header-main__img__hexagon_clip-solid">
+                </div>
+            </div>
+            <div class="header-main__img__hexagon_clip-each header-main__img__hexagon_top-left"></div>
+            <div class="header-main__img__hexagon_clip-each header-main__img__hexagon_top-right"></div>
+            <div class="header-main__img__hexagon_clip-each header-main__img__hexagon_bottom-left"></div>
+            <div class="header-main__img__hexagon_clip-each header-main__img__hexagon_bottom-right"></div>
+            <div class="header-main__img__hexagon_clip-each header-main__img__hexagon_bottom"></div>
+            <div class="header-main__img__hexagon_clip-each header-main__img__hexagon_bottom-deep-right"></div>
+        </div>
+        <div class="header-main__info">
+            <h2 class="header-main__info__title">
+                We push it right!
+            </h2>
+            <p class="header-main__info__subtitle">
+                Грамотно подберём инструменты и каналы продвижения, чтобы сэкономить бюджет и увеличить продажи.
+            </p>
+            <a href="#order" id="more-btn" class="header-main__info__more-btn">подробнее</a>
+        </div>
+    </div>
+    <a id="about"></a>
+    <div class="header-advantages">
+        <div class="header-advantages__icons">
+            <div class="header-advantages__icons-wrapper">
+                <img src="img/header/advantagesIcons/medal.svg" alt="medal" class="header-advantages__icons-wrapper__item">
+                <div class="header-advantages__icons-wrapper__description">Гарантия результата</div>
+            </div>
+            <div class="header-advantages__icons-wrapper">
+                <img src="img/header/advantagesIcons/experience.svg" alt="experience" class="header-advantages__icons-wrapper__item">
+                <div class="header-advantages__icons-wrapper__description">Международный опыт</div>
+            </div>
+            <div class="header-advantages__icons-wrapper">
+                <img src="img/header/advantagesIcons/marketing.svg" alt="" class="header-advantages__icons-wrapper__item">
+                <div class="header-advantages__icons-wrapper__description">Стратегический маркетинг</div>
+            </div>
+            <div class="header-advantages__icons-wrapper">
+                <img src="img/header/advantagesIcons/quality.svg" alt="" class="header-advantages__icons-wrapper__item">
+                <div class="header-advantages__icons-wrapper__description">Работа с digital-трендами</div>
+            </div>
+            <div class="header-advantages__icons-wrapper">
+                <img src="img/header/advantagesIcons/trends.svg" alt="" class="header-advantages__icons-wrapper__item">
+                <div class="header-advantages__icons-wrapper__description">Качество услуг, SLA </div>
+            </div>
+            <div class="header-advantages__icons-wrapper">
+                <img src="img/header/advantagesIcons/transparence.svg" alt="" class="header-advantages__icons-wrapper__item">
+                <div class="header-advantages__icons-wrapper__description">Прозрачность и контроль</div>
+            </div>
+        </div>
+        <div class="header-advantages__subtitle">Руководствуемся<span class="header-advantages__subtitle_selected-text">комплексным подходом</span>: анализируем рынок, выделяем сильные стороны вашего продукта, утверждаем стратегию и реализуем её на практике, с учётом ваших целей, внутренних и внешних триггеров.</div>
+    </div>
+
+</header>
 <section class="team">
-    <div class="team-description"></div>
-    <div class="services"></div>
+    <div class="team-description container">
+        <div class="team-description-content">
+            <div class="team-description-top-main-title">Команда</div>
+            <p class="team-description-title">Международная опытная команда - наша основа.</p>
+            <p class="team-description-subtitle">Trigger – мультинациональная команда с опытом в разных сферах PR,
+                маркетинга и продаж на рынках Израиля, Великобритании, Беларуси, Украины и т.д. Подходим к делу
+                высокопрофессионально, нестандартно и мыслим outside-the-box. </p>
+            <p class="team-description-bonus"><span class="team-description-bonus-highlight">Важный бонус</span>: у всех
+                Trigger-экспертов за плечами опыт в маркетинге от <span class="bold-text">10</span> до <span
+                        class="bold-text">20</span> лет. В нашей команде – более <span class="bold-text">20</span>
+                специалистов
+                в сферах SMM, SEO, PR, UI/UX и т. д.</p>
+        </div>
+        <div class="team-description-images">
+            <div class="hexagon-1"></div>
+            <div class="hexagon-2"></div>
+            <img class="team-description-photo-sharon" src="img/sharon-photo.png" alt="sharon-israel-photo">
+            <img class="team-description-photo-eddie" src="img/prilepski-photo.png" alt="prilepski-eddie-photo">
+            <img class="team-description-photo-olga" src="img/panteleeva-photo.png" alt="panteleeva-olga-photo">
+        </div>
+    </div>
+    <a id="services"></a>
+    <div class="services container">
+        <div class="services-title">
+            <p class="services-title-text">Наши услуги</p>
+        </div>
+        <div class="services-items-row-1">
+            <div class="services-item">
+                <img class="services-item-logo" src="img/complex.svg" alt="img-1">
+                <p class="services-item-text">Комплексный пошаговый подход</p>
+            </div>
+            <div class="services-item">
+                <img class="services-item-logo" src="img/webdevelopment.svg" alt="img-2">
+                <p class="services-item-text">Разработка сайта и digital-продвижение</p>
+            </div>
+            <div class="services-item">
+                <img class="services-item-logo" src="img/smm.svg" alt="img-3">
+                <p class="services-item-text">SMM, контент-маркетинг и продвижение в социальных сетях</p>
+            </div>
+        </div>
+        <div class="services-items-row-2">
+            <div class="services-item">
+                <img class="services-item-logo" src="img/pr.svg" alt="img-4">
+                <p class="services-item-text">PR-продвижение</p>
+            </div>
+            <div class="services-item">
+                <img class="services-item-logo" src="img/marketing23.svg" alt="img-5">
+                <p class="services-item-text">Маркетинг продаж, планирование, обучение отдела продаж</p>
+            </div>
+            <div class="services-item">
+                <img class="services-item-logo" src="img/crm.svg" alt="img-6">
+                <p class="services-item-text">Подбор и внедрение CRM-системы</p>
+            </div>
+        </div>
+    </div>
 </section>
 <section class="advantages">
     <div class="container advantages-container">
@@ -112,6 +240,7 @@
 
     </div>
 </section>
+<a id="order"></a>
 <section class="order">
     <div class="container container-info-form-wrapper">
         <div class="order__info">
@@ -131,6 +260,7 @@
 
     </div>
 </section>
+<a id="contacts"></a>
 <footer class="contacts">
     <section class="contacts__location container">
         <div class="contacts__location__address">
@@ -141,38 +271,65 @@
                 <span class="contacts__location__address__sub-paragraph-item">ТОЦ Silver Breeze,офис А, 6-й этаж</span>
             </p>
             <p class="contacts__location__address__paragraph">
-                тел.: <span class="contacts__location__address__paragraph-coloring">+38 097-649-84-67</span>
+                тел.: <a href="tel: (097) 649 84 67" class="contacts__location__address__paragraph-coloring">+38 097-649-84-67</a>
             </p>
             <p class="contacts__location__address__paragraph">
-                Email: <span class="contacts__location__address__paragraph-coloring">info@trigger.com.ua</span>
+                Email: <a href="mailto:info@trigger.com.ua" target="_blank" class="contacts__location__address__paragraph-coloring">info@trigger.com.ua</a>
             </p>
         </div>
+
         <div class="contacts__location__map">
-            <div class="contacts__location__map__shape" id="map"></div>
+            <a href="https://www.facebook.com/triggerexperts/"  target="_blank" class="contacts__location__map__facebook">
+                <img src="img/facebook.svg" alt="not-found">
+            </a>
+            <a href="https://instagram.com/triggerexperts?r=nametag" target="_blank" class="contacts__location__map__instagram">
+                <img src="img/instagram.svg" alt="not-found">
+            </a>
+            <div class="contacts__location__map__shape">
+                <div class="contacts__location__map__shape__each contacts__location__map__shape__solid" id="map">
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="hexagon-block">
+                    <div class="hexagon-each-blue hexagon-solid-blue">
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap">
+                <div class="hexagon-block">
+                    <div class="hexagon-each-orange hexagon-solid-orange">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <nav class="contacts__navigation">
         <div class="container contacts__navigation__cover">
             <menu class="contacts__navigation__cover__menu">
                 <li class="contacts__navigation__cover__menu__item">
-                    <a href="#" class="contacts__navigation__cover__menu__item-link">о нас</a>
+                    <a href="#about" id="about-b-btn" class="contacts__navigation__cover__menu__item-link">о нас</a>
                 </li>
                 <li class="contacts__navigation__cover__menu__item">
-                    <a href="#" class="contacts__navigation__cover__menu__item-link">услуги</a>
+                    <a href="#services" id="services-b-btn" class="contacts__navigation__cover__menu__item-link">услуги</a>
                 </li>
                 <li class="contacts__navigation__cover__menu__item">
-                    <a href="#" class="contacts__navigation__cover__menu__item-link">проекты</a>
+                    <a href="#projects" id="projects-b-btn" class="contacts__navigation__cover__menu__item-link">проекты</a>
                 </li>
                 <li class="contacts__navigation__cover__menu__item">
-                    <a href="#" class="contacts__navigation__cover__menu__item-link">контакты</a>
+                    <a href="#contacts" id="contacts-b-btn" class="contacts__navigation__cover__menu__item-link">контакты</a>
                 </li>
             </menu>
 
             <p class="contacts__navigation__cover__copyright">&copy; All rights reserved, DAN.IT 2019</p>
 
             <div class="contacts__navigation__cover__social">
-                <img src="img/facebook-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__fb">
-                <img src="img/instagram-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__inst">
+                <a href="https://www.facebook.com/triggerexperts/" target="_blank" class="social-icons">
+                    <img src="img/facebook-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__fb">
+                </a>
+                <a href="https://instagram.com/triggerexperts?r=nametag" target="_blank" class="social-icons">
+                    <img src="img/instagram-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__inst">
+                </a>
             </div>
         </div>
     </nav>
@@ -180,6 +337,7 @@
 
 <!--JQUERY-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
 <script src="js/script.js"></script>

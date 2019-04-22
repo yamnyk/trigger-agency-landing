@@ -1,1 +1,263 @@
-/*header*/
+.header {
+  overflow-x: hidden;
+}
+.top-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9.8rem;
+  margin: 0 9.2rem;
+
+  &__wrapper {
+    display: flex;
+
+  }
+
+  &__logo-item {
+    height: 7.3rem;
+    width: 25rem;
+  }
+
+  &__nav-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 46.7rem;
+
+    &__item {
+      color: #07002c;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-family: 'Releway', sans-serif;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: #4c4184;
+        font-weight: 900;
+        font-size: 1.98rem;
+        background: linear-gradient(to left, $deepOrange, $purple) left bottom no-repeat;
+        background-size:100% 5px;
+      }
+    }
+  }
+
+
+  &__phone {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #007ca2;
+    margin-left: 3.7rem;
+  }
+
+  &__languages-item {
+    outline: none;
+    border: none;
+    font-weight: 700;
+    font-size: 2rem;
+    background-color: transparent;
+    color: #08012c;
+    margin-left: 3.7rem;
+  }
+}
+
+.header-main {
+  display: flex;
+
+  &__img {
+    position: relative;
+    flex-basis: 50%;
+
+    &__hexagon {
+      &_clip-each {
+        display: block;
+        position: relative;
+        -webkit-clip-path: polygon(45% 1.33975%, 46.5798% 0.60307%, 48.26352% 0.15192%, 50% 0%, 51.73648% 0.15192%, 53.4202% 0.60307%, 55% 1.33975%, 89.64102% 21.33975%, 91.06889% 22.33956%, 92.30146% 23.57212%, 93.30127% 25%, 94.03794% 26.5798%, 94.48909% 28.26352%, 94.64102% 30%, 94.64102% 70%, 94.48909% 71.73648%, 94.03794% 73.4202%, 93.30127% 75%, 92.30146% 76.42788%, 91.06889% 77.66044%, 89.64102% 78.66025%, 55% 98.66025%, 53.4202% 99.39693%, 51.73648% 99.84808%, 50% 100%, 48.26352% 99.84808%, 46.5798% 99.39693%, 45% 98.66025%, 10.35898% 78.66025%, 8.93111% 77.66044%, 7.69854% 76.42788%, 6.69873% 75%, 5.96206% 73.4202%, 5.51091% 71.73648%, 5.35898% 70%, 5.35898% 30%, 5.51091% 28.26352%, 5.96206% 26.5798%, 6.69873% 25%, 7.69854% 23.57212%, 8.93111% 22.33956%, 10.35898% 21.33975%);
+        clip-path: polygon(45% 1.33975%, 46.5798% 0.60307%, 48.26352% 0.15192%, 50% 0%, 51.73648% 0.15192%, 53.4202% 0.60307%, 55% 1.33975%, 89.64102% 21.33975%, 91.06889% 22.33956%, 92.30146% 23.57212%, 93.30127% 25%, 94.03794% 26.5798%, 94.48909% 28.26352%, 94.64102% 30%, 94.64102% 70%, 94.48909% 71.73648%, 94.03794% 73.4202%, 93.30127% 75%, 92.30146% 76.42788%, 91.06889% 77.66044%, 89.64102% 78.66025%, 55% 98.66025%, 53.4202% 99.39693%, 51.73648% 99.84808%, 50% 100%, 48.26352% 99.84808%, 46.5798% 99.39693%, 45% 98.66025%, 10.35898% 78.66025%, 8.93111% 77.66044%, 7.69854% 76.42788%, 6.69873% 75%, 5.96206% 73.4202%, 5.51091% 71.73648%, 5.35898% 70%, 5.35898% 30%, 5.51091% 28.26352%, 5.96206% 26.5798%, 6.69873% 25%, 7.69854% 23.57212%, 8.93111% 22.33956%, 10.35898% 21.33975%);
+      }
+
+      &_clip-solid {
+        width: 65rem;
+        height: 65rem;
+        background-image: url("../img/header/alesia-kazantceva-283291-unsplash@2x.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        transform: rotateZ(-8deg);
+      }
+
+      &_top-left {
+        width: 13rem;
+        height: 13rem;
+        position: absolute;
+        top: -2%;
+        left: 0;
+        @include gradBluViolet(to bottom);
+        transform: rotateZ(-8deg);
+      }
+
+      &_top-right {
+        width: 10rem;
+        height: 10rem;
+        position: absolute;
+        top: 3%;
+        right: 3%;
+        @include gradOrangePurple(to bottom);
+        transform: rotateZ(-10deg);
+      }
+
+      &_bottom-left {
+        width: 6rem;
+        height: 6rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        @include gradOrangePurple(to left);
+        transform: rotateZ(-10deg);
+      }
+
+      &_bottom {
+        width: 8rem;
+        height: 8rem;
+        position: absolute;
+        bottom: -5%;
+        left: 20%;
+        @include gradBluViolet(to bottom);
+        transform: rotateZ(-43deg);
+      }
+
+      &_bottom-right {
+        width: 8rem;
+        height: 8rem;
+        position: absolute;
+        bottom: 10%;
+        right: 2%;
+        @include gradBluViolet(to bottom);
+        transform: rotateZ(-43deg);
+      }
+
+      &_bottom-deep-right {
+        width: 10rem;
+        height: 10rem;
+        position: absolute;
+        bottom: -10%;
+        right: -100%;
+        @include gradOrangePurple(to bottom);
+        transform: rotateZ(-10deg);
+      }
+    }
+  }
+
+  &__info {
+    flex-basis: 50%;
+    margin-top: 11rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__title {
+      padding-left: 5rem;
+      @include gradOrangePurple(to right);
+      width: 100%;
+      font-size: 7.6rem;
+      font-weight: 900;
+      font-style: normal;
+      font-family: 'Releway', sans-serif;
+      font-stretch: normal;
+      line-height: 1.5;
+      color: #ffffff;
+    }
+
+    &__subtitle {
+      margin-top: 5rem;
+      width: 55.3rem;
+      font-size: 2.4rem;
+      font-weight: 700;
+      font-family: 'Releway', sans-serif;
+      line-height: 1.5;
+      color: #090036;
+    }
+
+    &__more-btn {
+      align-self: flex-start;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin: 5rem 8.6rem;
+      padding: 2.7rem 4rem;
+      @include gradBluViolet(to right);
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 900;
+      font-family: 'Releway', sans-serif;
+      border-radius: 4.4rem;
+      cursor: pointer;
+
+      border: double 5px transparent;
+      background-image: linear-gradient(to right, rgba(57, 170, 214, 1), rgba(124, 85, 187, 1), rgba(205, 76, 159, 1)), radial-gradient(circle at top left, rgba(57, 170, 214, .5), rgba(124, 85, 187, .5), rgba(205, 76, 159, .5));
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+    }
+
+  }
+}
+
+.header-advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 14.8rem;
+  font-family: 'Releway', sans-serif;
+
+  &__icons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &__item {
+        //width: 10rem;
+        height: 11.6rem;
+
+      }
+
+      &__description {
+        width: 15rem;
+        height: 4.8rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: #090036;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-top: 6.8rem;
+    width: 1132px;
+    font-size: 2.8rem;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    text-align: center;
+    color: #07002c;
+
+    &_selected-text {
+      display: inline-block;
+      @include gradBluViolet(to right);
+      color: #ffffff;
+      padding: 0 1rem;
+    }
+  }
+}
+
