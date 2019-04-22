@@ -3021,6 +3021,18 @@ const widthControl = () => {
 };
 
 //_________________________________________TabMeny___________________
+
+let bgActiv =document.getElementsByClassName("bgActiv")[0];
+let navTable=document.getElementsByClassName("content-nav-table")[0];
+let navItem = document.querySelectorAll(".content-nav-table-item");
+
+let navTableClick=navTable.addEventListener('click', (event)=>{
+	if (event.target.classList.contains('content-nav-table-item')) {
+        $(".bgActiv").animate({left: event.target.offsetLeft+"px"}, 300)
+        bgActiv.style.width=event.target.offsetWidth+"px"
+    }
+})
+
 let ansmateTablAdvantages = function () {
 	let elem = document.querySelectorAll(".content-nav-table-item");
 	let elemCont = document.querySelectorAll(".content-nav-info__elem");
