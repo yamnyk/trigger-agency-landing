@@ -2997,39 +2997,28 @@
 
 //_____________________________SlickResponsCode______________________________
 
-function widthControl() {
+const widthControl = () => {
 	$(".center").slick(
 		{
-			responsive: [
-				{
-					breakpoint: 1440,
-					settings: {
-						infinite: true,
-						centerMode: true,
-						slidesToShow: 3,
-						slidesToScroll: 3
-					}
-				},
-				{
-					breakpoint: 980,
-					settings: {
-						infinite: true,
-						centerMode: true,
-						slidesToShow: 2,
-						slidesToScroll: 3
-					}
-				},
-				{
-					breakpoint: 480,
-					settings: {
-						infinite: true,
-						centerMode: true,
-						slidesToShow: 1,
-						slidesToScroll: 3
-					}
-				}]
-		});
-}
+				infinite: true,
+				centerMode: true,
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				responsive: [
+					{
+						breakpoint: 980,
+						settings: {
+							slidesToShow: 2,
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							slidesToShow: 1,
+						}
+					}]
+		})
+};
 
 //_________________________________________TabMeny___________________
 let ansmateTablAdvantages = function () {
@@ -3052,6 +3041,8 @@ let ansmateTablAdvantages = function () {
 	}
 };
 
+
+//_________________________________________SlowScroll___________________
 const slowScroll = (id) => {
 	$("".concat(id.split("")[0] === "." ? "" : "#").concat(id.toString())).on("click", function (event) {
 		event.preventDefault();
