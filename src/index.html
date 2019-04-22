@@ -2,13 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Trigger</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <title>Trigger Marketing Agency</title>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <link rel="stylesheet" href="css/style.css" >
+
 </head>
 <body>
-<header class="container header"></header>
+<header class="header container head-slogan">
+    <div class="top-menu">
+        <img src="img/header/logo_trigger.jpg" alt="" class="top-menu__logo-item">
+        <div class="top-menu__wrapper">
+            <nav class="top-menu__nav-menu">
+                <a href="about" class="top-menu__nav-menu__item top-menu__nav-menu__item_active">о нас</a>
+                <a href="services" class="top-menu__nav-menu__item">услуги</a>
+                <a href="projects" class="top-menu__nav-menu__item">проекты</a>
+                <a href="contacts" class="top-menu__nav-menu__item">контакты</a>
+            </nav>
+            <a href="tel: (097) 649 84 67" class="top-menu__phone">
+                +38 097-649-84-67
+            </a>
+            <div class="top-menu__languages">
+                <select data-placeholder="RU" class="top-menu__languages-item">
+                    <option value="Russian">RU</option>
+                    <option value="English">EN</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="header-main">
+        <div class="header-main__img">
+            <div class="header-main__img__hexagon">
+                <div class="header-main__img__hexagon_clip-each header-main__img__hexagon_clip-solid">
+                </div>
+            </div>
+            <div class="header-main__img__hexagon_clip-each header-main__img__hexagon_top-left"></div>
+            <div class="header-main__img__hexagon_clip-each header-main__img__hexagon_top-right"></div>
+            <div class="header-main__img__hexagon_clip-each header-main__img__hexagon_bottom-left"></div>
+            <div class="header-main__img__hexagon_clip-each header-main__img__hexagon_bottom-right"></div>
+            <div class="header-main__img__hexagon_clip-each header-main__img__hexagon_bottom"></div>
+            <div class="header-main__img__hexagon_clip-each header-main__img__hexagon_bottom-deep-right"></div>
+        </div>
+        <div class="header-main__info">
+            <h2 class="header-main__info__title">
+                We push it right!
+            </h2>
+            <p class="header-main__info__subtitle">
+                Грамотно подберём инструменты и каналы продвижения, чтобы сэкономить бюджет и увеличить продажи.
+            </p>
+            <a href="#" class="header-main__info__more-btn">подробнее</a>
+        </div>
+    </div>
+    <div class="header-advantages">
+        <div class="header-advantages__icons">
+            <div class="header-advantages__icons-wrapper">
+                <img src="img/header/advantagesIcons/medal.svg" alt="medal" class="header-advantages__icons-wrapper__item">
+                <div class="header-advantages__icons-wrapper__description">Гарантия результата</div>
+            </div>
+            <div class="header-advantages__icons-wrapper">
+                <img src="img/header/advantagesIcons/experience.svg" alt="experience" class="header-advantages__icons-wrapper__item">
+                <div class="header-advantages__icons-wrapper__description">Международный опыт</div>
+            </div>
+            <div class="header-advantages__icons-wrapper">
+                <img src="img/header/advantagesIcons/marketing.svg" alt="" class="header-advantages__icons-wrapper__item">
+                <div class="header-advantages__icons-wrapper__description">Стратегический маркетинг</div>
+            </div>
+            <div class="header-advantages__icons-wrapper">
+                <img src="img/header/advantagesIcons/quality.svg" alt="" class="header-advantages__icons-wrapper__item">
+                <div class="header-advantages__icons-wrapper__description">Работа с digital-трендами</div>
+            </div>
+            <div class="header-advantages__icons-wrapper">
+                <img src="img/header/advantagesIcons/trends.svg" alt="" class="header-advantages__icons-wrapper__item">
+                <div class="header-advantages__icons-wrapper__description">Качество услуг, SLA </div>
+            </div>
+            <div class="header-advantages__icons-wrapper">
+                <img src="img/header/advantagesIcons/transparence.svg" alt="" class="header-advantages__icons-wrapper__item">
+                <div class="header-advantages__icons-wrapper__description">Прозрачность и контроль</div>
+            </div>
+        </div>
+        <div class="header-advantages__subtitle">Руководствуемся<span class="header-advantages__subtitle_selected-text">комплексным подходом</span>: анализируем рынок, выделяем сильные стороны вашего продукта, утверждаем стратегию и реализуем её на практике, с учётом ваших целей, внутренних и внешних триггеров.</div>
+    </div>
+
+</header>
 <section class="team">
     <div class="team-description container">
         <div class="team-description-content">
@@ -88,6 +163,7 @@
         </div>
 
     </div>
+
 </section>
 <footer class="contacts">
     <section class="contacts__location container">
@@ -99,14 +175,33 @@
                 <span class="contacts__location__address__sub-paragraph-item">ТОЦ Silver Breeze,офис А, 6-й этаж</span>
             </p>
             <p class="contacts__location__address__paragraph">
-                тел.: <span class="contacts__location__address__paragraph-coloring">+38 097-649-84-67</span>
+                тел.: <a href="tel: (097) 649 84 67" class="contacts__location__address__paragraph-coloring">+38 097-649-84-67</a>
             </p>
             <p class="contacts__location__address__paragraph">
-                Email: <span class="contacts__location__address__paragraph-coloring">info@trigger.com.ua</span>
+                Email: <a href="mailto:info@trigger.com.ua" class="contacts__location__address__paragraph-coloring">info@trigger.com.ua</a>
             </p>
         </div>
+
         <div class="contacts__location__map">
-            <div class="contacts__location__map__shape" id="map"></div>
+            <a href="#" class="contacts__location__map__facebook"><img src="img/facebook.svg" alt="not-found"></a>
+            <a href="#" class="contacts__location__map__instagram"><img src="img/instagram.svg" alt="not-found"></a>
+            <div class="contacts__location__map__shape">
+                <div class="contacts__location__map__shape__each contacts__location__map__shape__solid" id="map">
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="hexagon-block">
+                    <div class="hexagon-each-blue hexagon-solid-blue">
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap">
+                <div class="hexagon-block">
+                    <div class="hexagon-each-orange hexagon-solid-orange">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <nav class="contacts__navigation">
@@ -129,8 +224,8 @@
             <p class="contacts__navigation__cover__copyright">&copy; All rights reserved, DAN.IT 2019</p>
 
             <div class="contacts__navigation__cover__social">
-                <img src="img/facebook-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__fb">
-                <img src="img/instagram-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__inst">
+                <a href="#" class="social-icons"><img src="img/facebook-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__fb"></a>
+                <a href="#" class="social-icons"><img src="img/instagram-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__inst"></a>
             </div>
         </div>
     </nav>

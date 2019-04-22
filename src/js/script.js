@@ -2,9 +2,9 @@ const gogi = 'gogi';
 const notGogi = 'not gogi';
 
 $( document ).ready(function() {
-	
+
 	$('#form__phone').mask('+38(999) 999-99-99')
-	
+
 	$('#orderForm').validate({
 		rules: {
 			name: {
@@ -29,7 +29,7 @@ $( document ).ready(function() {
 			}
 		}
 	});
-	
+
 	$(function() {
 		$("#orderForm").submit(function(event) {
 			event.preventDefault();
@@ -40,7 +40,7 @@ $( document ).ready(function() {
                 Email - ${$('#form__email').val()},
                 Телефон - ${$('#form__phone').val()},
                 `,
-				
+
 			};
 			$.ajax({
 				type: "POST",
@@ -55,11 +55,11 @@ $( document ).ready(function() {
                 Была успешно заказана `,);
 				}
 			});
-			
+
 			return false;
 		});
 	});
-	
+
 	/*MAP INITIALISATION*/
 	mapboxgl.accessToken = 'pk.eyJ1IjoidHJpZ2dlciIsImEiOiJjanVpZHYxbDMwdXN5M3lzYXg5dzJ0Y3Y1In0.kc2qv99WmxmAf8RgZrwS4w';
 	if (!mapboxgl.supported()) {
@@ -75,5 +75,5 @@ $( document ).ready(function() {
 			.setLngLat([30.5933111, 50.4284607])
 			.addTo(map);
 	}
-	
+
 });
