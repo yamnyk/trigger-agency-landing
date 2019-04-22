@@ -96,7 +96,7 @@ const watcher = () => {
 			baseDir: "./build"
 		}
 	});
-	gulp.watch(path.watch.html, htmlBuild).on('change', browserSync.reload);
+	gulp.watch(path.src.html, htmlBuild).on('change', browserSync.reload);
 	gulp.watch(path.watch.style, scssBuild).on('change', browserSync.reload);
 	gulp.watch(path.watch.js, jsBuild).on('change', browserSync.reload);
 	gulp.watch(path.watch.img, imgBuild).on('change', browserSync.reload);
