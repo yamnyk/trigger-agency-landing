@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=1550"> <!--for hosting without adaptive-->
     <title>Trigger Marketing Agency</title>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
     <link rel="stylesheet" href="css/style.css" >
 
 </head>
@@ -14,10 +14,10 @@
         <img src="img/header/logo_trigger.jpg" alt="" class="top-menu__logo-item">
         <div class="top-menu__wrapper">
             <nav class="top-menu__nav-menu">
-                <a href="about" class="top-menu__nav-menu__item top-menu__nav-menu__item_active">о нас</a>
-                <a href="services" class="top-menu__nav-menu__item">услуги</a>
-                <a href="projects" class="top-menu__nav-menu__item">проекты</a>
-                <a href="contacts" class="top-menu__nav-menu__item">контакты</a>
+                <a href="#about" id="about-btn" class="top-menu__nav-menu__item top-menu__nav-menu__item_active">о нас</a>
+                <a href="#services" id="services-btn" class="top-menu__nav-menu__item">услуги</a>
+                <a href="#projects" id="projects-btn" class="top-menu__nav-menu__item">проекты</a>
+                <a href="#contacts" id="contacts-btn" class="top-menu__nav-menu__item">контакты</a>
             </nav>
             <a href="tel: (097) 649 84 67" class="top-menu__phone">
                 +38 097-649-84-67
@@ -50,9 +50,10 @@
             <p class="header-main__info__subtitle">
                 Грамотно подберём инструменты и каналы продвижения, чтобы сэкономить бюджет и увеличить продажи.
             </p>
-            <a href="#" class="header-main__info__more-btn">подробнее</a>
+            <a href="#order" id="more-btn" class="header-main__info__more-btn">подробнее</a>
         </div>
     </div>
+    <a id="about"></a>
     <div class="header-advantages">
         <div class="header-advantages__icons">
             <div class="header-advantages__icons-wrapper">
@@ -106,6 +107,7 @@
             <img class="team-description-photo-olga" src="img/panteleeva-photo.png" alt="panteleeva-olga-photo">
         </div>
     </div>
+    <a id="services"></a>
     <div class="services container">
         <div class="services-title">
             <p class="services-title-text">Наши услуги</p>
@@ -144,6 +146,7 @@
     <div class="advantages-description"></div>
     <div class="projects"></div>
 </section>
+<a id="order"></a>
 <section class="order">
     <div class="container container-info-form-wrapper">
         <div class="order__info">
@@ -164,6 +167,7 @@
     </div>
 
 </section>
+<a id="contacts"></a>
 <footer class="contacts">
     <section class="contacts__location container">
         <div class="contacts__location__address">
@@ -207,24 +211,28 @@
         <div class="container contacts__navigation__cover">
             <menu class="contacts__navigation__cover__menu">
                 <li class="contacts__navigation__cover__menu__item">
-                    <a href="#" class="contacts__navigation__cover__menu__item-link">о нас</a>
+                    <a href="#about" id="about-b-btn" class="contacts__navigation__cover__menu__item-link">о нас</a>
                 </li>
                 <li class="contacts__navigation__cover__menu__item">
-                    <a href="#" class="contacts__navigation__cover__menu__item-link">услуги</a>
+                    <a href="#services" id="services-b-btn" class="contacts__navigation__cover__menu__item-link">услуги</a>
                 </li>
                 <li class="contacts__navigation__cover__menu__item">
-                    <a href="#" class="contacts__navigation__cover__menu__item-link">проекты</a>
+                    <a href="#projects" id="projects-b-btn" class="contacts__navigation__cover__menu__item-link">проекты</a>
                 </li>
                 <li class="contacts__navigation__cover__menu__item">
-                    <a href="#" class="contacts__navigation__cover__menu__item-link">контакты</a>
+                    <a href="#contacts" id="contacts-b-btn" class="contacts__navigation__cover__menu__item-link">контакты</a>
                 </li>
             </menu>
 
             <p class="contacts__navigation__cover__copyright">&copy; All rights reserved, DAN.IT 2019</p>
 
             <div class="contacts__navigation__cover__social">
-                <a href="#" class="social-icons"><img src="img/facebook-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__fb"></a>
-                <a href="#" class="social-icons"><img src="img/instagram-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__inst"></a>
+                <a href="#" class="social-icons">
+                    <img src="img/facebook-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__fb">
+                </a>
+                <a href="#" class="social-icons">
+                    <img src="img/instagram-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__inst">
+                </a>
             </div>
         </div>
     </nav>
@@ -232,6 +240,7 @@
 
 <!--JQUERY-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
 <script src="js/script.js"></script>
