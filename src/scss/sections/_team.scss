@@ -8,7 +8,7 @@
 }
 
 .team-description {
-  margin-bottom: 12.5rem;
+  margin-bottom: 17rem;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -149,19 +149,22 @@
 }
 
 .services-title-text {
+  position: relative;
   font-family: 'Raleway', sans-serif;
   display: flex;
   justify-content: center;
+  margin-bottom: 6rem;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 6rem;
+    width: 18rem;
+    height: 0.5rem;
+    @include gradBluViolet(to right);
+  }
 }
 
-.services-title-line {
-  display: flex;
-  justify-content: center;
-  width: 18rem;
-  height: 0.5rem;
-  margin-top: 1rem;
-  @include gradBluViolet(to right);
-}
 
 .services-items-row-1,
 .services-items-row-2 {
