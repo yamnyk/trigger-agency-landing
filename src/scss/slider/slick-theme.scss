@@ -35,6 +35,7 @@ $slick-opacity-not-active: 0.25 !default;
     @return font-url($url);
   }
   @else {
+
     @return url($slick-font-path + $url);
   }
 }
@@ -43,7 +44,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-list {
   .slick-loading & {
-    background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
+    background: #fff slick-image-url("../img/ajax-loader.gif") center center no-repeat;
   }
 }
 
