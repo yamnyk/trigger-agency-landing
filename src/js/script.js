@@ -1,8 +1,29 @@
-const gogi = 'gogi';
-const notGogi = 'not gogi';
-
 $( document ).ready(function() {
-
+	
+	const slowScroll = (id) => {
+		$("".concat(id.split("")[0] === "." ? "" : "#").concat(id.toString())).on("click", function (event) {
+			event.preventDefault();
+			const scrollTo = $(this).attr('href'),
+				top = $(scrollTo).offset().top;
+			debugger;
+			console.log(scrollTo);
+			$('body,html').animate({
+				scrollTop: top
+			}, 1000);
+		});
+	};
+	
+	slowScroll('about-btn');
+	slowScroll('about-b-btn');
+	slowScroll('services-btn');
+	slowScroll('services-b-btn');
+	slowScroll('projects-btn');
+	slowScroll('projects-b-btn');
+	slowScroll('contacts-btn');
+	slowScroll('contacts-b-btn');
+	slowScroll('more-btn');
+	
+	
 	$('#form__phone').mask('+38(999) 999-99-99')
 
 	$('#orderForm').validate({
@@ -75,5 +96,4 @@ $( document ).ready(function() {
 			.setLngLat([30.5933111, 50.4284607])
 			.addTo(map);
 	}
-
 });
