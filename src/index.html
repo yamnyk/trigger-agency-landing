@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="css/style.css">
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
 <header class="container head-slogan"></header>
@@ -35,6 +35,7 @@
         </div>
 
     </div>
+
 </section>
 <footer class="contacts">
     <section class="contacts__location container">
@@ -46,14 +47,33 @@
                 <span class="contacts__location__address__sub-paragraph-item">ТОЦ Silver Breeze,офис А, 6-й этаж</span>
             </p>
             <p class="contacts__location__address__paragraph">
-                тел.: <span class="contacts__location__address__paragraph-coloring">+38 097-649-84-67</span>
+                тел.: <a href="tel: (097) 649 84 67" class="contacts__location__address__paragraph-coloring">+38 097-649-84-67</a>
             </p>
             <p class="contacts__location__address__paragraph">
-                Email: <span class="contacts__location__address__paragraph-coloring">info@trigger.com.ua</span>
+                Email: <a href="mailto:info@trigger.com.ua" class="contacts__location__address__paragraph-coloring">info@trigger.com.ua</a>
             </p>
         </div>
+
         <div class="contacts__location__map">
-            <div class="contacts__location__map__shape" id="map"></div>
+            <a href="#" class="contacts__location__map__facebook"><img src="img/facebook.svg" alt="not-found"></a>
+            <a href="#" class="contacts__location__map__instagram"><img src="img/instagram.svg" alt="not-found"></a>
+            <div class="contacts__location__map__shape">
+                <div class="contacts__location__map__shape__each contacts__location__map__shape__solid" id="map">
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="hexagon-block">
+                    <div class="hexagon-each-blue hexagon-solid-blue">
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap">
+                <div class="hexagon-block">
+                    <div class="hexagon-each-orange hexagon-solid-orange">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <nav class="contacts__navigation">
@@ -76,8 +96,8 @@
             <p class="contacts__navigation__cover__copyright">&copy; All rights reserved, DAN.IT 2019</p>
 
             <div class="contacts__navigation__cover__social">
-                <img src="img/facebook-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__fb">
-                <img src="img/instagram-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__inst">
+                <a href="#" class="social-icons"><img src="img/facebook-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__fb"></a>
+                <a href="#" class="social-icons"><img src="img/instagram-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__inst"></a>
             </div>
         </div>
     </nav>
