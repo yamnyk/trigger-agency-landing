@@ -5,6 +5,7 @@
 
 .container-info-form-wrapper{
   font-weight: 900;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
 }
@@ -122,3 +123,4 @@
 //  box-shadow: 3px 1px 5px 0px $darkPink, -3px -1px 5px 0px $lightBlue;
 //  cursor: pointer;
 //}
+

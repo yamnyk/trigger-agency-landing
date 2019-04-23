@@ -13,18 +13,59 @@
 @media screen and (max-width: 960px){
   .order__info{
     justify-content: space-around;
+    //justify-content: space-between;
+
+    &__headline{
+      width: 100%;
+    }
+
+    &__slogan{
+    display: none;
+  }
   }
 
-  .order__info__slogan{
-    display: none;
+  .order__form-wrapper__form{
+    width: 100%;
+  }
+
+  .order__info__text{
+    width: 60%;
   }
 
 //  order__info вместо justify-content: space-between делаем space-around
 }
 
-@media screen and (max-width: 320px) {
+@media  (max-width: 345px) {
   .container-info-form-wrapper{
     display: flex;
     flex-direction: column;
+  }
+
+  .order__info{
+    width: 100%;
+
+    &__headline{
+      width: 35rem;
+      font-size: 2rem;
+  }
+    &__text{
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      width: 80%;
+      font-size: 1.8rem;
+    }
+  }
+
+  .order__form-wrapper{
+    width: 100%;
+
+    &__form{
+      width: 32rem;
+      align-items: center;
+    }
+  }
+
+  .inputs-stylization{
+    width: 27rem;
   }
 }
