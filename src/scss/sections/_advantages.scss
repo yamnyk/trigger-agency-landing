@@ -191,17 +191,16 @@
         text-align: center;
         color: #07002c;
         margin-bottom: 6rem;
-        display: inline-flex;
-        justify-content: center;
-      }
-      &-headline::after {
-        position: absolute;
-        content: "";
-        width: 186px;
-        height: 4px;
-        top: 5rem;
-        background-image: linear-gradient(to right, #00b3f9, #f900a9);
+        &::after {
+          position: absolute;
+          content: "";
+          width: 186px;
+          height: 4px;
+          top: 5rem;
+          left: 44%;
+          background-image: linear-gradient(to right, #00b3f9, #f900a9);
 
+        }
       }
       .advantages-slider {
         max-height: 30rem;

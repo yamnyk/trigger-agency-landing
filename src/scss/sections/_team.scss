@@ -136,9 +136,8 @@
 }
 
 .services-title-text {
-  display: flex;
-  justify-content: center;
   position: relative;
+  text-align: center;
   font-size: 4rem;
   font-weight: 700;
   font-family: 'Raleway', sans-serif;
@@ -149,6 +148,7 @@
     content: '';
     position: absolute;
     top: 6rem;
+    left: 44%;
     width: 18rem;
     height: 0.5rem;
     @include gradBluViolet(to right);
