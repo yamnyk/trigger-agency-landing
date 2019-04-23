@@ -35,7 +35,12 @@
 //  order__info вместо justify-content: space-between делаем space-around
 }
 
-@media  (max-width: 345px) {
+@media  (min-width: 335px) and (max-width: 700px) {
+  .order{
+    box-sizing: border-box;
+    border-radius: 1rem;
+  }
+
   .container-info-form-wrapper{
     display: flex;
     flex-direction: column;
@@ -60,12 +65,12 @@
     width: 100%;
 
     &__form{
-      width: 32rem;
+      width: 100%;
       align-items: center;
     }
   }
 
   .inputs-stylization{
-    width: 27rem;
+    width: 65%;
   }
 }
