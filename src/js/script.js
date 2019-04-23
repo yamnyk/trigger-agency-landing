@@ -3112,29 +3112,35 @@ $(document).ready(function () {
 	
 	$(function () {
 		$("#orderForm").submit(function (event) {
+			const formName = $('#form__name').val();
+			const formEmail = $('#form__email').val();
+			const formPhone = $('#form__phone').val();
 			event.preventDefault();
-			let data = {
-				message: `
-                Заказ индивидуальной консультации:
-                Имя - ${$('#form__name').val()},
-                Email - ${$('#form__email').val()},
-                Телефон - ${$('#form__phone').val()},
-                `,
-				
-			};
-			$.ajax({
-				type: "POST",
-				url: "js/email.php",
-				data: data,
-				success: function () {
-					alert(`
-                Индивидуальная консультация на
-                Имя - ${$('#form__name').val()},
-                Email - ${$('#form__email').val()},
-                Телефон - ${$('#form__phone').val()},
-                Была успешно заказана `,);
-				}
-			});
+			if(formName && formEmail && formPhone) {
+				let data = {
+					message: `
+	                Заказ индивидуальной консультации:
+	                Имя - ${formName},
+	                Email - ${formEmail},
+	                Телефон - ${formPhone},
+	                `,
+				};
+				$.ajax({
+					type: "POST",
+					url: "js/email.php",
+					data: data,
+					success: function () {
+						alert(`
+	                Индивидуальная консультация на
+	                Имя - ${formName},
+	                Email - ${formEmail},
+	                Телефон - ${formPhone},
+	                Была успешно заказана `,);
+					}
+				});
+			} else {
+				alert("Заполните пожалуйста форму!")
+			}
 			
 			return false;
 		});
