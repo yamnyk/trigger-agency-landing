@@ -135,24 +135,14 @@
   transform: rotateZ(33deg);
 }
 
-
-.services-title {
-  font-family: Ralaway, sans-serif;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  color: black;
-  align-items: center;
-  font-size: 4rem;
-  text-align: center;
-  font-weight: 700;
-}
-
 .services-title-text {
-  position: relative;
-  font-family: 'Raleway', sans-serif;
   display: flex;
   justify-content: center;
+  position: relative;
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  color: black;
   margin-bottom: 6rem;
 
   &:after {
@@ -166,16 +156,19 @@
 }
 
 
-.services-items-row-1,
-.services-items-row-2 {
+.services-items {
+  width: 90%;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   text-align: center;
+  align-content: center;
+  margin: 0 auto;
 }
 
 .services-item {
   width: 27rem;
-  margin: 2rem;
+  margin: 3rem;
 }
 
 .services-item-text {
