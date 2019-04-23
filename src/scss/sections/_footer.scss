@@ -1,10 +1,10 @@
 .contacts {
   font-family: 'Raleway', sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
 
   &__location {
     display: flex;
-    padding-top: 10rem;
+    padding-top: 12rem;
     padding-bottom: 10rem;
 
     &__address {
@@ -55,13 +55,13 @@
       width: 50%;
       position: relative;
 
-      &__facebook{
+      &__facebook {
         position: absolute;
         top: 115px;
         left: 45px;
       }
 
-      &__instagram{
+      &__instagram {
         position: absolute;
         bottom: 185px;
         left: 85px;
@@ -71,55 +71,64 @@
 
   &__navigation {
     background-color: #4c4184;
-    position: relative;
+    padding: 3rem;
 
-    &__cover {
-      padding: 4rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
-
-      &__menu {
-        width: 42rem;
-        text-transform: uppercase;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-
-        &__item {
-          font-size: 1.8rem;
-
-          &-link {
-            text-decoration: none;
-            color: #ffffff;
-          }
-        }
-      }
-
-      &__copyright {
-        font-size: 1.2rem;
-        position: absolute;
-        top: 7rem;
-        left: 50%;
-        transform: translateX(-50%);
-        font-weight: 400;
-        color: #9582f6;
-      }
-
-      &__social {
-        &__fb {
-          width: 3rem;
-          height: 3rem;
-        }
-
-        &__inst {
-          margin-left: 1.9rem;
-          width: 3rem;
-          height: 3rem;
-        }
-      }
+    .contacts__navigation__cover__copyright {
+      font-size: 1.2rem;
+      margin: 0 auto;
+      font-weight: 400;
+      color: #9582f6;
+      width: 18.5rem;
     }
+
+    //  &__cover {
+    //    padding: 4rem;
+    //    display: flex;
+    //    justify-content: space-between;
+    //    align-items: center;
+    //    position: relative;
+    //
+    //    &__menu {
+    //      width: 42rem;
+    //      text-transform: uppercase;
+    //      list-style: none;
+    //      display: flex;
+    //      justify-content: space-between;
+    //
+    //      &__item {
+    //        font-size: 1.8rem;
+    //
+    //        &-link {
+    //          text-decoration: none;
+    //          color: #ffffff;
+    //        }
+    //      }
+    //    }
+    //
+    //    &__copyright {
+    //      font-size: 1.2rem;
+    //      position: absolute;
+    //      top: 7rem;
+    //      left: 50%;
+    //      transform: translateX(-50%);
+    //      font-weight: 400;
+    //      color: #9582f6;
+    //    }
+    //
+    //    &__social {
+    //      &__fb {
+    //        width: 3rem;
+    //        height: 3rem;
+    //      }
+    //
+    //      &__inst {
+    //        margin-left: 1.9rem;
+    //        width: 3rem;
+    //        height: 3rem;
+    //      }
+    //    }
+    //  }
+    //}
   }
 }
 
