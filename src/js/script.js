@@ -3130,12 +3130,7 @@ $(document).ready(function () {
 					url: "js/email.php",
 					data: data,
 					success: function () {
-						alert(`
-	                Индивидуальная консультация на
-	                Имя - ${formName},
-	                Email - ${formEmail},
-	                Телефон - ${formPhone},
-	                Была успешно заказана `,);
+						alert(`Заявка принята`);
 					}
 				});
 			} else {
