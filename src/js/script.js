@@ -3124,7 +3124,7 @@ $(document).ready(function () {
 			};
 			$.ajax({
 				type: "POST",
-				url: "email.php",
+				url: "js/email.php",
 				data: data,
 				success: function () {
 					alert(`
