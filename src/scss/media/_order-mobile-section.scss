@@ -35,10 +35,10 @@
 //  order__info вместо justify-content: space-between делаем space-around
 }
 
-@media  (min-width: 335px) and (max-width: 700px) {
+@media  (min-width: 320px) and (max-width: 700px) {
   .order{
-    box-sizing: border-box;
     border-radius: 1rem;
+    margin: 0 10%;
   }
 
   .container-info-form-wrapper{
