@@ -66,14 +66,14 @@ const jsBuild = () => (
 
 const imgBuild = () => (
 	gulp.src(path.src.img)
-		.pipe(imagemin({
-			progressive: true,
-			svgoPlugins: [{
-				removeViewBox: false
-			}],
-			// use: [pngquant()],
-			interlaced: true
-		}))
+		// .pipe(imagemin({
+		// 	progressive: true,
+		// 	svgoPlugins: [{
+		// 		removeViewBox: false
+		// 	}],
+		// 	// use: [pngquant()],
+		// 	interlaced: true
+		// }))
 		.pipe(gulp.dest(path.build.img))
 		.pipe(browserSync.stream())
 );
