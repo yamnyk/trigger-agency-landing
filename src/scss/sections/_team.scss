@@ -4,7 +4,7 @@
 }
 
 .bold-text {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .team-description {
@@ -135,30 +135,20 @@
   transform: rotateZ(33deg);
 }
 
-
-.services-title {
-  font-family: Ralaway, sans-serif;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  color: black;
-  align-items: center;
-  font-size: 4rem;
-  text-align: center;
-  font-weight: 600;
-}
-
 .services-title-text {
   position: relative;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
   font-family: 'Raleway', sans-serif;
-  display: flex;
-  justify-content: center;
+  color: black;
   margin-bottom: 6rem;
 
   &:after {
     content: '';
     position: absolute;
     top: 6rem;
+    left: 44%;
     width: 18rem;
     height: 0.5rem;
     @include gradBluViolet(to right);
@@ -166,16 +156,19 @@
 }
 
 
-.services-items-row-1,
-.services-items-row-2 {
+.services-items {
+  width: 90%;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   text-align: center;
+  align-content: center;
+  margin: 0 auto;
 }
 
 .services-item {
   width: 27rem;
-  margin: 2rem;
+  margin: 3rem;
 }
 
 .services-item-text {
