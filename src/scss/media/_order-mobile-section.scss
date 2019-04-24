@@ -13,7 +13,6 @@
 @media screen and (max-width: 960px){
   .order__info{
     justify-content: space-around;
-    //justify-content: space-between;
 
     &__headline{
       width: 100%;
@@ -35,6 +34,7 @@
 //  order__info вместо justify-content: space-between делаем space-around
 }
 
+
 @media  (min-width: 320px) and (max-width: 700px) {
   .order{
     border-radius: 1rem;
@@ -50,7 +50,7 @@
     width: 100%;
 
     &__headline{
-      width: 35rem;
+      width: 100%;
       font-size: 2rem;
   }
     &__text{
@@ -71,6 +71,12 @@
   }
 
   .inputs-stylization{
-    width: 65%;
+    width: 70%;
+  }
+}
+
+@media (min-width: 520px) and (max-width: 700px) {
+  .order__info__headline{
+    font-size: 3rem;
   }
 }
