@@ -80,59 +80,72 @@
   }
 }
 
+.team-description-photo {
+  &-sharon {
+    top: -9rem;
+    left: 9rem;
+    transform: rotate(30deg);
+  }
+  &__sharon-img {
+    height: 28rem;
+    width: 28rem;
+    background: url("../img/sharon-photo.jpg") no-repeat;
+    background-size: cover;
+    transform: rotate(-30deg);
+  }
+  &-olga {
+    top: 20rem;
+    left: 7rem;
+    transform: rotate(30deg);
+  }
+  &__olga-img {
+    height: 31rem;
+    width: 31rem;
+    background: url("../img/panteleeva-olga.png") 0 -3rem no-repeat;
+    background-size: cover;
+    transform: rotate(-30deg);
+  }
+  &-eddie {
+    right: -2rem;
+    bottom: 3rem;
+    transform: rotate(30deg);
+  }
+  &__eddie-img {
+    height: 42rem;
+    width: 42rem;
+    background: url("../img/eddie-photo.jpg") 0 -7rem no-repeat;
+    background-size: cover;
+    transform: rotate(-30deg);
+  }
+}
 
-
-
-
-
+.hexagon-orange,
 .team-description-photo-sharon,
-.team-description-photo-olga {
-  position: absolute;
-  width: 31rem;
-  //height: 20rem;
-}
-
-.team-description-photo-sharon {
-  right: 35rem;
-  bottom: 25rem;
-}
-
-.team-description-photo-eddie {
-  position: absolute;
-  height: 42rem;
-  right: -5rem;
-  bottom: 3rem;
-}
-
-.team-description-photo-olga {
-  right: 34rem;
-  bottom: -8rem;
-}
-
-.hexagon-1,
-.hexagon-2 {
+.team-description-photo-eddie,
+.team-description-photo-olga,
+.hexagon-blue {
   position: absolute;
   opacity: 0.97;
   -webkit-clip-path: polygon(45% 1.33975%, 46.5798% 0.60307%, 48.26352% 0.15192%, 50% 0%, 51.73648% 0.15192%, 53.4202% 0.60307%, 55% 1.33975%, 89.64102% 21.33975%, 91.06889% 22.33956%, 92.30146% 23.57212%, 93.30127% 25%, 94.03794% 26.5798%, 94.48909% 28.26352%, 94.64102% 30%, 94.64102% 70%, 94.48909% 71.73648%, 94.03794% 73.4202%, 93.30127% 75%, 92.30146% 76.42788%, 91.06889% 77.66044%, 89.64102% 78.66025%, 55% 98.66025%, 53.4202% 99.39693%, 51.73648% 99.84808%, 50% 100%, 48.26352% 99.84808%, 46.5798% 99.39693%, 45% 98.66025%, 10.35898% 78.66025%, 8.93111% 77.66044%, 7.69854% 76.42788%, 6.69873% 75%, 5.96206% 73.4202%, 5.51091% 71.73648%, 5.35898% 70%, 5.35898% 30%, 5.51091% 28.26352%, 5.96206% 26.5798%, 6.69873% 25%, 7.69854% 23.57212%, 8.93111% 22.33956%, 10.35898% 21.33975%);
   clip-path: polygon(45% 1.33975%, 46.5798% 0.60307%, 48.26352% 0.15192%, 50% 0%, 51.73648% 0.15192%, 53.4202% 0.60307%, 55% 1.33975%, 89.64102% 21.33975%, 91.06889% 22.33956%, 92.30146% 23.57212%, 93.30127% 25%, 94.03794% 26.5798%, 94.48909% 28.26352%, 94.64102% 30%, 94.64102% 70%, 94.48909% 71.73648%, 94.03794% 73.4202%, 93.30127% 75%, 92.30146% 76.42788%, 91.06889% 77.66044%, 89.64102% 78.66025%, 55% 98.66025%, 53.4202% 99.39693%, 51.73648% 99.84808%, 50% 100%, 48.26352% 99.84808%, 46.5798% 99.39693%, 45% 98.66025%, 10.35898% 78.66025%, 8.93111% 77.66044%, 7.69854% 76.42788%, 6.69873% 75%, 5.96206% 73.4202%, 5.51091% 71.73648%, 5.35898% 70%, 5.35898% 30%, 5.51091% 28.26352%, 5.96206% 26.5798%, 6.69873% 25%, 7.69854% 23.57212%, 8.93111% 22.33956%, 10.35898% 21.33975%);
 }
 
-.hexagon-1 {
+.hexagon-blue {
   width: 6rem;
   height: 6rem;
   bottom: 20rem;
   left: 5rem;
   @include gradBluViolet(to top right);
-  transform: rotateZ(15deg);
+  transform: rotate(15deg);
 }
 
-.hexagon-2 {
+.hexagon-orange {
   width: 9rem;
   height: 9rem;
-  right: 23rem;
-  top: 45rem;
+  right: 25rem;
+  top: 42rem;
   @include gradOrangePurple(to bottom);
-  transform: rotateZ(33deg);
+  transform: rotate(33deg);
 }
 
 .services-title-text {
