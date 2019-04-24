@@ -2,6 +2,6 @@
 if($_POST){
     $message = $_POST['message'];
 
-    mail("denvradiy@gmail.com", "ЗАКАЗ ИНДИВИДУАЛЬНОЙ КОНСУЛЬТАЦИИ" .$message);
+    mail("info@trigger.com.ua", "ЗАКАЗ ИНДИВИДУАЛЬНОЙ КОНСУЛЬТАЦИИ", $message);
 }
 ?>
