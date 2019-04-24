@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+// Default Variables
+
+// Slick icon entity codes outputs the following
+// "\2190" outputs ascii character "←"
+// "\2192" outputs ascii character "→"
+// "\2022" outputs ascii character "•"
+
+$slick-font-path: "./fonts/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "./" !default;
+$slick-arrow-color: white !default;
+$slick-dot-color: black !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-prev-character: "\2329" !default;
+$slick-next-character: "\232a" !default;
+$slick-dot-character: "\2022" !default;
+$slick-dot-size: 6px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+
+@function slick-image-url($url) {
+  @if function-exists(image-url) {
+    @return image-url($url);
+  }
+  @else {
+    @return url($slick-loader-path + $url);
+  }
+}
+
+@function slick-font-url($url) {
+  @if function-exists(font-url) {
+    @return font-url($url);
+  }
+  @else {
+
+    @return url($slick-font-path + $url);
+  }
+}
+
+/* Slider */
+
+.slick-list {
+  .slick-loading & {
+    background: #fff slick-image-url("../img/ajax-loader.gif") center center no-repeat;
+  }
+}
+
+
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 100%;
+  z-index: 900;
+  width: 5rem;
+  cursor: pointer;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+
+  &.slick-disabled:before {
+    opacity: $slick-opacity-not-active;
+  }
+  &:before {
+    font-family: $slick-font-family;
+    font-size: 20px;
+    line-height: 1;
+    background: black;
+    color: $slick-arrow-color;
+    opacity: $slick-opacity-default;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.slick-prev {
+  opacity: 0.55;
+  background-color: #f66021;
+
+  &:before {
+    content: $slick-prev-character;
+    [dir="rtl"] & {
+      content: $slick-next-character;
+    }
+  }
+}
+
+.slick-next {
+  opacity: 0.55;
+  background-color: #de3179;
+  right: 0px;
+  [dir="rtl"] & {
+    left: 0px;
+    right: auto;
+  }
+  &:before {
+    content: $slick-next-character;
+    [dir="rtl"] & {
+      content: $slick-prev-character;
+    }
+  }
+}
+
