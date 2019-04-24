@@ -1,10 +1,31 @@
-const gogi = 'gogi';
-const notGogi = 'not gogi';
-
 $( document ).ready(function() {
 	
-	$('#form__phone').mask('+38(999) 999-99-99')
+	const slowScroll = (id) => {
+		$("".concat(id.split("")[0] === "." ? "" : "#").concat(id.toString())).on("click", function (event) {
+			event.preventDefault();
+			const scrollTo = $(this).attr('href'),
+				top = $(scrollTo).offset().top;
+			debugger;
+			console.log(scrollTo);
+			$('body,html').animate({
+				scrollTop: top
+			}, 1000);
+		});
+	};
 	
+	slowScroll('about-btn');
+	slowScroll('about-b-btn');
+	slowScroll('services-btn');
+	slowScroll('services-b-btn');
+	slowScroll('projects-btn');
+	slowScroll('projects-b-btn');
+	slowScroll('contacts-btn');
+	slowScroll('contacts-b-btn');
+	slowScroll('more-btn');
+	
+	
+	$('#form__phone').mask('+38(999) 999-99-99')
+
 	$('#orderForm').validate({
 		rules: {
 			name: {
@@ -29,7 +50,7 @@ $( document ).ready(function() {
 			}
 		}
 	});
-	
+
 	$(function() {
 		$("#orderForm").submit(function(event) {
 			event.preventDefault();
@@ -40,7 +61,7 @@ $( document ).ready(function() {
                 Email - ${$('#form__email').val()},
                 Телефон - ${$('#form__phone').val()},
                 `,
-				
+
 			};
 			$.ajax({
 				type: "POST",
@@ -55,11 +76,11 @@ $( document ).ready(function() {
                 Была успешно заказана `,);
 				}
 			});
-			
+
 			return false;
 		});
 	});
-	
+
 	/*MAP INITIALISATION*/
 	mapboxgl.accessToken = 'pk.eyJ1IjoidHJpZ2dlciIsImEiOiJjanVpZHYxbDMwdXN5M3lzYXg5dzJ0Y3Y1In0.kc2qv99WmxmAf8RgZrwS4w';
 	if (!mapboxgl.supported()) {
@@ -75,5 +96,4 @@ $( document ).ready(function() {
 			.setLngLat([30.5933111, 50.4284607])
 			.addTo(map);
 	}
-	
 });
