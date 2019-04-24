@@ -123,7 +123,6 @@
       padding-bottom: 7rem;
 
       &__address__paragraph {
-        //font-size: 1.1rem;
         line-height: 2.3rem;
         font-size: 2.5vw;
       }
@@ -131,7 +130,6 @@
       &__address__headline {
         font-size: 1.8rem;
         margin-bottom: 1.5rem;
-        //font-size: 3.7vw;
 
         &:after {
           width: 9rem;
@@ -268,14 +266,14 @@
   }
 
   .hexagon-each-blue {
-    bottom: 7rem;
+    bottom: 7.2rem;
     left: 10rem;
   }
 
 
   .hexagon-solid-blue {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
   }
 
   .hexagon-each-orange {
