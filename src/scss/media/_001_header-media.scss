@@ -1,4 +1,121 @@
-.gogi {
-  background-size: cover;
+@media screen and (max-width: 1418px){
+  .top-menu {
+
+    &__wrapper {
+      display: flex;
+    }
+
+    &__logo-item {
+
+    }
+
+    &__nav-menu {
+
+
+      &__item {
+
+      }
+    }
+
+
+    &__phone {
+      font-size: 1.8rem;
+    }
+
+    &__languages-item {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1169px){
+  .top-menu {
+
+    &__wrapper {
+      display: flex;
+    }
+
+    &__logo-item {
+
+    }
+
+    &__nav-menu {
+
+
+      &__item {
+
+      }
+    }
+
+
+    &__phone {
+      font-size: 1.4rem;
+    }
+
+    &__languages-item {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 960px){
+  .top-menu {
+
+    &__wrapper {
+      display: flex;
+    }
+
+    &__logo-item {
+
+    }
+
+    &__nav-menu {
+
+
+      &__item {
+
+      }
+    }
+
+
+    &__phone {
+      font-size: 1rem;
+    }
+
+    &__languages-item {
+     font-size: 1rem;
+    }
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .top-menu {
+
+    &__wrapper {
+      display: flex;
+    }
+
+    &__logo-item {
+
+    }
+
+    &__nav-menu {
+
+
+      &__item {
+
+      }
+    }
+
+
+    &__phone {
+     display: none;
+    }
+
+    &__languages-item {
+      display: none;
+    }
+  }
 }
 
