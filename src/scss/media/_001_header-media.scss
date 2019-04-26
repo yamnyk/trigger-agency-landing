@@ -1,4 +1,4 @@
-@media screen and (max-width: 1418px){
+@media screen and (max-width: 1418px) {
   .top-menu {
 
     &__wrapper {
@@ -13,29 +13,38 @@
       width: 44.7rem;
 
       &__item {
-        font-size: 1.8rem;
+
+        &_link {
+          font-size: 1.8rem;
+          &:hover {
+            font-size: 1.78rem;
+          }
+        }
       }
-    }
 
-
-    &__phone {
-      font-size: 2.1rem;
-    }
-
-    &__languages-item {
-      font-size: 1.8rem;
     }
   }
-  .header-main{
-    &__info{
-      &__title{
+
+
+  &__phone {
+    font-size: 2.1rem;
+  }
+
+  &__languages-item {
+    font-size: 1.8rem;
+  }
+
+  .header-main {
+    &__info {
+      &__title {
         font-size: 7rem;
       }
     }
   }
+
 }
 
-@media screen and (max-width: 1169px){
+@media screen and (max-width: 1169px) {
   .top-menu {
 
     &__wrapper {
@@ -50,7 +59,12 @@
       width: 40.7rem;
 
       &__item {
-        font-size: 1.6rem;
+        &_link {
+          font-size: 1.6rem;
+          &:hover {
+            font-size: 1.58rem;
+          }
+        }
       }
     }
 
@@ -63,16 +77,16 @@
       font-size: 1.6rem;
     }
   }
-  .header-main{
-    &__info{
-      &__title{
+  .header-main {
+    &__info {
+      &__title {
         font-size: 6.7rem;
       }
     }
   }
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 960px) {
   .top-menu {
 
     &__wrapper {
@@ -87,7 +101,12 @@
       width: 38.7rem;
 
       &__item {
-        font-size: 1.4rem;
+        &_link {
+          font-size: 1.4rem;
+          &:hover {
+            font-size: 1.38rem;
+          }
+        }
       }
     }
 
@@ -98,20 +117,20 @@
     }
 
     &__languages-item {
-     font-size: 1.4rem;
+      font-size: 1.4rem;
     }
   }
-  .header-main{
+  .header-main {
 
-    &__info{
-      &__title{
+    &__info {
+      &__title {
         font-size: 6.4rem;
       }
     }
   }
 }
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 760px) {
   .top-menu {
 
     &__wrapper {
@@ -126,7 +145,12 @@
       width: 36.7rem;
 
       &__item {
-        font-size: 1.2rem;
+        &_link {
+          font-size: 1.2rem;
+          &:hover {
+            font-size: 1.18rem;
+          }
+        }
       }
     }
 
@@ -136,24 +160,35 @@
       display: none;
     }
 
+    &__phone_img {
+      display: inline-block;
+    }
+
     &__languages-item {
       font-size: 1.2rem;
     }
   }
-  .header-main{
-    &__info{
-      &__title{
+  .header-main {
+    &__info {
+      &__title {
         font-size: 6.2rem;
       }
     }
   }
 }
 
-@media screen and (max-width: 3200px) {
+@media screen and (max-width: 650px) {
   .top-menu {
 
     &__wrapper {
+      &__logo-item{
 
+      }
+      padding-top: 4rem;
+    }
+
+    .nav-mobile {
+      display: block;
     }
 
     &__logo-item {
@@ -161,39 +196,102 @@
     }
 
     &__nav-menu {
-
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+      box-sizing: border-box;
+      position: absolute;
+      right: -254px;
 
       &__item {
-        font-size: 1.2rem;
+        margin-bottom: 5px;
+        &_link {
+          //position: absolute;
+          width: 20px;
+          height: 2px;
+          background-color: #fff;
+          opacity: 1;
+          top: 0;
+          left: 0;
+          transition: all .4s linear;
+          transform-origin: -2.5px 1px;
+
+          font-size: 1.2rem;
+          &:hover {
+            font-size: 1.18rem;
+          }
+        }
       }
     }
 
 
     &__phone {
-     display: none;
+      display: none;
+    }
+
+    &__phone_img {
+      display: inline-block;
+      margin-left: 115px;
     }
 
     &__languages-item {
       display: none;
     }
   }
-  .header-main{
-    &__info{
+  .header-main {
+    &__info {
+      flex-basis: 0;
 
-      &__title{
+      &__title {
         font-size: 5.7rem;
+        position: absolute;
+        top: 170px;
+        left: 0;
+        padding-left: 90px;
 
       }
+
       &__subtitle {
-
+        font-size: 2rem;
+        position: absolute;
+        top: 230px;
+        left: 90px;
+        background: #ffffff;
+        width: 455px;
+        text-align: center;
       }
-      &__more-btn {
 
+      &__more-btn {
+        position: absolute;
+        bottom: 0;
+        left: 145px;
       }
     }
-    &__img{
 
+    &__img {
+      flex-basis: 100%;
     }
   }
+  .header-advantages {
+    &__icons {
+      width: 80%;
+
+      &-wrapper {
+        &__item {
+          height: 7.35rem;
+        }
+
+        &__description {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    &__subtitle {
+      width: 80%;
+      font-size: 1.6rem;
+    }
+  }
+
 }
 

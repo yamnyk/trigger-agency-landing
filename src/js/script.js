@@ -3158,3 +3158,15 @@ $(document).ready(function () {
 	}
 	
 });
+
+/*burger menu*/
+// Toggle open and close nav styles on click
+$('#nav-toggle').click(function() {
+	$('.top-menu__nav-menu').slideToggle();
+});
+// Hamburger to X toggle
+$('#nav-toggle').on('click', function() {
+	this.classList.toggle('active');
+
+});
+
