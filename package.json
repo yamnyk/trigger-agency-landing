@@ -1,7 +1,6 @@
 {
-  "name": "trigger-agency-landing",
+  "name": "c",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +10,7 @@
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.3.1",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-babel": "^8.0.0",
@@ -22,5 +21,14 @@
     "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamnyk/trigger-agency-landing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yamnyk/trigger-agency-landing/issues"
+  },
+  "homepage": "https://github.com/yamnyk/trigger-agency-landing#readme",
+  "description": ""
 }

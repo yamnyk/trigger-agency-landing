@@ -66,14 +66,14 @@ const jsBuild = () => (
 
 const imgBuild = () => (
 	gulp.src(path.src.img)
-		.pipe(imagemin({
-			progressive: true,
-			svgoPlugins: [{
-				removeViewBox: false
-			}],
-			// use: [pngquant()],
-			interlaced: true
-		}))
+		// .pipe(imagemin({
+		// 	progressive: true,
+		// 	svgoPlugins: [{
+		// 		removeViewBox: false
+		// 	}],
+		// 	// use: [pngquant()],
+		// 	interlaced: true
+		// }))
 		.pipe(gulp.dest(path.build.img))
 		.pipe(browserSync.stream())
 );
@@ -84,13 +84,19 @@ const fontsBuild = () => (
 		.pipe(browserSync.stream())
 );
 
+const phpBuild = () => (
+	gulp.src("./src/js/email.php")
+		.pipe(gulp.dest(path.build.js))
+		.pipe(browserSync.stream())
+);
+
 const watcher = () => {
 	browserSync.init({
 		server: {
 			baseDir: "./build"
 		}
 	});
-	gulp.watch(path.watch.html, htmlBuild).on('change', browserSync.reload);
+	gulp.watch(path.src.html, htmlBuild).on('change', browserSync.reload);
 	gulp.watch(path.watch.style, scssBuild).on('change', browserSync.reload);
 	gulp.watch(path.watch.js, jsBuild).on('change', browserSync.reload);
 	gulp.watch(path.watch.img, imgBuild).on('change', browserSync.reload);
@@ -118,6 +124,7 @@ gulp.task('default', gulp.series(
 	htmlBuild,
 	scssBuild,
 	jsBuild,
+	phpBuild,
 	gulp.parallel(fontsBuild,imgBuild),
 	watcher
 ));
