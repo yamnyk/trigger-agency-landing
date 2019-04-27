@@ -3163,6 +3163,15 @@ $(document).ready(function () {
 // Toggle open and close nav styles on click
 $('#nav-toggle').click(function() {
 	$('.top-menu__nav-menu').slideToggle();
+
+	if ($('#nav-toggle')[0].classList.contains('active')){
+		$('.header-main').animate({marginTop: 40},'slow','swing');
+	} else {
+		$('.header-main').animate({marginTop: 90},'slow','swing');
+	};
+
+
+
 });
 // Hamburger to X toggle
 $('#nav-toggle').on('click', function() {

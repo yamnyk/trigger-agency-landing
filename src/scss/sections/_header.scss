@@ -2,39 +2,37 @@
   overflow-x: hidden;
 }
 
+
 .top-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 9.8rem;
-  margin-left: 9.2rem;
+  //margin-left: 9.2rem;
   margin-right: 0;
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    .nav-mobile{
+      display: none;
+    }
   }
 
   &__logo-item {
     height: 7.3rem;
     width: 25rem;
-  }
-  .nav-mobile{
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 70px;
-    width: 70px;
+    background-image: url("../img/header/logo_trigger.jpg");
+    background-size: cover;
+
   }
 
+
   #nav-toggle {
-    position: absolute;
-    left: 1.8rem;
-    top: 35px;
     cursor: pointer;
-    padding: 1rem 3.5rem 1.6rem 0;
+
     span,
     span:before,
     span:after {
@@ -68,6 +66,7 @@
       }
     }
   }
+
 
   &__nav-menu {
     display: flex;
@@ -282,8 +281,11 @@
       align-items: center;
 
       &__item {
-        //width: 10rem;
         height: 11.6rem;
+        transition: all .2s ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+        }
 
       }
 

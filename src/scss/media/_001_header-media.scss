@@ -179,34 +179,37 @@
 
 @media screen and (max-width: 650px) {
   .top-menu {
-
+    margin:0;
+    height: 17rem;
     &__wrapper {
+      align-items: center;
       &__logo-item{
 
       }
-      padding-top: 4rem;
     }
 
     .nav-mobile {
       display: block;
+      justify-self: flex-end;
     }
 
     &__logo-item {
-
+      background-image: url("../img/header/trigger_logo_mobile.jpg");
+      height: 18rem;
+      width: 19rem;
     }
 
     &__nav-menu {
       display: none;
-      flex-direction: column;
-      align-items: flex-end;
       box-sizing: border-box;
       position: absolute;
-      right: -254px;
+      right: -200px;
+      top: 110px;
 
       &__item {
+
         margin-bottom: 5px;
         &_link {
-          //position: absolute;
           width: 20px;
           height: 2px;
           background-color: #fff;
@@ -216,9 +219,9 @@
           transition: all .4s linear;
           transform-origin: -2.5px 1px;
 
-          font-size: 1.2rem;
+          font-size: 1.6rem;
           &:hover {
-            font-size: 1.18rem;
+            font-size: 1.58rem;
           }
         }
       }
@@ -239,6 +242,7 @@
     }
   }
   .header-main {
+    margin-top: 4rem;
     &__info {
       flex-basis: 0;
 
@@ -270,9 +274,21 @@
 
     &__img {
       flex-basis: 100%;
+      &__hexagon {
+        &_top-left {
+          width: 9rem;
+          height: 9rem;
+          top: 5%;
+          left: 7%;
+        }
+        &_bottom {
+          display: none;
+        }
+      }
     }
   }
   .header-advantages {
+    margin-top: 4rem;
     &__icons {
       width: 80%;
 
