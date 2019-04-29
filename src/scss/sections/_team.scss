@@ -35,7 +35,7 @@
   }
 
   &-title {
-    width: 65rem;
+    width: 90%;
     font-size: 3.5rem;
     font-weight: 900;
     font-family: Releway, sans-serif;
@@ -55,7 +55,7 @@
     font-family: Releway, sans-serif;
     line-height: 1.35;
     font-size: 2rem;
-    width: 64rem;
+    width: 90%;
     color: #07002c;
     margin-bottom: 3rem;
   }
@@ -65,7 +65,7 @@
     line-height: 1.35;
     font-size: 2rem;
     color: black;
-    width: 64rem;
+    width: 90%;
 
     &-highlight {
       @include gradBluViolet(to left);

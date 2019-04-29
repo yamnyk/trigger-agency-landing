@@ -3,16 +3,7 @@
   .team-description {
 
     &-title {
-      width: 100%;
       margin: 3rem 0;
-    }
-
-    &-subtitle {
-      width: 100%;
-    }
-
-    &-bonus {
-      width: 100%;
     }
 
     .team-description-images {
@@ -71,7 +62,7 @@
 
     &:before {
       left: -20rem;
-      padding: 2.5rem 17rem;
+      padding: 2.5rem 21rem;
     }
 
     &-top-main-title {
@@ -79,20 +70,17 @@
     }
 
     &-title {
-      width: 100%;
       font-size: 2.5rem;
       margin: 2rem 0;
     }
 
     &-subtitle {
       font-size: 1.58rem;
-      width: 100%;
       margin-bottom: 2rem;
     }
 
     &-bonus {
       font-size: 1.58rem;
-      width: 100%;
     }
 
     .team-description-images {
