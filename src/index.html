@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1550"> <!--for hosting without adaptive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Trigger Marketing Agency</title>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="css/style.css" >
@@ -266,10 +266,10 @@
 
         <div class="contacts__location__map">
             <a href="https://www.facebook.com/triggerexperts/"  target="_blank" class="contacts__location__map__facebook">
-                <img src="img/facebook.svg" alt="not-found">
+                <img src="img/facebook.svg" alt="fb-icon-not-found" class="contacts__location__map_icon-sizing">
             </a>
             <a href="https://instagram.com/triggerexperts?r=nametag" target="_blank" class="contacts__location__map__instagram">
-                <img src="img/instagram.svg" alt="not-found">
+                <img src="img/instagram.svg" alt="inst-icon-not-found" class="contacts__location__map_icon-sizing">
             </a>
             <div class="contacts__location__map__shape">
                 <div class="contacts__location__map__shape__each contacts__location__map__shape__solid" id="map">
@@ -290,35 +290,9 @@
             </div>
         </div>
     </section>
-    <nav class="contacts__navigation">
-        <div class="container contacts__navigation__cover">
-            <menu class="contacts__navigation__cover__menu">
-                <li class="contacts__navigation__cover__menu__item">
-                    <a href="#about" id="about-b-btn" class="contacts__navigation__cover__menu__item-link">о нас</a>
-                </li>
-                <li class="contacts__navigation__cover__menu__item">
-                    <a href="#services" id="services-b-btn" class="contacts__navigation__cover__menu__item-link">услуги</a>
-                </li>
-                <li class="contacts__navigation__cover__menu__item">
-                    <a href="#projects" id="projects-b-btn" class="contacts__navigation__cover__menu__item-link">проекты</a>
-                </li>
-                <li class="contacts__navigation__cover__menu__item">
-                    <a href="#contacts" id="contacts-b-btn" class="contacts__navigation__cover__menu__item-link">контакты</a>
-                </li>
-            </menu>
-
-            <p class="contacts__navigation__cover__copyright">&copy; All rights reserved, DAN.IT 2019</p>
-
-            <div class="contacts__navigation__cover__social">
-                <a href="https://www.facebook.com/triggerexperts/" target="_blank" class="social-icons">
-                    <img src="img/facebook-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__fb">
-                </a>
-                <a href="https://instagram.com/triggerexperts?r=nametag" target="_blank" class="social-icons">
-                    <img src="img/instagram-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__inst">
-                </a>
-            </div>
-        </div>
-    </nav>
+    <div class="contacts__copyright">
+            <p class="contacts__copyright__paragraph">&copy; All rights reserved, DAN.IT 2019</p>
+    </div>
 </footer>
 
 <!--JQUERY-->
