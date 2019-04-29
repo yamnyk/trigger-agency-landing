@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29.257" height="29.257" viewBox="0 0 29.257 29.257">
+    <defs>
+        <style>
+            .cls-1{fill:url(#linear-gradient)}
+        </style>
+        <linearGradient id="linear-gradient" x1="-.204" x2="1.14" y1=".542" y2=".542" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ff7200"/>
+            <stop offset="1" stop-color="#d8268d"/>
+        </linearGradient>
+    </defs>
+    <path id="facebook" d="M4.286 29.257h9.543v-10.4H10.4v-3.428h3.429v-4.286a4.291 4.291 0 0 1 4.286-4.286H22.4v3.429h-3.428A1.716 1.716 0 0 0 17.257 12v3.429h4.988l-.571 3.429h-4.417v10.4h7.714a4.291 4.291 0 0 0 4.286-4.286V4.286A4.291 4.291 0 0 0 24.972 0H4.286A4.291 4.291 0 0 0 0 4.286v20.686a4.291 4.291 0 0 0 4.286 4.285zM1.714 4.286a2.574 2.574 0 0 1 2.572-2.572h20.686a2.574 2.574 0 0 1 2.571 2.571v20.687a2.574 2.574 0 0 1-2.571 2.571h-6v-6.971h4.155l1.143-6.857h-5.3V12h5.143V5.143h-6a6.007 6.007 0 0 0-6 6v2.571H8.686v6.857h3.429v6.971H4.286a2.574 2.574 0 0 1-2.571-2.571zm0 0" class="cls-1"/>
+</svg>
