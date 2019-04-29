@@ -143,3 +143,236 @@
     }
   }
 }
+
+//DEN
+
+@media (max-width: 699px) {
+  .team-description {
+    margin-bottom: 10rem;
+
+    &:before {
+      left: -20rem;
+      padding: 2.5rem 21rem;
+    }
+
+    &-top-main-title {
+      font-size: 3rem;
+    }
+
+    &-title {
+      font-size: 2.5rem;
+      margin: 4rem 0;
+    }
+
+    &-subtitle {
+      font-size: 1.58rem;
+      margin-bottom: 2rem;
+
+      &-highlight{
+        padding: 0.2rem 0;
+        color: #ffffff;
+        @include gradBluViolet(to right);
+      }
+
+      &-hidden-span{
+        display: none;
+      }
+    }
+
+    &-bonus {
+      display: none;
+    }
+
+    .team-description-images {
+      height: 34rem;
+    }
+
+    .team-description-photo {
+      &-sharon {
+        top: 2rem;
+        right: 16rem;
+      }
+
+      &__sharon-img {
+        height: 13rem;
+        width: 13rem;
+      }
+
+      &-olga {
+        top: 17rem;
+        right: 16rem;
+      }
+
+      &__olga-img {
+        height: 13rem;
+        width: 13rem;
+        background-position: 0 -2rem;
+      }
+
+      &-eddie {
+        right: -2rem;
+        bottom: 8rem;
+      }
+
+      &__eddie-img {
+        height: 20rem;
+        width: 20rem;
+        background-position: center;
+      }
+    }
+
+    .hexagon-blue {
+      display: none;
+    }
+
+    .hexagon-orange {
+      display: none;
+    }
+  }
+
+  .services-title-text {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+
+    &:after {
+      top: 4rem;
+    }
+  }
+}
+
+@media (max-width: 499px) {
+  .team-description {
+    margin-bottom: 10rem;
+
+    &:before {
+      left: -20rem;
+      padding: 2rem 18.5rem;
+    }
+
+    &-top-main-title {
+      font-size: 2.3rem;
+      left: 5rem;
+    }
+
+    &-title {
+      font-size: 2rem;
+      margin: 4rem 0;
+    }
+
+    &-subtitle {
+      font-size: 1.35rem;
+    }
+
+
+    .team-description-images {
+      height: 34rem;
+    }
+
+    .team-description-photo {
+      &-sharon {
+        top: 10rem;
+        right: 10rem;
+      }
+
+      &__sharon-img {
+        height: 9rem;
+        width: 9rem;
+      }
+
+      &-olga {
+        top: 20rem;
+        right: 10rem;
+      }
+
+      &__olga-img {
+        height: 9rem;
+        width: 9rem;
+        background-position: 0 -1rem;
+      }
+
+      &-eddie {
+        right: 0rem;
+        bottom: 9rem;
+      }
+
+      &__eddie-img {
+        height: 11rem;
+        width: 11rem;
+        background-position: 0 -2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 381px) {
+  .team{
+    padding-top: 9rem;
+  }
+
+  .team-description {
+    margin-bottom: 4rem;
+
+    &:before {
+      left: -20rem;
+      padding: 2rem 17.5rem;
+    }
+
+    &-top-main-title {
+      font-size: 2rem;
+      left: 5rem;
+    }
+
+    &-title {
+      font-size: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    &-subtitle {
+      font-size: 1.2rem;
+    }
+
+
+    .team-description-images {
+      height: 29rem;
+    }
+
+    .team-description-photo {
+      &-sharon {
+        top: 6rem;
+        right: 9.5rem;
+      }
+
+      &__sharon-img {
+        height: 9rem;
+        width: 9rem;
+      }
+
+      &-olga {
+        top: 15rem;
+        right: 9rem;
+      }
+
+      &__olga-img {
+        height: 9rem;
+        width: 9rem;
+      }
+
+      &-eddie {
+        right: 0rem;
+        bottom: 9rem;
+      }
+
+      &__eddie-img {
+        height: 11rem;
+        width: 11rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 733px) {
+  .services-item {
+    width: 25rem;
+    margin: 2.5rem 0;
+  }
+}
