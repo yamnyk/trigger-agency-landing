@@ -83,7 +83,7 @@
 .team-description-photo {
   &-sharon {
     top: -9rem;
-    left: 9rem;
+    right: 35rem;
     transform: rotate(30deg);
   }
   &__sharon-img {
@@ -95,7 +95,7 @@
   }
   &-olga {
     top: 20rem;
-    left: 7rem;
+    right: 34rem;
     transform: rotate(30deg);
   }
   &__olga-img {
@@ -134,7 +134,7 @@
   width: 6rem;
   height: 6rem;
   bottom: 20rem;
-  left: 5rem;
+  right: 61rem;
   @include gradBluViolet(to top right);
   transform: rotate(15deg);
 }
@@ -161,7 +161,8 @@
     content: '';
     position: absolute;
     top: 6rem;
-    left: 44%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 18rem;
     height: 0.5rem;
     @include gradBluViolet(to right);
