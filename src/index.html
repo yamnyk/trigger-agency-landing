@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Trigger Marketing Agency</title>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="css/style.css" >
@@ -90,15 +90,18 @@
         <div class="team-description-content">
             <div class="team-description-top-main-title">Команда</div>
             <p class="team-description-title">Международная опытная команда - наша основа.</p>
-            <p class="team-description-subtitle">Trigger – мультинациональная команда с опытом в разных сферах PR,
-                маркетинга и продаж на рынках Израиля, Великобритании, Беларуси, Украины и т.д. Подходим к делу
-                высокопрофессионально, нестандартно и мыслим outside-the-box. </p>
+            <p class="team-description-subtitle"><span class="team-description-subtitle-highlight">Trigger</span> – мультинациональная команда с опытом в разных сферах PR,
+                маркетинга и продаж на рынках Израиля, Великобритании, Беларуси, Украины и т.д. <span class="team-description-subtitle-hidden-span">Подходим к делу
+                высокопрофессионально, нестандартно и мыслим outside-the-box.</span></p>
             <p class="team-description-bonus"><span class="team-description-bonus-highlight">Важный бонус</span>: у всех
                 Trigger-экспертов за плечами опыт в маркетинге от <span class="bold-text">10</span> до <span
                         class="bold-text">20</span> лет. В нашей команде – более <span class="bold-text">20</span>
                 специалистов
                 в сферах SMM, SEO, PR, UI/UX и т. д.</p>
         </div>
+
+
+
         <div class="team-description-images">
             <div class="hexagon-blue"></div>
             <div class="hexagon-orange"></div>
@@ -269,13 +272,12 @@
                 Email: <a href="mailto:info@trigger.com.ua" target="_blank" class="contacts__location__address__paragraph-coloring">info@trigger.com.ua</a>
             </p>
         </div>
-
         <div class="contacts__location__map">
             <a href="https://www.facebook.com/triggerexperts/"  target="_blank" class="contacts__location__map__facebook">
-                <img src="img/facebook.svg" alt="not-found">
+                <img src="img/facebook.svg" alt="fb-icon-not-found" class="contacts__location__map_icon-sizing">
             </a>
             <a href="https://instagram.com/triggerexperts?r=nametag" target="_blank" class="contacts__location__map__instagram">
-                <img src="img/instagram.svg" alt="not-found">
+                <img src="img/instagram.svg" alt="inst-icon-not-found" class="contacts__location__map_icon-sizing">
             </a>
             <div class="contacts__location__map__shape">
                 <div class="contacts__location__map__shape__each contacts__location__map__shape__solid" id="map">
@@ -296,35 +298,9 @@
             </div>
         </div>
     </section>
-    <nav class="contacts__navigation">
-        <div class="container contacts__navigation__cover">
-            <menu class="contacts__navigation__cover__menu">
-                <li class="contacts__navigation__cover__menu__item">
-                    <a href="#about" id="about-b-btn" class="contacts__navigation__cover__menu__item-link">о нас</a>
-                </li>
-                <li class="contacts__navigation__cover__menu__item">
-                    <a href="#services" id="services-b-btn" class="contacts__navigation__cover__menu__item-link">услуги</a>
-                </li>
-                <li class="contacts__navigation__cover__menu__item">
-                    <a href="#projects" id="projects-b-btn" class="contacts__navigation__cover__menu__item-link">проекты</a>
-                </li>
-                <li class="contacts__navigation__cover__menu__item">
-                    <a href="#contacts" id="contacts-b-btn" class="contacts__navigation__cover__menu__item-link">контакты</a>
-                </li>
-            </menu>
-
-            <p class="contacts__navigation__cover__copyright">&copy; All rights reserved, DAN.IT 2019</p>
-
-            <div class="contacts__navigation__cover__social">
-                <a href="https://www.facebook.com/triggerexperts/" target="_blank" class="social-icons">
-                    <img src="img/facebook-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__fb">
-                </a>
-                <a href="https://instagram.com/triggerexperts?r=nametag" target="_blank" class="social-icons">
-                    <img src="img/instagram-footer-icon.png" alt="not-found" class="contacts__navigation__cover__social__inst">
-                </a>
-            </div>
-        </div>
-    </nav>
+    <div class="contacts__copyright">
+            <p class="contacts__copyright__paragraph">&copy; All rights reserved, DAN.IT 2019</p>
+    </div>
 </footer>
 
 <!--JQUERY-->
