@@ -98,7 +98,7 @@
             width: 18.6rem;
             height: 5.3rem;
             background-image: linear-gradient(to right, #09a2de, #d8268d);
-
+            border-radius: 0.1rem;
           }
 
           &-item {
@@ -139,6 +139,7 @@
             line-height: 1.5;
             text-align: left;
             color: #07002c;
+            border-radius: 0.2rem;
             animation: passContent 0.2s 1 linear forwards;
           }
 
@@ -245,7 +246,7 @@
     right: 20%;;
     width: 6.5rem;
     height: 6.5rem;
-    @include gradOrangePurple(to left)
+    @include gradOrangePurple(to left);
   }
   &__middle {
     width: 8.5rem;

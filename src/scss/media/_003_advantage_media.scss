@@ -1,40 +1,57 @@
 @media (max-width: 1200px) {
+
+  .advantages-hexagon {
+
+    &__is-symplify {
+      right: 36%;
+      top: 8rem;
+
+      &-img {
+        width: 30rem;
+        height: 30rem;
+        background-image: url("../img/advantages/iSymplify-team_technology.png");
+        background-position: -7rem -1rem;
+      }
+    }
+    &__smeh-1 {
+      top: 9rem;
+      right: 13%;
+
+      &-img {
+        width: 13rem;
+        height: 13rem;
+        background: url("../img/advantages/smeh1.png");
+        background-position: -19rem -9rem;
+      }
+    }
+    &__small {
+      top: 29rem;
+      right: 27%;
+      width: 4.5rem;
+      height: 4.5rem;
+      @include gradOrangePurple(to left)
+    }
+    &__middle {
+      width: 5.5rem;
+      height: 5.5rem;
+      top: 3rem;
+      right: 56%;
+      @include gradOrangePurple(to right);
+    }
+    &__big {
+      width: 10rem;
+      height: 10rem;
+      right: 80%;
+      @include gradBluViolet(-280deg);
+    }
+  }
+
   .advantages {
     &-container {
       .advantages-description {
         margin-bottom: 0;
         .advantages-img {
           width: 40%;
-          .is-symplify {
-            position: absolute;
-            width: 65%;
-            left: 2rem;
-            top: 6rem;
-          }
-          .smeh1 {
-            position: absolute;
-            width: 30%;
-            top: 9rem;
-            left: 70%;
-          }
-          .path-big {
-            position: absolute;
-            width: 18%;
-          }
-
-          .path-midle {
-            position: absolute;
-            width: 10%;
-            top: 29rem;
-            left: 70%;
-          }
-
-          .path-small {
-            position: absolute;
-            width: 7%;
-            top: 1rem;
-            left: 45%;
-          }
         }
 
         &-content {
@@ -361,6 +378,54 @@
   }
 }
 @media (max-width: 760px) {
+
+  .advantages-hexagon {
+
+    &__is-symplify {
+      right: 36%;
+      top: 8rem;
+
+      &-img {
+        width: 15rem;
+        height: 15rem;
+        background-image: url("../img/advantages/iSymplify-team_technology.png");
+        background-position: -17rem -14rem;
+      }
+    }
+    &__smeh-1 {
+      top: 9rem;
+      right: 13%;
+
+      &-img {
+        width: 7rem;
+        height: 7rem;
+        background: url("../img/advantages/smeh1.png");
+        background-position: -22rem -12rem;
+      }
+    }
+    &__small {
+      top: 19rem;
+      right: 27%;
+      width: 2.5rem;
+      height: 2.5rem;
+      @include gradOrangePurple(to left)
+    }
+    &__middle {
+      width: 3.5rem;
+      height: 3.5rem;
+      top: 4rem;
+      right: 48%;
+      @include gradOrangePurple(to right);
+    }
+    &__big {
+      width: 5rem;
+      height: 5rem;
+      right: 74%;
+      top: 5rem;
+      @include gradBluViolet(-280deg);
+    }
+  }
+
   .advantages {
     &-container {
       .advantages-description {
@@ -487,7 +552,42 @@
     }
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 640px) {
+
+  .advantages-hexagon {
+
+    &__is-symplify {
+      right: 20%;
+      top: 5rem;
+
+      &-img {
+        width: 60vw;
+        height: 60vw;
+        background-position: -17rem -6rem;
+        background-repeat: no-repeat;
+      }
+    }
+    &__smeh-1 {
+      display: none;
+    }
+    &__small {
+      top: 35rem;
+      right: 17%;
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+    &__middle {
+      display: none;
+    }
+    &__big {
+      width: 5rem;
+      height: 5rem;
+      right: 74%;
+      top: 5rem;
+    }
+  }
+
+
   .advantages {
     &-container {
       .advantages-description {
@@ -540,8 +640,8 @@
         }
 
         .content-nav {
-          width: 70%;
-          margin: 23% auto;
+          width: 45%;
+          margin: 16% auto;
 
           &-table {
             height: 2.7rem;
@@ -624,5 +724,54 @@
       }
 
     }
+  }
+}
+
+
+
+@media (max-width: 460px) {
+
+  .advantages-container
+  .advantages-description
+  .content-nav-table-item {
+    font-size: 0.6rem;
+    line-height: 1;
+    max-height: 2.7rem;
+  }
+
+  .advantages-container
+  .advantages-description
+  .content-nav-table
+  .bgActiv {
+    width: 6rem;
+    height: 2.7rem;
+  }
+
+  .advantages-hexagon__is-symplify {
+    right: 5%;
+    top: 6rem;
+  }
+
+  .advantages-hexagon__is-symplify-img {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .advantages-container .advantages-description .content-nav {
+    width: 65%;
+    margin: 24% auto;
+  }
+  .advantages-hexagon__big {
+    width: 5rem;
+    height: 5rem;
+    right: 83%;
+    top: 5rem;
+  }
+
+  .advantages-hexagon__small {
+    top: 35rem;
+    right: 4%;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 }
