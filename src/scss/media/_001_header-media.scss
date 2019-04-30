@@ -179,10 +179,6 @@
 
 @media screen and (max-width: 650px) {
 
-  //body{
-  //  filter: grayscale(0.5);
-  //}
-
   .top-menu {
     margin:0;
     height: 17rem;
@@ -215,15 +211,17 @@
       padding-left: 2rem;
       padding-right: 2rem;
       height: 100vh;
-      width: 40%;
+      width: 45%;
       right: 0;
       top: 0;
       z-index: 999;
 
 
       &__item {
-        line-height: 3.5rem;
-        margin-top: 1.5rem;
+        //line-height: 3.5rem;
+        //margin-top: 1.5rem;
+        line-height: 5.5vw;
+        margin-top: 2vw;
         border-bottom: 1px solid #b4b4b4;
 
         &:hover {
@@ -242,8 +240,10 @@
           width: 20px;
           height: 2px;
           background-color: #fff;
-          font-size: 2.5rem;
-          padding-left: 3rem;
+          //font-size: 2.5rem;
+          //padding-left: 3rem;
+          font-size: 4vw;
+          padding-left: 4vw;
           opacity: 1;
           top: 0;
           left: 0;
@@ -251,7 +251,7 @@
           transform-origin: -2.5px 1px;
 
           &:hover {
-            font-size: 2.5rem;
+            font-size: 4vw;
             background: initial;
             background-size: initial;
           }
