@@ -1,0 +1,290 @@
+@media screen and (max-width: 968px){
+
+    .contacts__location {
+      padding-top: 9rem;
+      padding-bottom: 10rem;
+
+        &__map__instagram {
+          position: absolute;
+          bottom: 16rem;
+          left: 8.5rem;
+        }
+      }
+
+.contacts__location__map__shape__each {
+  bottom: 12rem;
+  left: 7.5rem;
+}
+
+
+.contacts__location__map__shape__solid {
+  width: 300px;
+  height: 300px;
+}
+
+.hexagon-each-blue {
+  bottom: 12.5rem;
+  left: 29rem;
+}
+
+
+.hexagon-solid-blue {
+  width: 125px;
+  height: 125px;
+}
+
+.hexagon-each-orange {
+  top: 19rem;
+  left: 6.5rem;
+}
+
+
+.hexagon-solid-orange {
+  width: 70px;
+  height: 70px;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+    .contacts__location {
+      padding-top: 7rem;
+      padding-bottom: 9rem;
+
+        &__address__paragraph {
+          font-size: 1.5rem;
+        }
+
+      &__address__headline {
+          font-size: 2rem;
+
+          &:after {
+            width: 10rem;
+            top: 2.5rem;
+          }
+        }
+      }
+
+      .contacts__location__map {
+        width: 50%;
+        position: relative;
+
+        &__facebook {
+          position: absolute;
+          top: 9.5rem;
+          left: 0;
+        }
+
+        &__instagram {
+          position: absolute;
+          bottom: 15rem;
+          left: 4.5rem;
+        }
+      }
+
+  .contacts__location__map__shape__each {
+    bottom: 15.5rem;
+    left: 2.5rem;
+  }
+
+
+  .contacts__location__map__shape__solid {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hexagon-each-blue {
+    bottom: 10rem;
+    left: 21rem;
+  }
+
+
+  .hexagon-solid-blue {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hexagon-each-orange {
+    top: 16.5rem;
+    left: 0.5rem;
+  }
+
+
+  .hexagon-solid-orange {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+
+    .contacts__location {
+      padding-top: 6rem;
+      padding-bottom: 7rem;
+
+      &__address__paragraph {
+        line-height: 2.3rem;
+        font-size: 2.5vw;
+      }
+
+      &__address__headline {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+
+        &:after {
+          width: 9rem;
+        }
+      }
+
+      &__map {
+        width: 50%;
+        position: relative;
+
+        &__facebook {
+          position: absolute;
+          top: 7.2rem;
+          left: -1rem;
+        }
+
+        &__instagram {
+          position: absolute;
+          bottom: 12rem;
+          left: 2rem;
+        }
+
+        &_icon-sizing {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+
+      .contacts__copyright {
+        padding: 2rem;
+
+        &__paragraph {
+          font-size: 1rem;
+          width: 15.5rem;
+        }
+      }
+
+  .contacts__location__map__shape__each {
+    bottom: 20.5rem;
+    left: 0.5rem;
+  }
+
+
+  .contacts__location__map__shape__solid {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hexagon-each-blue {
+    bottom: 7.7rem;
+    left: 15rem;
+  }
+
+
+  .hexagon-solid-blue {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hexagon-each-orange {
+    top: 12rem;
+    left: -0.5rem;
+  }
+
+
+  .hexagon-solid-orange {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 460px){
+  .contacts__location {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    &__address__paragraph {
+      font-size: 0.8rem;
+      line-height: 2rem;
+    }
+
+    &__address__headline {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+
+      &:after {
+        width: 7.5rem;
+        top: 2.1rem;
+      }
+    }
+
+    &__map {
+      width: 50%;
+      position: relative;
+
+      &__facebook {
+        position: absolute;
+        top: 7.5rem;
+        left: -1.4rem;
+      }
+
+      &__instagram {
+        position: absolute;
+        bottom: 10.5rem;
+        left: 0.5rem;
+      }
+
+      &_icon-sizing {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+    }
+  }
+
+  .contacts__copyright {
+    padding: 2rem;
+
+    &__paragraph {
+      font-size: 1rem;
+      width: 15.5rem;
+    }
+  }
+
+  .contacts__location__map__shape__each {
+    bottom: 24.5rem;
+    left: -1rem;
+  }
+
+
+  .contacts__location__map__shape__solid {
+    width: 165px;
+    height: 160px;
+  }
+
+  .hexagon-each-blue {
+    bottom: 7.2rem;
+    left: 10rem;
+  }
+
+
+  .hexagon-solid-blue {
+    width: 75px;
+    height: 75px;
+  }
+
+  .hexagon-each-orange {
+    top: 9.3rem;
+    left: -1.8rem;
+    z-index: 0;
+  }
+
+
+  .hexagon-solid-orange {
+    width: 50px;
+    height: 50px;
+  }
+}
