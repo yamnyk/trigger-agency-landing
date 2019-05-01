@@ -3203,6 +3203,7 @@ $(function($){
 	window.onresize = function() {
 		if (window.innerWidth > 650) {
 			$(".top-menu__nav-menu").attr({style : ""});
+			$("#background").attr({style : ""});
 		}
 	};
 
