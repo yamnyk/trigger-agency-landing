@@ -2,7 +2,6 @@
   overflow-x: hidden;
 }
 
-
 .top-menu {
   display: flex;
   align-items: center;
@@ -19,7 +18,15 @@
 
     .nav-mobile{
       display: none;
+      height: 3rem;
     }
+  }
+
+  .top-menu__details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 5%;
   }
 
   &__logo-item {
@@ -30,43 +37,56 @@
 
   }
 
-
-  #nav-toggle {
-    cursor: pointer;
-
-    span,
-    span:before,
-    span:after {
-      cursor: pointer;
-      border-radius: 1px;
-      height: 0.6rem;
-      width: 4.31rem;
-      background: linear-gradient(to left, $deepOrange, $purple) left bottom no-repeat;
-      position: absolute;
-      display: block;
-      content: '';
-      transition: all 300ms ease-in-out;
-    }
-    span:before {
-      top: -10px;
-    }
-    span:after {
-      bottom: -10px;
-    }
-    &.active span {
-      background: transparent;
-      &:before,
-      &:after {
-        top: 0;
-      }
-      &:before {
-        transform: rotate(45deg);
-      }
-      &:after {
-        transform: rotate(-45deg);
-      }
-    }
+  #background {
+    position:fixed;
+    z-index:998;
+    width: 100%;
+    //height: 1000%;
+    background-color:#0e0055;
+    opacity: 0.5;
   }
+
+  .nav-mobile{
+    cursor: pointer;
+    width: 4.31rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  //
+  //  span,
+  //  span:before,
+  //  span:after {
+  //    cursor: pointer;
+  //    border-radius: 1px;
+  //    height: 0.6rem;
+  //    width: 4.31rem;
+  //    background: linear-gradient(to left, $deepOrange, $purple) left bottom no-repeat;
+  //    position: absolute;
+  //    display: block;
+  //    content: '';
+  //    transition: all 300ms ease-in-out;
+  //  }
+  //  span:before {
+  //    top: -10px;
+  //  }
+  //  span:after {
+  //    bottom: -10px;
+  //  }
+  //  &.active span {
+  //    background: transparent;
+  //    &:before,
+  //    &:after {
+  //      top: 0;
+  //    }
+  //    &:before {
+  //      transform: rotate(45deg);
+  //    }
+  //    &:after {
+  //      transform: rotate(-45deg);
+  //    }
+  //  }
+  //}
 
 
   &__nav-menu {

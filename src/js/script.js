@@ -3177,20 +3177,35 @@ $("#nav-toggle").click(function(){
 	$(".top-menu__nav-menu").animate({
 		width: "toggle"
 	});
+	let backgroundColor = $('<div id="background"></div>');
+	$(backgroundColor).height($(document).height());
+	backgroundColor.insertBefore('.top-menu__nav-menu');
 	});
 
 $(function($){
 	$(document).mouseup(function (e){
 		let menuDropDown = $(".top-menu__nav-menu");
 		if (!menuDropDown.is(e.target) && menuDropDown.has(e.target).length === 0 && $(window).width() < 650) {
-			$('#nav-toggle').removeClass('active');
+			// $('#nav-toggle').removeClass('active');
 			menuDropDown.hide();
+			$('#background').remove();
 		}
 	});
 });
 
-// Hamburger to X toggle
-$('#nav-toggle').on('click', function() {
-	this.classList.toggle('active');
-});
+// // Hamburger to X toggle
+// $('#nav-toggle').on('click', function() {
+// 	this.classList.toggle('active');
+// });
+
+
+
+	window.onresize = function() {
+		if (window.innerWidth > 650) {
+			$(".top-menu__nav-menu").attr({style : ""});
+		}
+	};
+
+
+
 

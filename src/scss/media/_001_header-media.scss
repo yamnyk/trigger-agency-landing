@@ -112,7 +112,7 @@
 
 
     &__phone {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       //display: none;
     }
 
@@ -137,11 +137,17 @@
 
     }
 
+    .top-menu__details{
+      width: 20%;
+      justify-content: space-around;
+    }
+
     &__logo-item {
 
     }
 
     &__nav-menu {
+      display: flex;
       width: 36.7rem;
 
       &__item {
@@ -179,20 +185,28 @@
 
 @media screen and (max-width: 650px) {
 
+
+
   .top-menu {
     margin:0;
     height: 17rem;
+    &__details{
+      display: flex;
+    }
     &__wrapper {
       align-items: center;
-      width: 100vw;
+      width: 90vw;
       &__logo-item{
       }
+    }
+
+    .top-menu__details{
+      justify-content: space-between;
     }
 
     .nav-mobile {
       display: block;
       justify-self: initial;
-      margin-right: 3rem;
     }
 
     &__logo-item {
