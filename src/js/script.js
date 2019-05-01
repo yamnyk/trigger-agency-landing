@@ -3158,3 +3158,42 @@ $(document).ready(function () {
 	}
 
 });
+
+/*burger menu*/
+// Toggle open and close nav styles on click
+// $('#nav-toggle').click(function() {
+// 	$('.top-menu__nav-menu').slideToggle();
+//
+// 	if ($('#nav-toggle')[0].classList.contains('active')){
+// 		$('.header-main').animate({marginTop: 40},'slow','swing');
+// 	} else {
+// 		$('.header-main').animate({marginTop: 90},'slow','swing');
+// 	};
+//
+// });
+
+
+$("#nav-toggle").click(function(){
+	$(".top-menu__nav-menu").animate({
+		width: "toggle"
+	});
+	});
+
+$(function($){
+	$(document).mouseup(function (e){
+		let menuDropDown = $(".top-menu__nav-menu");
+		if (!menuDropDown.is(e.target) && menuDropDown.has(e.target).length === 0) {
+			// $('body').css({
+			// 		'filter':'blur(3px)',
+			// 	});
+			$('#nav-toggle').removeClass('active');
+			menuDropDown.hide();
+		}
+	});
+});
+
+// Hamburger to X toggle
+$('#nav-toggle').on('click', function() {
+	this.classList.toggle('active');
+});
+
