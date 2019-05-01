@@ -1,14 +1,5 @@
 @media screen and (max-width: 1418px) {
   .top-menu {
-
-    &__wrapper {
-
-    }
-
-    &__logo-item {
-
-    }
-
     &__nav-menu {
       width: 44.7rem;
 
@@ -56,7 +47,6 @@
   }
   .header-advantages {
     margin-top: 4rem;
-    width: 80%;
 
     &__icons {
       &-wrapper {
@@ -72,21 +62,14 @@
 
     &__subtitle {
       font-size: 2.5rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
     }
   }
 }
 
 @media screen and (max-width: 1169px) {
   .top-menu {
-
-    &__wrapper {
-
-    }
-
-    &__logo-item {
-
-    }
-
     &__nav-menu {
       width: 40.7rem;
 
@@ -148,13 +131,7 @@
   .header-advantages {
     &__icons {
       &-wrapper {
-        &__item {
-          height: 9.6rem;
-        }
-
-        &__description {
-          font-size: 1.5rem;
-        }
+        flex-basis: 33%;
       }
     }
 
@@ -166,15 +143,6 @@
 
 @media screen and (max-width: 960px) {
   .top-menu {
-
-    &__wrapper {
-
-    }
-
-    &__logo-item {
-
-    }
-
     &__nav-menu {
       width: 38.7rem;
 
@@ -250,18 +218,6 @@
     }
   }
   .header-advantages {
-    &__icons {
-      &-wrapper {
-        &__item {
-          height: 8.6rem;
-        }
-
-        &__description {
-          font-size: 1.4rem;
-        }
-      }
-    }
-
     &__subtitle {
       font-size: 1.9rem;
     }
@@ -270,20 +226,10 @@
 
 @media screen and (max-width: 780px) {
   .top-menu {
-
-    &__wrapper {
-
-    }
-
     .top-menu__details {
       width: 20%;
       justify-content: space-around;
     }
-
-    &__logo-item {
-
-    }
-
     &__nav-menu {
       display: flex;
       width: 36.7rem;
@@ -324,10 +270,6 @@
       flex-basis: 50%;
 
       &__hexagon {
-        &_clip-solid {
-          width: 30rem;
-          height: 30rem;
-        }
 
         &_top-left {
           width: 8rem;
@@ -356,23 +298,6 @@
           right: -110%;
         }
       }
-    }
-  }
-  .header-advantages {
-    &__icons {
-      &-wrapper {
-        &__item {
-          height: 7.6rem;
-        }
-
-        &__description {
-          font-size: 1.3rem;
-        }
-      }
-    }
-
-    &__subtitle {
-      font-size: 1.rem;
     }
   }
 }
@@ -475,12 +400,14 @@
   .header-main {
 
     &__info {
+      margin-top: 35vw;
       flex-basis: 100%;
       position: absolute;
       justify-content: center;
       align-items: center;
 
       &__more-btn {
+        margin-top: 5vw;
         padding: 1.7rem 2rem;
         font-size: 3vw;
         align-self: inherit;
@@ -491,6 +418,7 @@
       }
 
       &__subtitle {
+        margin-top: 5vw;
         font-size: 3vw;
         background: #ffffff;
         width: 80%;
@@ -531,11 +459,10 @@
     &__icons {
       &-wrapper {
         &__item {
-          height: 7.35rem;
+          height: 8rem;
         }
-
         &__description {
-          font-size: 1.2rem;
+          font-size: 1.4rem;
         }
       }
     }
