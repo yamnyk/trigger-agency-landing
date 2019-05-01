@@ -16,6 +16,7 @@
 
         &_link {
           font-size: 1.8rem;
+
           &:hover {
             font-size: 1.78rem;
           }
@@ -24,24 +25,55 @@
 
     }
   }
-
-
   &__phone {
     font-size: 2.1rem;
   }
-
   &__languages-item {
     font-size: 1.8rem;
   }
-
   .header-main {
     &__info {
       &__title {
-        font-size: 7rem;
+        font-size: 6.5rem;
+      }
+
+      &__subtitle {
+        font-size: 2.2rem;
+      }
+    }
+
+    &__img {
+      position: relative;
+      flex-basis: 50%;
+
+      &__hexagon {
+        &_clip-solid {
+          width: 60rem;
+          height: 60rem;
+        }
       }
     }
   }
+  .header-advantages {
+    margin-top: 4rem;
+    width: 80%;
 
+    &__icons {
+      &-wrapper {
+        &__item {
+          height: 10.6rem;
+        }
+
+        &__description {
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    &__subtitle {
+      font-size: 2.5rem;
+    }
+  }
 }
 
 @media screen and (max-width: 1169px) {
@@ -61,6 +93,7 @@
       &__item {
         &_link {
           font-size: 1.6rem;
+
           &:hover {
             font-size: 1.58rem;
           }
@@ -80,8 +113,53 @@
   .header-main {
     &__info {
       &__title {
-        font-size: 6.7rem;
+        font-size: 6rem;
       }
+
+      &__subtitle {
+        font-size: 1.8rem;
+      }
+    }
+
+    &__img {
+      position: relative;
+      flex-basis: 50%;
+
+      &__hexagon {
+        &_clip-solid {
+          width: 47rem;
+          height: 47rem;
+        }
+
+        &_top-left {
+          width: 9rem;
+          height: 9rem;
+          top: 5%;
+          left: 7%;
+          z-index: -2;
+        }
+
+        &_top-right {
+          z-index: -2;
+        }
+      }
+    }
+  }
+  .header-advantages {
+    &__icons {
+      &-wrapper {
+        &__item {
+          height: 9.6rem;
+        }
+
+        &__description {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    &__subtitle {
+      font-size: 2.2rem;
     }
   }
 }
@@ -103,6 +181,7 @@
       &__item {
         &_link {
           font-size: 1.4rem;
+
           &:hover {
             font-size: 1.38rem;
           }
@@ -123,8 +202,68 @@
 
     &__info {
       &__title {
-        font-size: 6.4rem;
+        font-size: 4.9rem;
       }
+
+      &__subtitle {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__img {
+      position: relative;
+      flex-basis: 50%;
+
+      &__hexagon {
+        &_clip-solid {
+          width: 35rem;
+          height: 35rem;
+        }
+
+        &_top-left {
+          width: 9rem;
+          height: 9rem;
+          top: 5%;
+          left: 7%;
+          z-index: -2;
+        }
+
+        &_top-right {
+          z-index: -2;
+        }
+
+        &_bottom-left {
+          bottom: 20%;
+          left: 0;
+        }
+
+        &_bottom {
+          bottom: 5%;
+          left: 20%;
+        }
+
+        &_bottom-deep-right {
+          bottom: -10%;
+          right: -110%;
+        }
+      }
+    }
+  }
+  .header-advantages {
+    &__icons {
+      &-wrapper {
+        &__item {
+          height: 8.6rem;
+        }
+
+        &__description {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    &__subtitle {
+      font-size: 1.9rem;
     }
   }
 }
@@ -136,7 +275,7 @@
 
     }
 
-    .top-menu__details{
+    .top-menu__details {
       width: 20%;
       justify-content: space-around;
     }
@@ -152,6 +291,7 @@
       &__item {
         &_link {
           font-size: 1.2rem;
+
           &:hover {
             font-size: 1.18rem;
           }
@@ -175,29 +315,86 @@
   .header-main {
     &__info {
       &__title {
-        font-size: 6.2rem;
+        font-size: 4.4rem;
       }
+    }
+
+    &__img {
+      position: relative;
+      flex-basis: 50%;
+
+      &__hexagon {
+        &_clip-solid {
+          width: 30rem;
+          height: 30rem;
+        }
+
+        &_top-left {
+          width: 8rem;
+          height: 8rem;
+          top: 3%;
+          left: 7%;
+          z-index: -2;
+        }
+
+        &_top-right {
+          z-index: -2;
+        }
+
+        &_bottom-left {
+          bottom: 20%;
+          left: 0;
+        }
+
+        &_bottom {
+          bottom: 5%;
+          left: 20%;
+        }
+
+        &_bottom-deep-right {
+          bottom: -10%;
+          right: -110%;
+        }
+      }
+    }
+  }
+  .header-advantages {
+    &__icons {
+      &-wrapper {
+        &__item {
+          height: 7.6rem;
+        }
+
+        &__description {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    &__subtitle {
+      font-size: 1.rem;
     }
   }
 }
 
 @media screen and (max-width: 650px) {
 
-
-
   .top-menu {
-    margin:0;
-    &__details{
+    margin: 0;
+
+    &__details {
       display: flex;
     }
+
     &__wrapper {
       align-items: center;
       margin-right: 1rem;
-      &__logo-item{
+
+      &__logo-item {
       }
     }
 
-    .top-menu__details{
+    .top-menu__details {
       justify-content: space-between;
     }
 
@@ -240,7 +437,7 @@
           margin-bottom: -0.2rem;
         }
 
-        &:hover .top-menu__nav-menu__item_link{
+        &:hover .top-menu__nav-menu__item_link {
           color: #4c4184;
           transition: all 0.2s;
         }
@@ -283,7 +480,7 @@
       justify-content: center;
       align-items: center;
 
-      &__more-btn{
+      &__more-btn {
         padding: 1.7rem 2rem;
         font-size: 3vw;
         align-self: inherit;
@@ -299,61 +496,55 @@
         width: 80%;
         text-align: center;
       }
-      }
-
-      &__img {
-        position: relative;
-        z-index: -1;
-        &__hexagon {
-
-          &_clip-solid{
-            width: 100vw;
-            height: 100vw;
-          }
-
-          &_top-left {
-            width: 9rem;
-            height: 9rem;
-            top: 5%;
-            left: 7%;
-            z-index: -2;
-          }
-
-          &_top-right{
-            z-index: -2;
-          }
-
-          &_bottom {
-            display: none;
-          }
-        }
-      }
     }
 
-    .header-advantages {
-      margin-top: 4rem;
+    &__img {
+      position: relative;
+      z-index: -1;
 
-      &__icons {
-        width: 80%;
+      &__hexagon {
 
-        &-wrapper {
-          &__item {
-            height: 7.35rem;
-          }
-
-          &__description {
-            font-size: 1.2rem;
-          }
+        &_clip-solid {
+          width: 100vw;
+          height: 100vw;
         }
-      }
 
-      &__subtitle {
-        width: 80%;
-        font-size: 1.6rem;
+        &_top-left {
+          width: 9rem;
+          height: 9rem;
+          top: 5%;
+          left: 7%;
+          z-index: -2;
+        }
+
+        &_top-right {
+          z-index: -2;
+        }
+
+        &_bottom {
+          display: none;
+        }
       }
     }
   }
+  .header-advantages {
+    &__icons {
+      &-wrapper {
+        &__item {
+          height: 7.35rem;
+        }
 
+        &__description {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    &__subtitle {
+      font-size: 1.6rem;
+    }
+  }
+}
 
 @media screen and (max-width: 600px) {
   .top-menu {
@@ -363,6 +554,7 @@
     }
   }
 }
+
 @media screen and (max-width: 500px) {
   .top-menu {
 
@@ -371,6 +563,7 @@
     }
   }
 }
+
 @media screen and (max-width: 450px) {
   .top-menu {
 
@@ -379,6 +572,7 @@
     }
   }
 }
+
 @media screen and (max-width: 400px) {
   .top-menu {
 
@@ -387,6 +581,7 @@
     }
   }
 }
+
 @media screen and (max-width: 320px) {
   .top-menu {
 
