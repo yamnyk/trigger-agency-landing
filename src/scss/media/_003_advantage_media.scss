@@ -408,7 +408,7 @@
       right: 27%;
       width: 2.5rem;
       height: 2.5rem;
-      @include gradOrangePurple(to left)
+      @include gradOrangePurple(to top);
     }
     &__middle {
       width: 3.5rem;
@@ -554,15 +554,20 @@
 }
 @media (max-width: 640px) {
 
+  .wrapper-is-symplify{
+    transform: rotate(30deg);
+  }
+
   .advantages-hexagon {
 
     &__is-symplify {
-      right: 20%;
-      top: 5rem;
+      transform: translateX(85%);
+      right: 50%;
+      top: 4rem;
 
       &-img {
-        width: 60vw;
-        height: 60vw;
+        width: 380px;
+        height: 380px;
         background-position: -17rem -6rem;
         background-repeat: no-repeat;
       }
@@ -571,8 +576,8 @@
       display: none;
     }
     &__small {
-      top: 35rem;
-      right: 17%;
+      top: 38rem;
+      right: 5%;
       width: 3.5rem;
       height: 3.5rem;
     }
@@ -582,8 +587,8 @@
     &__big {
       width: 5rem;
       height: 5rem;
-      right: 74%;
-      top: 5rem;
+      right: 81%;
+      top: 8rem;
     }
   }
 
@@ -640,8 +645,8 @@
         }
 
         .content-nav {
-          width: 45%;
-          margin: 16% auto;
+          width: 250px;
+          margin: 150px auto;
 
           &-table {
             height: 2.7rem;
@@ -665,7 +670,7 @@
             height: 12rem;
             margin: 1rem auto;
             &__elem {
-              font-size: 0.9rem;
+              font-size: 1.1rem;
               line-height: 1;
             }
             .active-content {
@@ -727,51 +732,152 @@
   }
 }
 
+@media (max-width: 385px) {
 
+  .advantages-hexagon {
 
-@media (max-width: 460px) {
+    &__is-symplify {
+      right: 49%;
 
-  .advantages-container
-  .advantages-description
-  .content-nav-table-item {
-    font-size: 0.6rem;
-    line-height: 1;
-    max-height: 2.7rem;
+      &-img {
+        width: 315px;
+        height: 315px;
+        background-position: -16rem -7rem;
+      }
+    }
+    &__small {
+      top: 32rem;
+      right: 5%;
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+    &__big {
+      width: 4rem;
+      height: 4rem;
+      right: 80%;
+      top: 7rem;
+    }
   }
 
-  .advantages-container
-  .advantages-description
-  .content-nav-table
-  .bgActiv {
-    width: 6rem;
-    height: 2.7rem;
-  }
 
-  .advantages-hexagon__is-symplify {
-    right: 5%;
-    top: 6rem;
-  }
+  .advantages {
+    &-container {
+      .advantages-description {
+        display: flex;
+        justify-content: center;
+        height: 45rem;
+        .advantages-img {
+          width: 100%;
+          .is-symplify {
+            width: 80%;
+            left: 10%;
+            top: 7rem;
+          }
+          .smeh1 {
+            display: none;
+          }
+          .path-big {
+            width: 14%;
+            top: 7rem;
+            left: 2rem;
+          }
+          .path-midle {
+            width: 10%;
+            top: 34rem;
+            left: 82%;
+          }
 
-  .advantages-hexagon__is-symplify-img {
-    width: 90vw;
-    height: 90vw;
-  }
+          .path-small {
+            display: none;
+          }
+        }
+        &-content {
+          width: 100%;
+          position: absolute;
+        }
 
-  .advantages-container .advantages-description .content-nav {
-    width: 65%;
-    margin: 24% auto;
-  }
-  .advantages-hexagon__big {
-    width: 5rem;
-    height: 5rem;
-    right: 83%;
-    top: 5rem;
-  }
 
-  .advantages-hexagon__small {
-    top: 35rem;
-    right: 4%;
-    width: 3.5rem;
-    height: 3.5rem;
+
+        .content-headline {
+          font-size: 1.8rem;
+          line-height: 2.2rem;
+          height: 2.2rem;
+          width: 18rem;
+        }
+
+        .content-tagline {
+          margin: 1.8rem 0;
+          font-size: 1.7rem;
+          text-align: center;
+        }
+
+        .content-nav {
+          width: 234px;
+          margin: 78px auto;
+
+          &-table {
+            height: 2.7rem;
+            width: 100%;
+            .bgActiv {
+              width: 9rem;
+              height: 2.7rem;
+            }
+            &-item {
+              font-size: 0.9rem;
+            }
+
+          }
+        }
+      }
+
+      .projects {
+        margin-bottom: 5rem;
+        &-headline {
+          font-size: 3rem;
+          margin-bottom: 4rem;
+          &::after {
+            width: 14rem;
+            height: 0.3rem;
+            top: 4rem;
+            left: 36%;
+
+          }
+        }
+        .advantages-slider {
+          max-height: 30rem;
+        }
+
+        .partners-icon {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          align-content: center;
+          width: 90%;
+          margin: 0 auto;
+
+          .color-icon {
+            filter: grayscale(1);
+            height: 6rem;
+            width: 27rem;
+            margin: 2rem 3rem;
+            text-align: center;
+            transition: 0.3s filter ease;
+            cursor: pointer;
+
+            &:hover {
+              filter: grayscale(0);
+            }
+
+            img {
+              height: 100%;
+            }
+
+          }
+        }
+
+      }
+
+    }
   }
 }
