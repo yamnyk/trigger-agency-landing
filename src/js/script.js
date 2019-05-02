@@ -3168,10 +3168,9 @@ $("#nav-toggle").click(function(){
 	});
 
 $(function($){
-	$(document).mouseup(function (e){
+	$(document).on('touchstart',function (e){
 		let menuDropDown = $(".top-menu__nav-menu");
 		if (!menuDropDown.is(e.target) && menuDropDown.has(e.target).length === 0 && $(window).width() < 650) {
-			// $('#nav-toggle').removeClass('active');
 			menuDropDown.hide();
 			$('#background').remove();
 		}

@@ -148,36 +148,6 @@
           }
         }
       }
-      .projects {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        margin-bottom: 5rem;
-        &-headline {
-          position: relative;
-          font-family: 'Releway', sans-serif;
-          font-size: 4rem;
-          font-weight: 900;
-          text-align: center;
-          color: #07002c;
-          margin-bottom: 6rem;
-          &::after {
-            position: absolute;
-            content: "";
-            width: 186px;
-            height: 4px;
-            top: 5rem;
-            left: 44%;
-            background-image: linear-gradient(to right, #00b3f9, #f900a9);
-
-          }
-        }
-        .advantages-slider {
-          max-height: 30rem;
-        }
-      }
-
     }
   }
 }
@@ -304,7 +274,6 @@
             width: 186px;
             height: 4px;
             top: 5rem;
-            left: 44%;
             background-image: linear-gradient(to right, #00b3f9, #f900a9);
 
           }
@@ -455,7 +424,6 @@
         }
       }
       .projects {
-
         margin-bottom: 5rem;
         &-headline {
           font-size: 4rem;
@@ -466,7 +434,6 @@
             width: 186px;
             height: 4px;
             top: 5rem;
-            left: 44%;
             background-image: linear-gradient(to right, #00b3f9, #f900a9);
 
           }
@@ -550,8 +517,6 @@
             width: 14rem;
             height: 0.3rem;
             top: 4rem;
-            left: 36%;
-
           }
         }
         .advantages-slider {

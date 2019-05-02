@@ -169,7 +169,8 @@
           width: 186px;
           height: 4px;
           top: 5rem;
-          left: 44%;
+          left: 50%;
+          transform: translateX(-50%);
           background-image: linear-gradient(to right, #00b3f9, #f900a9);
 
         }
