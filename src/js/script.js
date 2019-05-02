@@ -3059,9 +3059,8 @@ const slowScroll = (id) => {
 	$("".concat(id.split("")[0] === "." ? "" : "#").concat(id.toString())).on("click", function (event) {
 		event.preventDefault();
 		const scrollTo = $(this).attr('href'),
-			top = $(scrollTo).offset().top;
+			top = $(scrollTo).offset().top - 100;
 		debugger;
-		console.log(scrollTo);
 		$('body,html').animate({
 			scrollTop: top
 		}, 1000);
@@ -3159,20 +3158,6 @@ $(document).ready(function () {
 
 });
 
-/*burger menu*/
-// Toggle open and close nav styles on click
-// $('#nav-toggle').click(function() {
-// 	$('.top-menu__nav-menu').slideToggle();
-//
-// 	if ($('#nav-toggle')[0].classList.contains('active')){
-// 		$('.header-main').animate({marginTop: 40},'slow','swing');
-// 	} else {
-// 		$('.header-main').animate({marginTop: 90},'slow','swing');
-// 	};
-//
-// });
-
-
 $("#nav-toggle").click(function(){
 	$(".top-menu__nav-menu").animate({
 		width: "toggle"
@@ -3192,14 +3177,6 @@ $(function($){
 		}
 	});
 });
-
-// // Hamburger to X toggle
-// $('#nav-toggle').on('click', function() {
-// 	this.classList.toggle('active');
-// });
-
-
-
 	window.onresize = function() {
 		if (window.innerWidth > 650) {
 			$(".top-menu__nav-menu").attr({style : ""});
