@@ -529,90 +529,16 @@
 
 
   .advantages {
+    &-img {
+      display: none;
+    }
     &-container {
       .advantages-description {
         display: flex;
-        justify-content: center;
-        height: 45rem;
-        .advantages-img {
-          width: 100%;
-          .is-symplify {
-            width: 80%;
-            left: 10%;
-            top: 7rem;
-          }
-          .smeh1 {
-            display: none;
-          }
-          .path-big {
-            width: 14%;
-            top: 7rem;
-            left: 2rem;
-          }
-          .path-midle {
-            width: 10%;
-            top: 34rem;
-            left: 82%;
-          }
-
-          .path-small {
-            display: none;
-          }
-        }
+        justify-content: flex-end;
         &-content {
-          width: 100%;
-          position: absolute;
-        }
-
-
-
-        .content-headline {
-          font-size: 1.8rem;
-          line-height: 2.2rem;
-          height: 2.2rem;
-          width: 18rem;
-        }
-
-        .content-tagline {
-          margin: 1.8rem 0;
-          font-size: 1.7rem;
-          text-align: center;
-        }
-
-        .content-nav {
-          width: 250px;
-          margin: 150px auto;
-
-          &-table {
-            height: 2.7rem;
-            width: 100%;
-            .bgActiv {
-              width: 9rem;
-              height: 2.7rem;
-            }
-            &-item {
-              font-size: 0.9rem;
-              line-height: 1;
-              max-height: 2.7rem;
-            }
-            .active {
-              padding-top: 1rem;
-            }
-
-          }
-          &-info {
-
-            height: 12rem;
-            margin: 1rem auto;
-            &__elem {
-              font-size: 1.1rem;
-              line-height: 1;
-            }
-            .active-content {
-              padding: 1rem 1rem;
-              background-color: white;
-            }
-          }
+          box-sizing: border-box;
+          width: 85%;
         }
       }
       .projects {
@@ -665,94 +591,4 @@
   }
 
 
-  .advantages {
-    &-container {
-      .advantages-description {
-        display: flex;
-        justify-content: center;
-        height: 45rem;
-        .advantages-img {
-          width: 100%;
-          .is-symplify {
-            width: 80%;
-            left: 10%;
-            top: 7rem;
-          }
-          .smeh1 {
-            display: none;
-          }
-          .path-big {
-            width: 14%;
-            top: 7rem;
-            left: 2rem;
-          }
-          .path-midle {
-            width: 10%;
-            top: 34rem;
-            left: 82%;
-          }
-
-          .path-small {
-            display: none;
-          }
-        }
-        &-content {
-          width: 100%;
-          position: absolute;
-        }
-
-
-
-        .content-headline {
-          font-size: 1.8rem;
-          line-height: 2.2rem;
-          height: 2.2rem;
-          width: 18rem;
-        }
-
-        .content-tagline {
-          margin: 1.8rem 0;
-          font-size: 1.7rem;
-          text-align: center;
-        }
-
-        .content-nav {
-          width: 234px;
-          margin: 78px auto;
-
-          &-table {
-            height: 2.7rem;
-            width: 100%;
-            .bgActiv {
-              width: 9rem;
-              height: 2.7rem;
-            }
-            &-item {
-              font-size: 0.9rem;
-            }
-
-          }
-        }
-      }
-
-      .projects {
-        margin-bottom: 5rem;
-        &-headline {
-          font-size: 3rem;
-          margin-bottom: 4rem;
-          &::after {
-            width: 14rem;
-            height: 0.3rem;
-            top: 4rem;
-            left: 36%;
-
-          }
-        }
-        .advantages-slider {
-          max-height: 30rem;
-        }
-      }
-
-    }
-  }
 }

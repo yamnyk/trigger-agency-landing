@@ -309,12 +309,8 @@
       display: flex;
     }
 
-    &__wrapper {
-      align-items: center;
-      margin-right: 1rem;
-
-      &__logo-item {
-      }
+    &__logo-item {
+      width: 15rem;
     }
 
     .top-menu__details {
