@@ -189,9 +189,11 @@
 
         .color-icon {
           filter: grayscale(1);
-          height: 6rem;
-          width: 27rem;
-          margin: 2rem 3rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 33.333%;
+          height: 15rem;
           text-align: center;
           transition: 0.3s filter ease;
           cursor: pointer;
@@ -201,7 +203,7 @@
           }
 
           img {
-            height: 100%;
+            width: 50%;
           }
 
         }
