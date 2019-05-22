@@ -50,14 +50,6 @@
           width: 40%;
         }
 
-        &-content {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          width: 55%;
-
-        }
-
         .content-headline {
           align-self: flex-end;
           margin-top: 0;
@@ -144,66 +136,6 @@
           }
         }
       }
-      .projects {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        margin-bottom: 5rem;
-        &-headline {
-          position: relative;
-          font-family: 'Releway', sans-serif;
-          font-size: 4rem;
-          font-weight: 900;
-          text-align: center;
-          color: #07002c;
-          margin-bottom: 6rem;
-          &::after {
-            position: absolute;
-            content: "";
-            width: 186px;
-            height: 4px;
-            top: 5rem;
-            left: 44%;
-            background-image: linear-gradient(to right, #00b3f9, #f900a9);
-
-          }
-        }
-        .advantages-slider {
-          max-height: 30rem;
-        }
-
-        .partners-icon {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-          align-content: center;
-          width: 90%;
-          margin: 0 auto;
-
-          .color-icon {
-            filter: grayscale(1);
-            height: 6rem;
-            width: 27rem;
-            margin: 2rem 3rem;
-            text-align: center;
-            transition: 0.3s filter ease;
-            cursor: pointer;
-
-            &:hover {
-              filter: grayscale(0);
-            }
-
-            img {
-              height: 100%;
-            }
-
-          }
-        }
-
-      }
-
     }
   }
 }
@@ -245,11 +177,6 @@
             left: 45%;
           }
         }
-
-        &-content {
-          width: 55%;
-        }
-
 
         .content-headline {
           font-size: 3.5rem;
@@ -330,7 +257,6 @@
             width: 186px;
             height: 4px;
             top: 5rem;
-            left: 44%;
             background-image: linear-gradient(to right, #00b3f9, #f900a9);
 
           }
@@ -338,38 +264,7 @@
         .advantages-slider {
           max-height: 30rem;
         }
-
-        .partners-icon {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-          align-content: center;
-          width: 90%;
-          margin: 0 auto;
-
-          .color-icon {
-            filter: grayscale(1);
-            height: 6rem;
-            width: 27rem;
-            margin: 2rem 3rem;
-            text-align: center;
-            transition: 0.3s filter ease;
-            cursor: pointer;
-
-            &:hover {
-              filter: grayscale(0);
-            }
-
-            img {
-              height: 100%;
-            }
-
-          }
-        }
-
       }
-
     }
   }
 }
@@ -452,11 +347,6 @@
           }
         }
 
-        &-content {
-          width: 59%;
-        }
-
-
         .content-headline {
           font-size: 2.2rem;
           line-height: 3rem;
@@ -507,7 +397,6 @@
         }
       }
       .projects {
-
         margin-bottom: 5rem;
         &-headline {
           font-size: 4rem;
@@ -518,7 +407,6 @@
             width: 186px;
             height: 4px;
             top: 5rem;
-            left: 44%;
             background-image: linear-gradient(to right, #00b3f9, #f900a9);
 
           }
@@ -530,11 +418,7 @@
 
           .color-icon {
             height: 5rem;
-            width: 17rem;
-            img {
-              height: 100%;
-            }
-
+            width: 14rem;
           }
         }
 
@@ -543,7 +427,7 @@
     }
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 650px) {
 
   .wrapper-is-symplify{
     transform: rotate(30deg);
@@ -583,92 +467,20 @@
     }
   }
 
-
   .advantages {
+    &__hex {
+      display: none;
+    }
+    &-img {
+      display: none;
+    }
     &-container {
       .advantages-description {
         display: flex;
-        justify-content: center;
-        height: 45rem;
-        .advantages-img {
-          width: 100%;
-          .is-symplify {
-            width: 80%;
-            left: 10%;
-            top: 7rem;
-          }
-          .smeh1 {
-            display: none;
-          }
-          .path-big {
-            width: 14%;
-            top: 7rem;
-            left: 2rem;
-          }
-          .path-midle {
-            width: 10%;
-            top: 34rem;
-            left: 82%;
-          }
-
-          .path-small {
-            display: none;
-          }
-        }
+        justify-content: flex-end;
+        align-items: center;
         &-content {
-          width: 100%;
-          position: absolute;
-        }
-
-
-
-        .content-headline {
-          font-size: 1.8rem;
-          line-height: 2.2rem;
-          height: 2.2rem;
-          width: 18rem;
-        }
-
-        .content-tagline {
-          margin: 1.8rem 0;
-          font-size: 1.7rem;
-          text-align: center;
-        }
-
-        .content-nav {
-          width: 250px;
-          margin: 150px auto;
-
-          &-table {
-            height: 2.7rem;
-            width: 100%;
-            .bgActiv {
-              width: 9rem;
-              height: 2.7rem;
-            }
-            &-item {
-              font-size: 0.9rem;
-              line-height: 1;
-              max-height: 2.7rem;
-            }
-            .active {
-              padding-top: 1rem;
-            }
-
-          }
-          &-info {
-
-            height: 12rem;
-            margin: 1rem auto;
-            &__elem {
-              font-size: 1.1rem;
-              line-height: 1;
-            }
-            .active-content {
-              padding: 1rem 1rem;
-              background-color: white;
-            }
-          }
+          width: 90%;
         }
       }
       .projects {
@@ -680,45 +492,19 @@
             width: 14rem;
             height: 0.3rem;
             top: 4rem;
-            left: 36%;
-
           }
         }
         .advantages-slider {
           max-height: 30rem;
         }
-
-        .partners-icon {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-          align-content: center;
-          width: 90%;
-          margin: 0 auto;
-
-          .color-icon {
-            filter: grayscale(1);
-            height: 6rem;
-            width: 27rem;
-            margin: 2rem 3rem;
-            text-align: center;
-            transition: 0.3s filter ease;
-            cursor: pointer;
-
-            &:hover {
-              filter: grayscale(0);
-            }
-
-            img {
-              height: 100%;
-            }
-
-          }
-        }
-
       }
 
+    }
+  }
+
+  .content {
+    &-nav {
+      margin-right: 10%;
     }
   }
 }
@@ -749,126 +535,10 @@
       top: 7rem;
     }
   }
-
-
-  .advantages {
-    &-container {
-      .advantages-description {
-        display: flex;
-        justify-content: center;
-        height: 45rem;
-        .advantages-img {
-          width: 100%;
-          .is-symplify {
-            width: 80%;
-            left: 10%;
-            top: 7rem;
-          }
-          .smeh1 {
-            display: none;
-          }
-          .path-big {
-            width: 14%;
-            top: 7rem;
-            left: 2rem;
-          }
-          .path-midle {
-            width: 10%;
-            top: 34rem;
-            left: 82%;
-          }
-
-          .path-small {
-            display: none;
-          }
-        }
-        &-content {
-          width: 100%;
-          position: absolute;
-        }
-
-
-
-        .content-headline {
-          font-size: 1.8rem;
-          line-height: 2.2rem;
-          height: 2.2rem;
-          width: 18rem;
-        }
-
-        .content-tagline {
-          margin: 1.8rem 0;
-          font-size: 1.7rem;
-          text-align: center;
-        }
-
-        .content-nav {
-          width: 234px;
-          margin: 78px auto;
-
-          &-table {
-            height: 2.7rem;
-            width: 100%;
-            .bgActiv {
-              width: 9rem;
-              height: 2.7rem;
-            }
-            &-item {
-              font-size: 0.9rem;
-            }
-
-          }
-        }
-      }
-
-      .projects {
-        margin-bottom: 5rem;
-        &-headline {
-          font-size: 3rem;
-          margin-bottom: 4rem;
-          &::after {
-            width: 14rem;
-            height: 0.3rem;
-            top: 4rem;
-            left: 36%;
-
-          }
-        }
-        .advantages-slider {
-          max-height: 30rem;
-        }
-
-        .partners-icon {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-          align-content: center;
-          width: 90%;
-          margin: 0 auto;
-
-          .color-icon {
-            filter: grayscale(1);
-            height: 6rem;
-            width: 27rem;
-            margin: 2rem 3rem;
-            text-align: center;
-            transition: 0.3s filter ease;
-            cursor: pointer;
-
-            &:hover {
-              filter: grayscale(0);
-            }
-
-            img {
-              height: 100%;
-            }
-
-          }
-        }
-
-      }
-
+  .content {
+    &-nav {
+      margin-right: 8%;
     }
   }
+
 }

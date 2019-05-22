@@ -12,7 +12,8 @@
 <header class="header container head-slogan">
     <div class="top-menu">
         <div class="top-menu__wrapper">
-            <div class="top-menu__logo-item"></div>
+            <img src="img/header/logo_trigger.jpg" class="top-menu__logo-item"/>
+
             <ul class="top-menu__nav-menu">
                 <li class="top-menu__nav-menu__item"><a href="#about" id="about-btn"
                                                         class="top-menu__nav-menu__item_link">о нас</a></li>
@@ -135,7 +136,7 @@
         </div>
     </div>
     <div class="services container" id="services">
-        <p class="services-title-text">Наши услуги</p>
+        <h3 class="services-title-text">Наши услуги</h3>
         <div class="services-items">
             <div class="services-item">
                 <img class="services-item-logo" src="img/complex.svg" alt="img-1">
@@ -167,23 +168,111 @@
 <section class="advantages">
     <div class="container advantages-container">
         <div class="advantages-description">
-            <div class="advantages-img">
+            <!--<div class="advantages-img">-->
 
-                <div class="wrapper-is-symplify">
-                    <div class="advantages-hexagon advantages-hexagon__is-symplify">
-                        <div class="advantages-hexagon__is-symplify-img"></div>
-                    </div>
-                </div>
-                <div class="advantages-hexagon advantages-hexagon__smeh-1">
-                    <div class="advantages-hexagon__smeh-1-img"></div>
-                </div>
-                <div class="advantages-hexagon advantages-hexagon__big">
-                </div>
-                <div class="advantages-hexagon advantages-hexagon__middle">
-                </div>
-                <div class="advantages-hexagon advantages-hexagon__small">
-                </div>
-            </div>
+                <!--<div class="wrapper-is-symplify">-->
+                    <!--<div class="advantages-hexagon advantages-hexagon__is-symplify">-->
+                        <!--<div class="advantages-hexagon__is-symplify-img"></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="advantages-hexagon advantages-hexagon__smeh-1">-->
+                    <!--<div class="advantages-hexagon__smeh-1-img"></div>-->
+                <!--</div>-->
+                <!--<div class="advantages-hexagon advantages-hexagon__big">-->
+                <!--</div>-->
+                <!--<div class="advantages-hexagon advantages-hexagon__middle">-->
+                <!--</div>-->
+                <!--<div class="advantages-hexagon advantages-hexagon__small">-->
+                <!--</div>-->
+            <!--</div>-->
+            <svg viewBox="0 0 850 600" width="800"  preserveAspectRatio="xMinYMin meet" class="advantages__hex">
+                <defs>
+                    <clipPath id='hex'>
+                        <path class="animate__bigger" d='M45,220
+               a10,20 1 0,1 0,-30
+                    l60,-100
+                    a-28,25 1 0,1 25,-10
+                    l100,0
+                    a28,25 1 0,1 25,10
+                    l60,100
+                    a10,20 1 0,1 0,30
+                    l-60,100
+                    a28,25 1 0,1 -25,10
+                    l-100,0
+                    a28,25 1 0,1 -25,-10
+               Z'/>
+                    </clipPath>
+                    <clipPath id='hexSmall'>
+                        <path class="animate__bigger" d='M100,350
+               a10,20 1 0,1 0,-30
+                    l60,-100
+                    a-28,25 1 0,1 25,-10
+                    l100,0
+                    a28,25 1 0,1 25,10
+                    l60,100
+                    a10,20 1 0,1 0,30
+                    l-60,100
+                    a28,25 1 0,1 -25,10
+                    l-100,0
+                    a28,25 1 0,1 -25,-10
+               Z'/>
+                    </clipPath>
+                </defs>
+
+                <linearGradient id="orangepurple" x1="36.394%" x2="50%" y1="-5.157%" y2="100%">
+                    <stop offset="0%" stop-color="#fe7102"></stop>
+                    <stop offset="100%" stop-color="#da2987"></stop>
+                </linearGradient>
+                <linearGradient id="blueviolet" x1="36.394%" x2="50%" y1="-5.157%" y2="100%">
+                    <stop offset="0%" stop-color="#39aad6"></stop>
+                    <stop offset="50%" stop-color="#7c55bb"></stop>
+                    <stop offset="100%" stop-color="#cd4c9f"></stop>
+                </linearGradient>
+
+                <image class="animate__bigger" transform="scale(1.7)" x="-15" y="50" width="420" id='azaza' clip-path="url(#hex)"  xlink:href="http://trigger.com.ua/img/advantages/iSymplify-team_technology.png"></image>
+                <image class="animate__smaller" transform="scale(.7) translate(650 10)" x="-90" y="160" width="580" clip-path="url(#hexSmall)" xlink:href="http://trigger.com.ua/img/advantages/smeh1.png" transform="scale(0.5) translate(1020, 80)"></image>
+                <g class="animate__gradients">
+                    <path  fill="url(#blueviolet)" fill-rule="nonzero" d='M60,120
+               a10,20 1 0,1 0,-30
+                    l60,-100
+                    a-28,25 1 0,1 25,-10
+                    l100,0
+                    a28,25 1 0,1 25,10
+                    l60,100
+                    a10,20 1 0,1 0,30
+                    l-60,100
+                    a28,25 1 0,1 -25,10
+                    l-100,0
+                    a28,25 1 0,1 -25,-10
+               Z' transform='rotate(15) scale(.6)'/>
+                    <path fill="url(#orangepurple)" fill-rule="nonzero" d='M1300,-60
+               a10,20 1 0,1 0,-30
+                    l60,-100
+                    a-28,25 1 0,1 25,-10
+                    l100,0
+                    a28,25 1 0,1 25,10
+                    l60,100
+                    a10,20 1 0,1 0,30
+                    l-60,100
+                    a28,25 1 0,1 -25,10
+                    l-100,0
+                    a28,25 1 0,1 -25,-10
+               Z' transform='rotate(15) scale(.3)'/>
+                    <path fill="url(#orangepurple)" fill-rule="nonzero" d='M2100,3300
+               a10,20 1 0,1 0,-30
+                    l60,-100
+                    a-28,25 1 0,1 25,-10
+                    l100,0
+                    a28,25 1 0,1 25,10
+                    l60,100
+                    a10,20 1 0,1 0,30
+                    l-60,100
+                    a28,25 1 0,1 -25,10
+                    l-100,0
+                    a28,25 1 0,1 -25,-10
+               Z' transform='rotate(-15) scale(.2)'/>
+                </g>
+            </svg>
             <div class="advantages-description-content">
                 <h2 class="content-headline">Почему мы</h2>
                 <h3 class="content-tagline">Мы целимся &laquo;в яблочко&raquo;</h3>

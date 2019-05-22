@@ -117,8 +117,6 @@
         &_top-left {
           width: 9rem;
           height: 9rem;
-          top: 5%;
-          left: 7%;
           z-index: -2;
         }
 
@@ -191,8 +189,6 @@
         &_top-left {
           width: 9rem;
           height: 9rem;
-          top: 5%;
-          left: 7%;
           z-index: -2;
         }
 
@@ -245,7 +241,6 @@
       }
     }
 
-
     &__phone {
       display: none;
     }
@@ -271,11 +266,14 @@
 
       &__hexagon {
 
+        &_clip-solid {
+          width: 30rem;
+          height: 30rem;
+        }
+
         &_top-left {
           width: 8rem;
           height: 8rem;
-          top: 3%;
-          left: 7%;
           z-index: -2;
         }
 
@@ -311,12 +309,8 @@
       display: flex;
     }
 
-    &__wrapper {
-      align-items: center;
-      margin-right: 1rem;
-
-      &__logo-item {
-      }
+    &__logo-item {
+      width: 15rem;
     }
 
     .top-menu__details {
@@ -326,13 +320,6 @@
     .nav-mobile {
       display: block;
       justify-self: initial;
-    }
-
-    &__logo-item {
-      background: url(../img/header/trigger_logo_mobile.jpg) center;
-      background-size: cover;
-      height: 15rem;
-      width: 15rem;
     }
 
     &__nav-menu {

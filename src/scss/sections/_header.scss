@@ -3,11 +3,12 @@
 }
 
 .top-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 0;
-  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  padding: 1rem 0;
+  z-index: 10000;
 
   &__wrapper {
     display: flex;
@@ -28,10 +29,10 @@
   }
 
   &__logo-item {
-    height: 7.3rem;
-    width: 25rem;
-    background-image: url("../img/header/logo_trigger.jpg");
-    background-size: cover;
+    width: 20rem;
+    //height: 7.3rem;
+    //background-image: url("../img/header/logo_trigger.jpg");
+    //background-size: cover;
 
   }
 
@@ -50,6 +51,7 @@
     align-items: center;
     justify-content: center;
   }
+
   &__nav-menu {
     display: flex;
     justify-content: space-between;
@@ -102,6 +104,7 @@
 .header-main {
   display: flex;
   position: relative;
+  margin-top: 15rem;
   &__img {
     position: relative;
     flex-basis: 50%;
