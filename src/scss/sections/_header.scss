@@ -79,16 +79,13 @@
     }
   }
 
-
   &__phone {
     font-family: 'Open Sans', sans-serif;
     font-size: 2.3rem;
     font-weight: bold;
     color: #007ca2;
-    //margin-left: 3.7rem;
   }
   &__phone_img {
-    //background-image: url("img/header/phone.svg");
     width: 30px;
     display: none;
   }
@@ -123,7 +120,7 @@
       &_clip-solid {
         width: 65rem;
         height: 65rem;
-        background-image: url("../img/header/alesia-kazantceva-283291-unsplash@2x.png");
+        background-image: url("../img/header/alesia-kazantceva-283291-unsplash@2x.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
