@@ -12,20 +12,9 @@
 }
 
 .team-description {
-  margin-bottom: 17rem;
   position: relative;
   display: flex;
   justify-content: space-between;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: -0.8rem;
-    left: -14rem;
-    @include gradOrangePurple(to right);
-    padding: 3rem 21rem;
-
-  }
 
   &-top-main-title {
     position: relative;
@@ -36,6 +25,16 @@
     color: white;
     left: 7rem;
     align-self: flex-start;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -0.8rem;
+      left: -7rem;
+      @include gradOrangePurple(to right);
+      padding: 3rem 13.5rem;
+      z-index: -1;
+    }
   }
 
   &-title {
