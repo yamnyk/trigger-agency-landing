@@ -109,31 +109,109 @@
             <p class="team-description-title">Международная опытная команда - наша основа.</p>
             <p class="team-description-subtitle"><span class="team-description-subtitle-highlight">Trigger</span> –
                 мультинациональная команда с опытом в разных сферах PR,
-                маркетинга и продаж на рынках Израиля, Великобритании, Беларуси, Украины и т.д. <span
-                        class="team-description-subtitle-hidden-span">Подходим к делу
-                высокопрофессионально, нестандартно и мыслим outside-the-box.</span></p>
+                маркетинга и продаж на рынках Израиля, Великобритании, Беларуси, Украины и т.д. <span class="team-description-subtitle-hidden-span">Подходим к делу
+                высокопрофессионально, нестандартно и мыслим outside-the-box.</span>
+            </p>
             <p class="team-description-bonus"><span class="team-description-bonus-highlight">Важный бонус</span>: у всех
                 Trigger-экспертов за плечами опыт в маркетинге от <span class="bold-text">10</span> до <span
                         class="bold-text">20</span> лет. В нашей команде – более <span class="bold-text">20</span>
                 специалистов
-                в сферах SMM, SEO, PR, UI/UX и т. д.</p>
+                в сферах SMM, SEO, PR, UI/UX и т. д.
+            </p>
         </div>
 
 
-        <div class="team-description-images">
-            <div class="hexagon-blue"></div>
-            <div class="hexagon-orange"></div>
+        <svg class="team__hex" width="50%" height="100%" viewBox="0 0 780 750" preserveAspectRatio="xMidYMid slice">
+            <defs>
+                <clipPath id='bigger'>
+                    <path class="team-paths__bigger" style="fill: none;
+               " d='M175,210
+                    a10,20 1 0,1 0,-30
+                    l60,-100
+                    a-28,25 1 0,1 25,-10
+                    l100,0
+                    a28,25 1 0,1 25,10
+                    l60,100
+                    a10,20 1 0,1 0,30
+                    l-60,100
+                    a28,25 1 0,1 -25,10
+                    l-100,0
+                    a28,25 1 0,1 -25,-10
+                    Z'/>
+                </clipPath>
 
-            <div class="team-description-photo-sharon">
-                <div class="team-description-photo__sharon-img"></div>
-            </div>
-            <div class="team-description-photo-olga">
-                <div class="team-description-photo__olga-img"></div>
-            </div>
-            <div class="team-description-photo-eddie">
-                <div class="team-description-photo__eddie-img"></div>
-            </div>
-        </div>
+                <clipPath id='smaller'>
+                    <path class="team-paths__smaller" style="fill: none;
+               " d='M150,370
+                    a10,20 1 0,1 0,-30
+                    l60,-100
+                    a-28,25 1 0,1 25,-10
+                    l100,0
+                    a28,25 1 0,1 25,10
+                    l60,100
+                    a10,20 1 0,1 0,30
+                    l-60,100
+                    a28,25 1 0,1 -25,10
+                    l-100,0
+                    a28,25 1 0,1 -25,-10
+                    Z'/>
+                </clipPath>
+
+            </defs>
+
+            <g class="team-img__bigger">
+                <image  transform="scale(1.7)" width="290" x="165" y="10" clip-path="url(#bigger)" class="services__img" xlink:href="http://trigger.com.ua/img/eddie-photo.jpg"> </image>
+            </g>
+
+            <g class="team-img__smaller">
+                <image transform="scale(1.1) translate(-110 -190)" x="145" y="210" width="280" clip-path="url(#smaller)" xlink:href="http://trigger.com.ua/img/sharon-photo.jpg"></image>
+            </g>
+
+            <g class="team-img__smaller">
+                <image transform="scale(1.1) translate(-110 90)" x="130" y="180" width="290" clip-path="url(#smaller)" xlink:href="http://trigger.com.ua/img/panteleeva-olga.png"></image>
+            </g>
+
+            <linearGradient id="orangepurple" x1="36.394%" x2="50%" y1="-5.157%" y2="100%">
+                <stop offset="0%" stop-color="#fe7102"></stop>
+                <stop offset="100%" stop-color="#da2987"></stop>
+            </linearGradient>
+            <linearGradient id="blueviolet" x1="36.394%" x2="50%" y1="-5.157%" y2="100%">
+                <stop offset="0%" stop-color="#39aad6"></stop>
+                <stop offset="50%" stop-color="#7c55bb"></stop>
+                <stop offset="100%" stop-color="#cd4c9f"></stop>
+            </linearGradient>
+
+            <g>
+                <path fill="url(#orangepurple)" fill-rule="nonzero"
+                      d='M390,660
+               a3,5 1 0,1 0,-8
+               l20,-33
+               a-8,6 1 0,1 6,-3
+               l33,0
+               a8,6 1 0,1 6,3
+               l20,33
+               a3,5 1 0,1 0,8
+               l-20,33
+               a8,6 1 0,1 -6,3
+               l-33,0
+               a8,6 1 0,1 -6,-3
+               Z'  transform="scale(0.9)"/>
+                <path fill="url(#blueviolet)" fill-rule="nonzero"
+                      d='M-60,340
+               a3,5 1 0,1 0,-8
+               l15,-25
+               a-8,6 1 0,1 6,-3
+               l25,0
+               a8,6 1 0,1 6,3
+               l15,25
+               a3,5 1 0,1 0,8
+               l-15,25
+               a8,6 1 0,1 -6,3
+               l-25,0
+               a8,6 1 0,1 -6,-3
+               Z' transform='rotate(-15)'/>
+            </g>
+        </svg>
     </div>
     <div class="services container" id="services">
         <h3 class="services-title-text">Наши услуги</h3>
@@ -168,7 +246,7 @@
 <section class="advantages">
     <div class="container advantages-container">
         <div class="advantages-description">
-            <svg viewBox="0 0 750 600" width="50%" height="auto" class="advantages__hex" preserveAspectRatio="xMinYMin meet">
+            <svg viewBox="0 0 750 600" width="50%" height="100%" class="advantages__hex" preserveAspectRatio="xMinYMin meet">
                 <defs>
                     <clipPath id='hex'>
                         <path class="animate__bigger" d='M45,220
