@@ -33,6 +33,28 @@
 
 .advantages {
   width: 100%;
+  &__hex {
+    align-self: center;
+
+    &-bigger {
+      opacity: 0;
+      //display: none;
+      //animation: biggerMove 1.6s ease alternate ;
+    }
+
+    &-smaller {
+      opacity: 0;
+      //display: none;
+      //animation: smallerMove 1.5s ease alternate ;
+    }
+
+    &-gradients {
+      opacity: 0;
+      //display: none;
+      //animation: gradientsMove 1.4s ease alternate;
+    }
+  }
+
   &-container {
     overflow: hidden;
     display: flex;
@@ -210,9 +232,6 @@
     }
 
   }
-}
-.advantages__hex {
-  align-self: center;
 }
 
 
