@@ -1,47 +1,4 @@
 @media (max-width: 1200px) {
-
-  .advantages-hexagon {
-
-    &__is-symplify {
-      right: 36%;
-      top: 8rem;
-
-      &-img {
-        width: 30rem;
-        height: 30rem;
-      }
-    }
-    &__smeh-1 {
-      top: 9rem;
-      right: 13%;
-
-      &-img {
-        width: 13rem;
-        height: 13rem;
-      }
-    }
-    &__small {
-      top: 29rem;
-      right: 27%;
-      width: 4.5rem;
-      height: 4.5rem;
-      @include gradOrangePurple(to left)
-    }
-    &__middle {
-      width: 5.5rem;
-      height: 5.5rem;
-      top: 3rem;
-      right: 56%;
-      @include gradOrangePurple(to right);
-    }
-    &__big {
-      width: 10rem;
-      height: 10rem;
-      right: 80%;
-      @include gradBluViolet(-280deg);
-    }
-  }
-
   .advantages {
     &-container {
       .advantages-description {
@@ -144,40 +101,6 @@
   .advantages {
     &-container {
       .advantages-description {
-        .advantages-img {
-          width: 45%;
-          .is-symplify {
-            position: absolute;
-            width: 60%;
-            left: 4rem;
-            top: 6rem;
-          }
-          .smeh1 {
-            position: absolute;
-            width: 27%;
-            top: 9rem;
-            left: 70%;
-          }
-
-          .path-big {
-            position: absolute;
-            width: 18%;
-          }
-
-          .path-midle {
-            position: absolute;
-            width: 10%;
-            top: 25rem;
-            left: 70%;
-          }
-          .path-small {
-            position: absolute;
-            width: 7%;
-            top: 1rem;
-            left: 45%;
-          }
-        }
-
         .content-headline {
           font-size: 3.5rem;
           line-height: 5rem;
@@ -343,7 +266,6 @@
         .partners-icon {
 
           .color-icon {
-            height: 5rem;
             width: 14rem;
           }
         }
