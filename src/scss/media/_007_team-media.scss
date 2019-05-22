@@ -144,38 +144,50 @@
   }
 }
 
-//DEN
-
-@media (max-width: 699px) {
-  .team-description {
-    margin-bottom: 10rem;
-
-    &:before {
-      left: -20rem;
-      padding: 2.5rem 21rem;
+@media (max-width: 750px) {
+  .team {
+    &__hex {
+      width: 70%;
     }
 
-    &-top-main-title {
-      font-size: 3rem;
+    &-img {
+      &__smaller {
+        transform: scale(1.2) translate(-40px, -20px);
+      }
+      &__bigger {
+        transform: translate(10px, 45px);
+      }
     }
+    &-description {
+      margin-bottom: 10rem;
 
-    &-title {
-      font-size: 2.5rem;
-      margin: 4rem 0;
-    }
-
-    &-subtitle {
-      font-size: 1.58rem;
-      margin-bottom: 2rem;
-
-      &-highlight{
-        padding: 0.2rem 0;
-        color: #ffffff;
-        @include gradBluViolet(to right);
+      &:before {
+        left: -20rem;
+        padding: 2.5rem 21rem;
       }
 
-      &-hidden-span{
-        display: none;
+      &-top-main-title {
+        font-size: 3rem;
+      }
+
+      &-title {
+        font-size: 2.5rem;
+        margin: 4rem 0;
+      }
+
+      &-subtitle {
+        font-size: 1.58rem;
+        margin-bottom: 2rem;
+
+        &-highlight {
+          padding: 0.2rem 0;
+          color: #ffffff;
+          @include gradBluViolet(to right);
+        }
+
+        &-hidden-span {
+          display: none;
+        }
       }
     }
 
@@ -240,65 +252,70 @@
   }
 }
 
-@media (max-width: 499px) {
-  .team-description {
-    margin-bottom: 10rem;
-
-    &:before {
-      left: -20rem;
-      padding: 2rem 18.5rem;
+@media (max-width: 550px) {
+  .team {
+    &__hex {
+      height: auto;
     }
+    &-description {
+      margin-bottom: 6rem;
+      flex-direction: column;
 
-    &-top-main-title {
-      font-size: 2.3rem;
-      left: 5rem;
-    }
-
-    &-title {
-      font-size: 2rem;
-      margin: 4rem 0;
-    }
-
-    &-subtitle {
-      font-size: 1.35rem;
-    }
-
-
-    .team-description-images {
-      height: 34rem;
-    }
-
-    .team-description-photo {
-      &-sharon {
-        top: 10rem;
-        right: 10rem;
+      &:before {
+        left: -20rem;
+        padding: 2rem 18.5rem;
       }
 
-      &__sharon-img {
-        height: 9rem;
-        width: 9rem;
+      &-top-main-title {
+        font-size: 2.3rem;
+        left: 5rem;
       }
 
-      &-olga {
-        top: 20rem;
-        right: 10rem;
+      &-title {
+        font-size: 2rem;
+        margin: 4rem 0;
       }
 
-      &__olga-img {
-        height: 9rem;
-        width: 9rem;
-        background-position: 0 -1rem;
+      &-subtitle {
+        font-size: 1.35rem;
       }
 
-      &-eddie {
-        right: 0rem;
-        bottom: 9rem;
+      .team-description-images {
+        height: 34rem;
       }
 
-      &__eddie-img {
-        height: 11rem;
-        width: 11rem;
-        background-position: 0 -2rem;
+      .team-description-photo {
+        &-sharon {
+          top: 10rem;
+          right: 10rem;
+        }
+
+        &__sharon-img {
+          height: 9rem;
+          width: 9rem;
+        }
+
+        &-olga {
+          top: 20rem;
+          right: 10rem;
+        }
+
+        &__olga-img {
+          height: 9rem;
+          width: 9rem;
+          background-position: 0 -1rem;
+        }
+
+        &-eddie {
+          right: 0rem;
+          bottom: 9rem;
+        }
+
+        &__eddie-img {
+          height: 11rem;
+          width: 11rem;
+          background-position: 0 -2rem;
+        }
       }
     }
   }
