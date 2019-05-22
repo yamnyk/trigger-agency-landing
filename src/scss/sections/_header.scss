@@ -104,7 +104,8 @@
 .header-main {
   display: flex;
   position: relative;
-  margin-top: 15rem;
+  margin-top: 5%;
+  align-items: center;
   &__img {
     position: relative;
     flex-basis: 50%;
@@ -190,7 +191,7 @@
   }
 
   &__info {
-    flex-basis: 50%;
+    width: 50%;
     margin-top: 11rem;
     display: flex;
     align-items: center;
@@ -222,7 +223,8 @@
       align-self: flex-start;
       text-transform: uppercase;
       text-decoration: none;
-      margin: 5rem 8.6rem;
+      //margin: 5rem 8.6rem;
+      margin: 10% 12%;
       padding: 2.7rem 4rem;
       @include gradBluViolet(to right);
       color: #ffffff;

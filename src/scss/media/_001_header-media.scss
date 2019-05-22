@@ -166,9 +166,15 @@
   }
   .header-main {
 
+    &__svg-hex {
+      width: 60%;
+    }
+
     &__info {
+      width: 40%;
+
       &__title {
-        font-size: 4.9rem;
+        font-size: 4.4rem;
       }
 
       &__subtitle {
@@ -256,7 +262,7 @@
   .header-main {
     &__info {
       &__title {
-        font-size: 4.4rem;
+        font-size: 3.9rem;
       }
     }
 
