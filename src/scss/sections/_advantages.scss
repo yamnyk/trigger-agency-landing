@@ -44,16 +44,9 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       background-color: #ffffff;
       margin-bottom: 5rem;
-
-      .advantages-img {
-        width: 50%;
-        height: 100%;
-        position: relative;
-
-      }
 
       &-content {
         display: flex;
@@ -216,8 +209,7 @@
   }
 }
 .advantages__hex {
-  width: 45%;
-  height: auto;
+  align-self: center;
 }
 
 .advantages-hexagon {
@@ -252,7 +244,7 @@
   }
   &__small {
     top: 40rem;
-    right: 20%;;
+    right: 20%;
     width: 6.5rem;
     height: 6.5rem;
     @include gradOrangePurple(to top);
@@ -278,4 +270,3 @@
 .solod-logo {
   filter: invert(1);
 }
-
