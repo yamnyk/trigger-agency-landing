@@ -3072,9 +3072,6 @@ const animateAdvantages = () => {
 	const $hexSmaller = $('#advHexSmaller');
 	const $hexGradients = $('#advHexGradients');
 	
-	debugger
-	console.log($hexGradients);
-	
 	$hexBigger.css({
 		'animation': 'biggerMove 1.6s ease alternate',
 		'opacity': '1'
