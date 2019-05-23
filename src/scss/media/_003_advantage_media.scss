@@ -1,65 +1,10 @@
 @media (max-width: 1200px) {
-
-  .advantages-hexagon {
-
-    &__is-symplify {
-      right: 36%;
-      top: 8rem;
-
-      &-img {
-        width: 30rem;
-        height: 30rem;
-        background-image: url("../img/advantages/iSymplify-team_technology.png");
-        background-position: -7rem -1rem;
-      }
-    }
-    &__smeh-1 {
-      top: 9rem;
-      right: 13%;
-
-      &-img {
-        width: 13rem;
-        height: 13rem;
-        background: url("../img/advantages/smeh1.png");
-        background-position: -19rem -9rem;
-      }
-    }
-    &__small {
-      top: 29rem;
-      right: 27%;
-      width: 4.5rem;
-      height: 4.5rem;
-      @include gradOrangePurple(to left)
-    }
-    &__middle {
-      width: 5.5rem;
-      height: 5.5rem;
-      top: 3rem;
-      right: 56%;
-      @include gradOrangePurple(to right);
-    }
-    &__big {
-      width: 10rem;
-      height: 10rem;
-      right: 80%;
-      @include gradBluViolet(-280deg);
-    }
-  }
-
   .advantages {
     &-container {
       .advantages-description {
         margin-bottom: 0;
         .advantages-img {
           width: 40%;
-        }
-
-        &-content {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          width: 55%;
-
         }
 
         .content-headline {
@@ -148,66 +93,6 @@
           }
         }
       }
-      .projects {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        margin-bottom: 5rem;
-        &-headline {
-          position: relative;
-          font-family: 'Releway', sans-serif;
-          font-size: 4rem;
-          font-weight: 900;
-          text-align: center;
-          color: #07002c;
-          margin-bottom: 6rem;
-          &::after {
-            position: absolute;
-            content: "";
-            width: 186px;
-            height: 4px;
-            top: 5rem;
-            left: 44%;
-            background-image: linear-gradient(to right, #00b3f9, #f900a9);
-
-          }
-        }
-        .advantages-slider {
-          max-height: 30rem;
-        }
-
-        .partners-icon {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-          align-content: center;
-          width: 90%;
-          margin: 0 auto;
-
-          .color-icon {
-            filter: grayscale(1);
-            height: 6rem;
-            width: 27rem;
-            margin: 2rem 3rem;
-            text-align: center;
-            transition: 0.3s filter ease;
-            cursor: pointer;
-
-            &:hover {
-              filter: grayscale(0);
-            }
-
-            img {
-              height: 100%;
-            }
-
-          }
-        }
-
-      }
-
     }
   }
 }
@@ -216,45 +101,6 @@
   .advantages {
     &-container {
       .advantages-description {
-        .advantages-img {
-          width: 45%;
-          .is-symplify {
-            position: absolute;
-            width: 60%;
-            left: 4rem;
-            top: 6rem;
-          }
-          .smeh1 {
-            position: absolute;
-            width: 27%;
-            top: 9rem;
-            left: 70%;
-          }
-
-          .path-big {
-            position: absolute;
-            width: 18%;
-          }
-
-          .path-midle {
-            position: absolute;
-            width: 10%;
-            top: 25rem;
-            left: 70%;
-          }
-          .path-small {
-            position: absolute;
-            width: 7%;
-            top: 1rem;
-            left: 45%;
-          }
-        }
-
-        &-content {
-          width: 55%;
-        }
-
-
         .content-headline {
           font-size: 3.5rem;
           line-height: 5rem;
@@ -334,7 +180,6 @@
             width: 186px;
             height: 4px;
             top: 5rem;
-            left: 44%;
             background-image: linear-gradient(to right, #00b3f9, #f900a9);
 
           }
@@ -342,129 +187,14 @@
         .advantages-slider {
           max-height: 30rem;
         }
-
-        .partners-icon {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-          align-content: center;
-          width: 90%;
-          margin: 0 auto;
-
-          .color-icon {
-            filter: grayscale(1);
-            height: 6rem;
-            width: 27rem;
-            margin: 2rem 3rem;
-            text-align: center;
-            transition: 0.3s filter ease;
-            cursor: pointer;
-
-            &:hover {
-              filter: grayscale(0);
-            }
-
-            img {
-              height: 100%;
-            }
-
-          }
-        }
-
       }
-
     }
   }
 }
 @media (max-width: 760px) {
-
-  .advantages-hexagon {
-
-    &__is-symplify {
-      right: 36%;
-      top: 8rem;
-
-      &-img {
-        width: 15rem;
-        height: 15rem;
-        background-image: url("../img/advantages/iSymplify-team_technology.png");
-        background-position: -17rem -14rem;
-      }
-    }
-    &__smeh-1 {
-      top: 9rem;
-      right: 13%;
-
-      &-img {
-        width: 7rem;
-        height: 7rem;
-        background: url("../img/advantages/smeh1.png");
-        background-position: -22rem -12rem;
-      }
-    }
-    &__small {
-      top: 19rem;
-      right: 27%;
-      width: 2.5rem;
-      height: 2.5rem;
-      @include gradOrangePurple(to top);
-    }
-    &__middle {
-      width: 3.5rem;
-      height: 3.5rem;
-      top: 4rem;
-      right: 48%;
-      @include gradOrangePurple(to right);
-    }
-    &__big {
-      width: 5rem;
-      height: 5rem;
-      right: 74%;
-      top: 5rem;
-      @include gradBluViolet(-280deg);
-    }
-  }
-
   .advantages {
     &-container {
       .advantages-description {
-        .advantages-img {
-          width: 40%;
-          .is-symplify {
-            width: 55%;
-            left: 2rem;
-            top: 5rem;
-          }
-          .smeh1 {
-            width: 21%;
-            top: 5rem;
-            left: 66%;
-          }
-
-          .path-big {
-            width: 18%;
-          }
-
-
-          .path-midle {
-            width: 10%;
-            top: 18rem;
-            left: 72%;
-          }
-
-          .path-small {
-            position: absolute;
-            width: 7%;
-            top: 1rem;
-            left: 45%;
-          }
-        }
-
-        &-content {
-          width: 59%;
-        }
-
 
         .content-headline {
           font-size: 2.2rem;
@@ -516,7 +246,6 @@
         }
       }
       .projects {
-
         margin-bottom: 5rem;
         &-headline {
           font-size: 4rem;
@@ -527,7 +256,6 @@
             width: 186px;
             height: 4px;
             top: 5rem;
-            left: 44%;
             background-image: linear-gradient(to right, #00b3f9, #f900a9);
 
           }
@@ -538,12 +266,8 @@
         .partners-icon {
 
           .color-icon {
-            height: 5rem;
-            width: 17rem;
-            img {
-              height: 100%;
-            }
-
+            width: 14rem;
+            height: 7rem;
           }
         }
 
@@ -552,132 +276,22 @@
     }
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 650px) {
 
   .wrapper-is-symplify{
     transform: rotate(30deg);
   }
-
-  .advantages-hexagon {
-
-    &__is-symplify {
-      transform: translateX(85%);
-      right: 50%;
-      top: 4rem;
-
-      &-img {
-        width: 380px;
-        height: 380px;
-        background-position: -17rem -6rem;
-        background-repeat: no-repeat;
-      }
-    }
-    &__smeh-1 {
-      display: none;
-    }
-    &__small {
-      top: 38rem;
-      right: 5%;
-      width: 3.5rem;
-      height: 3.5rem;
-    }
-    &__middle {
-      display: none;
-    }
-    &__big {
-      width: 5rem;
-      height: 5rem;
-      right: 81%;
-      top: 8rem;
-    }
-  }
-
-
   .advantages {
+    &__hex {
+      display: none;
+    }
     &-container {
       .advantages-description {
         display: flex;
-        justify-content: center;
-        height: 45rem;
-        .advantages-img {
-          width: 100%;
-          .is-symplify {
-            width: 80%;
-            left: 10%;
-            top: 7rem;
-          }
-          .smeh1 {
-            display: none;
-          }
-          .path-big {
-            width: 14%;
-            top: 7rem;
-            left: 2rem;
-          }
-          .path-midle {
-            width: 10%;
-            top: 34rem;
-            left: 82%;
-          }
-
-          .path-small {
-            display: none;
-          }
-        }
+        justify-content: flex-end;
+        align-items: center;
         &-content {
-          width: 100%;
-          position: absolute;
-        }
-
-
-
-        .content-headline {
-          font-size: 1.8rem;
-          line-height: 2.2rem;
-          height: 2.2rem;
-          width: 18rem;
-        }
-
-        .content-tagline {
-          margin: 1.8rem 0;
-          font-size: 1.7rem;
-          text-align: center;
-        }
-
-        .content-nav {
-          width: 250px;
-          margin: 150px auto;
-
-          &-table {
-            height: 2.7rem;
-            width: 100%;
-            .bgActiv {
-              width: 9rem;
-              height: 2.7rem;
-            }
-            &-item {
-              font-size: 0.9rem;
-              line-height: 1;
-              max-height: 2.7rem;
-            }
-            .active {
-              padding-top: 1rem;
-            }
-
-          }
-          &-info {
-
-            height: 12rem;
-            margin: 1rem auto;
-            &__elem {
-              font-size: 1.1rem;
-              line-height: 1;
-            }
-            .active-content {
-              padding: 1rem 1rem;
-              background-color: white;
-            }
-          }
+          width: 90%;
         }
       }
       .projects {
@@ -689,195 +303,52 @@
             width: 14rem;
             height: 0.3rem;
             top: 4rem;
-            left: 36%;
-
           }
         }
         .advantages-slider {
           max-height: 30rem;
         }
-
-        .partners-icon {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-          align-content: center;
-          width: 90%;
-          margin: 0 auto;
-
-          .color-icon {
-            filter: grayscale(1);
-            height: 6rem;
-            width: 27rem;
-            margin: 2rem 3rem;
-            text-align: center;
-            transition: 0.3s filter ease;
-            cursor: pointer;
-
-            &:hover {
-              filter: grayscale(0);
-            }
-
-            img {
-              height: 100%;
-            }
-
-          }
-        }
-
       }
 
+    }
+  }
+
+  .content {
+    &-nav {
+      margin-right: 10%;
     }
   }
 }
 
-@media (max-width: 385px) {
+  @media (max-width: 385px) {
 
-  .advantages-hexagon {
+    .advantages-hexagon {
 
-    &__is-symplify {
-      right: 49%;
+      &__is-symplify {
+        right: 49%;
 
-      &-img {
-        width: 315px;
-        height: 315px;
-        background-position: -16rem -7rem;
+        &-img {
+          width: 315px;
+          height: 315px;
+          background-position: -16rem -7rem;
+        }
+      }
+      &__small {
+        top: 32rem;
+        right: 5%;
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+      &__big {
+        width: 4rem;
+        height: 4rem;
+        right: 80%;
+        top: 7rem;
       }
     }
-    &__small {
-      top: 32rem;
-      right: 5%;
-      width: 3.5rem;
-      height: 3.5rem;
-    }
-    &__big {
-      width: 4rem;
-      height: 4rem;
-      right: 80%;
-      top: 7rem;
+    .content {
+      &-nav {
+        margin-right: 8%;
+      }
     }
   }
-
-
-  .advantages {
-    &-container {
-      .advantages-description {
-        display: flex;
-        justify-content: center;
-        height: 45rem;
-        .advantages-img {
-          width: 100%;
-          .is-symplify {
-            width: 80%;
-            left: 10%;
-            top: 7rem;
-          }
-          .smeh1 {
-            display: none;
-          }
-          .path-big {
-            width: 14%;
-            top: 7rem;
-            left: 2rem;
-          }
-          .path-midle {
-            width: 10%;
-            top: 34rem;
-            left: 82%;
-          }
-
-          .path-small {
-            display: none;
-          }
-        }
-        &-content {
-          width: 100%;
-          position: absolute;
-        }
-
-
-
-        .content-headline {
-          font-size: 1.8rem;
-          line-height: 2.2rem;
-          height: 2.2rem;
-          width: 18rem;
-        }
-
-        .content-tagline {
-          margin: 1.8rem 0;
-          font-size: 1.7rem;
-          text-align: center;
-        }
-
-        .content-nav {
-          width: 234px;
-          margin: 78px auto;
-
-          &-table {
-            height: 2.7rem;
-            width: 100%;
-            .bgActiv {
-              width: 9rem;
-              height: 2.7rem;
-            }
-            &-item {
-              font-size: 0.9rem;
-            }
-
-          }
-        }
-      }
-
-      .projects {
-        margin-bottom: 5rem;
-        &-headline {
-          font-size: 3rem;
-          margin-bottom: 4rem;
-          &::after {
-            width: 14rem;
-            height: 0.3rem;
-            top: 4rem;
-            left: 36%;
-
-          }
-        }
-        .advantages-slider {
-          max-height: 30rem;
-        }
-
-        .partners-icon {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-          align-content: center;
-          width: 90%;
-          margin: 0 auto;
-
-          .color-icon {
-            filter: grayscale(1);
-            height: 6rem;
-            width: 27rem;
-            margin: 2rem 3rem;
-            text-align: center;
-            transition: 0.3s filter ease;
-            cursor: pointer;
-
-            &:hover {
-              filter: grayscale(0);
-            }
-
-            img {
-              height: 100%;
-            }
-
-          }
-        }
-
-      }
-
-    }
-  }
-}

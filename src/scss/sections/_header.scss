@@ -3,11 +3,12 @@
 }
 
 .top-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 0;
-  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  padding: 1rem 0;
+  z-index: 10000;
 
   &__wrapper {
     display: flex;
@@ -28,10 +29,10 @@
   }
 
   &__logo-item {
-    height: 7.3rem;
-    width: 25rem;
-    background-image: url("../img/header/logo_trigger.jpg");
-    background-size: cover;
+    width: 20rem;
+    //height: 7.3rem;
+    //background-image: url("../img/header/logo_trigger.jpg");
+    //background-size: cover;
 
   }
 
@@ -50,41 +51,6 @@
     align-items: center;
     justify-content: center;
   }
-  //
-  //  span,
-  //  span:before,
-  //  span:after {
-  //    cursor: pointer;
-  //    border-radius: 1px;
-  //    height: 0.6rem;
-  //    width: 4.31rem;
-  //    background: linear-gradient(to left, $deepOrange, $purple) left bottom no-repeat;
-  //    position: absolute;
-  //    display: block;
-  //    content: '';
-  //    transition: all 300ms ease-in-out;
-  //  }
-  //  span:before {
-  //    top: -10px;
-  //  }
-  //  span:after {
-  //    bottom: -10px;
-  //  }
-  //  &.active span {
-  //    background: transparent;
-  //    &:before,
-  //    &:after {
-  //      top: 0;
-  //    }
-  //    &:before {
-  //      transform: rotate(45deg);
-  //    }
-  //    &:after {
-  //      transform: rotate(-45deg);
-  //    }
-  //  }
-  //}
-
 
   &__nav-menu {
     display: flex;
@@ -113,16 +79,13 @@
     }
   }
 
-
   &__phone {
     font-family: 'Open Sans', sans-serif;
     font-size: 2.3rem;
     font-weight: bold;
     color: #007ca2;
-    //margin-left: 3.7rem;
   }
   &__phone_img {
-    //background-image: url("img/header/phone.svg");
     width: 30px;
     display: none;
   }
@@ -141,6 +104,8 @@
 .header-main {
   display: flex;
   position: relative;
+  margin-top: 5%;
+  align-items: center;
   &__img {
     position: relative;
     flex-basis: 50%;
@@ -156,7 +121,7 @@
       &_clip-solid {
         width: 65rem;
         height: 65rem;
-        background-image: url("../img/header/alesia-kazantceva-283291-unsplash@2x.png");
+        background-image: url("../img/header/alesia-kazantceva-283291-unsplash@2x.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -226,16 +191,14 @@
   }
 
   &__info {
-    flex-basis: 50%;
+    width: 50%;
     margin-top: 11rem;
     display: flex;
-    align-items: center;
     flex-direction: column;
 
     &__title {
       padding-left: 5rem;
       @include gradOrangePurple(to right);
-      width: 100%;
       font-size: 7.6rem;
       font-weight: 900;
       font-style: normal;
@@ -258,7 +221,8 @@
       align-self: flex-start;
       text-transform: uppercase;
       text-decoration: none;
-      margin: 5rem 8.6rem;
+      //margin: 5rem 8.6rem;
+      margin: 10% 12%;
       padding: 2.7rem 4rem;
       @include gradBluViolet(to right);
       color: #ffffff;
