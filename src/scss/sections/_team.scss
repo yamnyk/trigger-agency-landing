@@ -45,9 +45,9 @@
       content: '';
       position: absolute;
       top: -0.8rem;
-      left: -7rem;
+      left: 0;
       @include gradOrangePurple(to right);
-      padding: 3rem 17rem;
+      padding: 3rem 13rem;
       z-index: -1;
     }
   }
