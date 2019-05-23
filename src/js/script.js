@@ -3104,6 +3104,24 @@ const animateTeam = () => {
 		'opacity': '1'
 	})
 };
+const animateHeader = () => {
+	const $hexBigger = $('.header-hex__biger');
+	const $hexGradients = $('.header-hex__gradients');
+	const $hexGradientsBottom = $('.header-hex__gradients-bottom');
+	
+	$hexBigger.css({
+		'animation': 'headerBiggerMove 1.5s ease alternate',
+		'opacity': '1'
+	});
+	$hexGradients.css({
+		'animation': 'headerGeadientsMove 1.9s ease alternate',
+		'opacity': '1'
+	})
+	$hexGradientsBottom.css({
+		'animation': 'headerGeadientsBottomMove 1.9s ease alternate',
+		'opacity': '1'
+	})
+};
 
 
 $(document).ready(function () {
@@ -3194,6 +3212,41 @@ $(document).ready(function () {
 			.setLngLat([30.5933111, 50.4284607])
 			.addTo(map);
 	}
+	
+	if(window.innerWidth > 650) {
+		$('.animate__bigger-hex').css({
+			'opacity' : '1',
+			'animation' : 'headerBiggerMove 1.8s ease alternate'
+		});
+		$('.animate__gradients').css({
+			'opacity' : '1',
+			'animation' : 'headerGeadientsMove 1.9s ease alternate'
+		});
+		$('.animate__bottom-gradients').css({
+			'opacity' : '1',
+			'animation' : 'headerGeadientsBottomMove 2.1s ease alternate'
+		})
+		$(window).scroll(() => {
+			const thisScroll = $(window).scrollTop();
+			const advantagesTop = $('.advantages').offset().top;
+			const advantagesHeight = $('.advantages').outerHeight();
+			if(thisScroll > (advantagesTop + advantagesHeight - thisScroll )){
+				animateAdvantages();
+			}
+			const teamTop = $('.team').offset().top;
+			const teamHeight = $('.team').outerHeight();
+			if(thisScroll > (teamTop + teamHeight - thisScroll - 400)){
+				animateTeam();
+			};
+		});
+	} else {
+		$('#advHexBigger').css({'animation':'', 'opacity' : '1'});
+		$('#advHexSmaller').css({'animation':'', 'opacity' : '1'});
+		$('#advHexGradients').css({'animation':'', 'opacity' : '1'});
+		$('.team-img__bigger').css({'animation':'', 'opacity' : '1'});
+		$('.team-img__smaller').css({'animation':'', 'opacity' : '1'});
+		$('.team-img__gradients').css({'animation':'', 'opacity' : '1'});
+	}
 });
 
 $("#nav-toggle").click(function(){
@@ -3221,21 +3274,7 @@ window.onresize = function() {
 	}
 };
 
-if(window.innerWidth > 650) {
-	$(window).scroll(() => {
-		const thisScroll = $(window).scrollTop();
-		const advantagesTop = $('.advantages').offset().top;
-		const advantagesHeight = $('.advantages').outerHeight();
-		if(thisScroll > (advantagesTop + advantagesHeight - thisScroll + 400)){
-			animateAdvantages();
-		}
-		const teamTop = $('.team').offset().top;
-		const teamHeight = $('.team').outerHeight();
-		if(thisScroll > (teamTop + teamHeight - thisScroll - 400)){
-			animateTeam();
-		}
-	});
-}
+
 
 
 
