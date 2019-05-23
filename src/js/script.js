@@ -3067,6 +3067,7 @@ const slowScroll = (id) => {
 	});
 };
 
+//_________________________________________Animations___________________
 const animateAdvantages = () => {
 	const $hexBigger = $('#advHexBigger');
 	const $hexSmaller = $('#advHexSmaller');
@@ -3085,6 +3086,25 @@ const animateAdvantages = () => {
 		'opacity': '1'
 	})
 };
+const animateTeam = () => {
+	const $hexBigger = $('.team-img__bigger');
+	const $hexSmaller = $('.team-img__smaller');
+	const $hexGradients = $('.team-img__gradients');
+	
+	$hexBigger.css({
+		'animation': 'teamBiggerMove 1.5s ease alternate',
+		'opacity': '1'
+	});
+	$hexSmaller.css({
+		'animation': 'teamSmallerMove 1.7s ease alternate',
+		'opacity': '1'
+	});
+	$hexGradients.css({
+		'animation': 'teamGradientsMove 1.9s ease alternate',
+		'opacity': '1'
+	})
+};
+
 
 $(document).ready(function () {
 	
@@ -3203,11 +3223,16 @@ window.onresize = function() {
 
 if(window.innerWidth > 650) {
 	$(window).scroll(() => {
-		const scrollTo = $('.advantages').offset().top;
-		const hidhtTo = $('.advantages').outerHeight();
 		const thisScroll = $(window).scrollTop();
-		if(thisScroll > (scrollTo + hidhtTo - thisScroll + 400)){
-			animateAdvantages()
+		const advantagesTop = $('.advantages').offset().top;
+		const advantagesHeight = $('.advantages').outerHeight();
+		if(thisScroll > (advantagesTop + advantagesHeight - thisScroll + 400)){
+			animateAdvantages();
+		}
+		const teamTop = $('.team').offset().top;
+		const teamHeight = $('.team').outerHeight();
+		if(thisScroll > (teamTop + teamHeight - thisScroll - 400)){
+			animateTeam();
 		}
 	});
 }
