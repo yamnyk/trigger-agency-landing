@@ -98,6 +98,14 @@
           display: none;
         }
       }
+      &-bonus {
+        font-size: 1.58rem;
+        margin-bottom: 2rem;
+
+        &-highlight {
+          padding: 0.2rem 0;
+        }
+      }
     }
 
     &-bonus {
@@ -138,6 +146,9 @@
       }
 
       &-subtitle {
+        font-size: 1.35rem;
+      }
+      &-bonus{
         font-size: 1.35rem;
       }
 

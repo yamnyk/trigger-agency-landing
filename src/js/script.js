@@ -3240,9 +3240,9 @@ $(document).ready(function () {
 			};
 		});
 	} else {
-		$('#advHexBigger').css({'animation':'', 'opacity' : '1'});
-		$('#advHexSmaller').css({'animation':'', 'opacity' : '1'});
-		$('#advHexGradients').css({'animation':'', 'opacity' : '1'});
+		$('.animate__bigger-hex').css({'animation':'', 'opacity' : '1'});
+		$('.animate__gradients').css({'animation':'', 'opacity' : '1'});
+		$('.animate__bottom-gradients').css({'animation':'', 'opacity' : '1'});
 		$('.team-img__bigger').css({'animation':'', 'opacity' : '1'});
 		$('.team-img__smaller').css({'animation':'', 'opacity' : '1'});
 		$('.team-img__gradients').css({'animation':'', 'opacity' : '1'});
