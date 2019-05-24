@@ -3116,7 +3116,7 @@ const animateHeader = () => {
 	$hexGradients.css({
 		'animation': 'headerGeadientsMove 1.9s ease alternate',
 		'opacity': '1'
-	})
+	});
 	$hexGradientsBottom.css({
 		'animation': 'headerGeadientsBottomMove 1.9s ease alternate',
 		'opacity': '1'
