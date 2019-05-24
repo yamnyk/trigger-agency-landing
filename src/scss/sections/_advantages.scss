@@ -33,6 +33,22 @@
 
 .advantages {
   width: 100%;
+  &__hex {
+    align-self: center;
+
+    &-bigger {
+      opacity: 0;
+    }
+
+    &-smaller {
+      opacity: 0;
+    }
+
+    &-gradients {
+      opacity: 0;
+    }
+  }
+
   &-container {
     overflow: hidden;
     display: flex;
@@ -210,9 +226,6 @@
     }
 
   }
-}
-.advantages__hex {
-  align-self: center;
 }
 
 

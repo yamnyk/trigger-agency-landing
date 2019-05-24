@@ -42,21 +42,10 @@
         </div>
     </div>
     <div class="header-main">
-        <!--<div class="header-main__img">-->
-            <!--<div class="header-main__img__hexagon">-->
-                <!--<div class="header-main__img__hexagon_clip-each header-main__img__hexagon_clip-solid">-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="header-main__img__hexagon_clip-each header-main__img__hexagon_top-left"></div>-->
-            <!--<div class="header-main__img__hexagon_clip-each header-main__img__hexagon_top-right"></div>-->
-            <!--<div class="header-main__img__hexagon_clip-each header-main__img__hexagon_bottom-left"></div>-->
-            <!--<div class="header-main__img__hexagon_clip-each header-main__img__hexagon_bottom-right"></div>-->
-            <!--<div class="header-main__img__hexagon_clip-each header-main__img__hexagon_bottom"></div>-->
-            <!--<div class="header-main__img__hexagon_clip-each header-main__img__hexagon_bottom-deep-right"></div>-->
-        <!--</div>-->
+
         <svg viewBox="0 0 650 730" preserveAspectRatio="xMinYMin meet" height="100%" width="50%" class="header-main__svg-hex">
             <defs>
-                <clipPath id='hex'>
+                <clipPath id='headerHex'>
                     <path class="animate__bigger" d='M105,165
                a10,20 1 0,1 0,-30
                     l60,-100
@@ -71,21 +60,6 @@
                     a28,25 1 0,1 -25,-10
                Z'transform='rotate(15)' />
                 </clipPath>
-                <clipPath id='hexSmall'>
-                    <path class="animate__bigger" d='M100,350
-               a10,15 1 0,1 0,-20
-               l120,-200
-               a-28,25 1 0,1 25,-10
-               l200,0
-               a28,25 1 0,1 25,10
-               l120,200
-               a10,15 1 0,1 0,20
-               l-120,200
-               a28,25 1 0,1 -25,10
-               l-200,0
-               a28,25 1 0,1 -25,-10
-               Z'/>
-                </clipPath>
             </defs>
 
             <linearGradient id="orangepurple" x1="36.394%" x2="50%" y1="-5.157%" y2="100%">
@@ -98,7 +72,7 @@
                 <stop offset="100%" stop-color="#cd4c9f"></stop>
             </linearGradient>
 
-            <image class="animate__bigger-hex" transform="scale(1.7)" x="-15" y="55" width="450" id='azaza' clip-path="url(#hex)"  xlink:href="http://trigger.com.ua/img/header/alesia-kazantceva-283291-unsplash@2x.png"></image>
+            <image class="animate__bigger-hex" transform="scale(1.7)" x="-15" y="55" width="450" id='azaza' clip-path="url(#headerHex)"  xlink:href="img/header/alesia-kazantceva-283291-unsplash@2x.jpg"></image>
             <g class="animate__gradients">
                 <path  class="left-top-hex" fill="url(#blueviolet)" fill-rule="nonzero" d='M90,200
                a6,10 1 0,1 0,-16
@@ -236,7 +210,7 @@
         </div>
 
 
-        <svg class="team__hex" width="50%" height="100%" viewBox="0 0 780 750" preserveAspectRatio="xMidYMid slice">
+        <svg class="team__hex" width="50%" height="100%" viewBox="0 0 800 750" preserveAspectRatio="xMidYMid slice">
             <defs>
                 <clipPath id='bigger'>
                     <path class="team-paths__bigger" style="fill: none;
@@ -275,15 +249,15 @@
             </defs>
 
             <g class="team-img__bigger">
-                <image  transform="scale(1.7)" width="290" x="165" y="10" clip-path="url(#bigger)" class="services__img" xlink:href="http://trigger.com.ua/img/eddie-photo.jpg"> </image>
+                <image  transform="scale(1.7)" width="290" x="165" y="10" clip-path="url(#bigger)" class="services__img" xlink:href="img/eddie-photo.jpg"> </image>
             </g>
 
             <g class="team-img__smaller">
-                <image transform="scale(1.1) translate(-110 -190)" x="145" y="210" width="280" clip-path="url(#smaller)" xlink:href="http://trigger.com.ua/img/sharon-photo.jpg"></image>
+                <image transform="scale(1.1) translate(-110 -190)" x="145" y="210" width="280" clip-path="url(#smaller)" xlink:href="img/sharon-photo.jpg"></image>
             </g>
 
             <g class="team-img__smaller">
-                <image transform="scale(1.1) translate(-110 90)" x="130" y="180" width="290" clip-path="url(#smaller)" xlink:href="http://trigger.com.ua/img/panteleeva-olga.png"></image>
+                <image transform="scale(1.1) translate(-110 90)" x="130" y="180" width="290" clip-path="url(#smaller)" xlink:href="img/panteleeva-olga.jpg"></image>
             </g>
 
             <linearGradient id="orangepurple" x1="36.394%" x2="50%" y1="-5.157%" y2="100%">
@@ -296,7 +270,7 @@
                 <stop offset="100%" stop-color="#cd4c9f"></stop>
             </linearGradient>
 
-            <g>
+            <g class="team-img__gradients">
                 <path id='teamHexSmall' fill="url(#orangepurple)" fill-rule="nonzero"
                       d='M390,660
                a3,5 1 0,1 0,-8
@@ -361,10 +335,10 @@
 <section class="advantages">
     <div class="container advantages-container">
         <div class="advantages-description">
-            <svg viewBox="0 0 750 600" width="50%" height="100%" class="advantages__hex" preserveAspectRatio="xMinYMin meet">
+            <svg viewBox="0 0 750 750" width="50%" height="100%" class="advantages__hex" preserveAspectRatio="xMinYMin meet">
                 <defs>
                     <clipPath id='hex'>
-                        <path class="animate__bigger" d='M45,220
+                        <path d='M45,220
                a10,20 1 0,1 0,-30
                     l60,-100
                     a-28,25 1 0,1 25,-10
@@ -379,7 +353,7 @@
                Z'/>
                     </clipPath>
                     <clipPath id='hexSmall'>
-                        <path class="animate__bigger" d='M100,350
+                        <path d='M100,350
                a10,20 1 0,1 0,-30
                     l60,-100
                     a-28,25 1 0,1 25,-10
@@ -405,9 +379,9 @@
                     <stop offset="100%" stop-color="#cd4c9f"></stop>
                 </linearGradient>
 
-                <image class="animate__bigger" transform="scale(1.7)" x="-15" y="50" width="420" id='azaza' clip-path="url(#hex)"  xlink:href="http://trigger.com.ua/img/advantages/iSymplify-team_technology.png"></image>
-                <image class="animate__smaller" transform="scale(.7) translate(650 10)" x="-90" y="160" width="580" clip-path="url(#hexSmall)" xlink:href="http://trigger.com.ua/img/advantages/smeh1.png" transform="scale(0.5) translate(1020, 80)"></image>
-                <g class="animate__gradients">
+                <image id="advHexBigger" class="advantages__hex-bigger" transform="scale(1.7)" x="-15" y="50" width="420" id='azaza' clip-path="url(#hex)" xlink:href="img/advantages/iSymplify-team_technology.jpg"></image>
+                <image id="advHexSmaller" class="advantages__hex-smaller"  transform="scale(.7) translate(650 10)" x="-90" y="160" width="580" clip-path="url(#hexSmall)" xlink:href="img/advantages/smeh1.jpg"></image>
+                <g id="advHexGradients" class="advantages__hex-gradients">
                     <path  fill="url(#blueviolet)" fill-rule="nonzero" d='M60,120
                a10,20 1 0,1 0,-30
                     l60,-100
