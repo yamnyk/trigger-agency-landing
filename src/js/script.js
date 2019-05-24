@@ -3220,11 +3220,11 @@ $(document).ready(function () {
 		});
 		$('.animate__gradients').css({
 			'opacity' : '1',
-			'animation' : 'headerGeadientsMove 1.9s ease alternate'
+			'animation' : 'headerGeadientsMove 1.7s ease alternate'
 		});
 		$('.animate__bottom-gradients').css({
 			'opacity' : '1',
-			'animation' : 'headerGeadientsBottomMove 2.1s ease alternate'
+			'animation' : 'headerGeadientsBottomMove 2.3s ease alternate'
 		})
 		$(window).scroll(() => {
 			const thisScroll = $(window).scrollTop();
