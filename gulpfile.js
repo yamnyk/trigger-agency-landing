@@ -12,6 +12,7 @@ const path = {
 	build: {
 		html: 'build',
 		js: 'build/js/',
+
 		css: 'build/css/',
 		img: 'build/img/',
 		fonts: 'build/fonts/'

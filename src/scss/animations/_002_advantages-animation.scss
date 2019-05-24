@@ -1,0 +1,36 @@
+@keyframes biggerMove {
+  0% {
+    opacity: 0;
+    transform: scale(2) ;
+  }
+
+  100% {
+    transform: scale(1.7) ;
+  }
+}
+
+@keyframes smallerMove {
+  0% {
+    opacity: 0;
+    transform: scale(0.4) translate(140%, -10%);
+  }
+
+  100% {
+    transform: scale(.7) translate(650, 10);
+  }
+}
+
+@keyframes gradientsMove {
+  0% {
+    opacity: 0;
+    transform: scale(1.1) translate(-4%, -2%);
+  }
+
+  10% {
+    opacity: 0.08;
+  }
+
+  100% {
+    transform: scale(1) translateX(0);
+  }
+}

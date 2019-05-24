@@ -1,0 +1,31 @@
+@keyframes headerBiggerMove {
+  0% {
+    opacity: 0;
+    transform: translate(-20px,-50px) scale(1.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0,0) scale(1.7);
+  }
+}
+
+@keyframes headerGeadientsMove {
+  0% {
+    opacity: 0;
+    transform: translate(-10px,20px) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0,0) scale(1);
+  }
+}
+@keyframes headerGeadientsBottomMove {
+  0% {
+    opacity: 0;
+    transform: translate(-40px,3px) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0,0) scale(1);
+  }
+}

@@ -62,11 +62,10 @@
 
     &-img {
       &__smaller {
-        transform: scale(1.2) translate(-40px, -20px);
+        transform: scale(1.2) translate(30px, 40px);
       }
       &__bigger {
         transform: translate(10px, 45px);
-  
       }
     }
     &-description {
@@ -141,7 +140,6 @@
       &-subtitle {
         font-size: 1.35rem;
       }
-
 
     }
   }

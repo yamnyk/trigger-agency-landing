@@ -1,0 +1,30 @@
+@keyframes teamBiggerMove {
+  0% {
+    opacity: 0;
+    transform: translate(10px,0) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0,0) scale(1);
+  }
+}
+@keyframes teamSmallerMove {
+  0% {
+    opacity: 0;
+    transform: translate(-5px,10px) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0,0) scale(1);
+  }
+}
+@keyframes teamGradientsMove {
+  0% {
+    opacity: 0;
+    transform: translate(-5px,40px) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0,0) scale(1);
+  }
+}
