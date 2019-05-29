@@ -47,7 +47,7 @@ const scssBuild = () => (
 		.pipe(concat('style.css'))
 		.pipe(clean())
 		.pipe(prefixer({
-			browsers: ['last 100 versions'],
+			browsers: ['> 0.2%','last 100 versions'],
 			cascade: false
 		}))
 		.pipe(gulp.dest(path.build.css))
