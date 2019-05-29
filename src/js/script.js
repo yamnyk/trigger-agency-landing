@@ -3139,7 +3139,7 @@ $(document).ready(function () {
 	ansmateTablAdvantages();
 	widthControl();
 	
-	$('#form__phone').mask('+38(999) 999-99-99')
+	$('#form__phone').mask('+38(999) 999-99-99');
 	
 	$('#orderForm').validate({
 		rules: {
@@ -3240,12 +3240,12 @@ $(document).ready(function () {
 			}
 		});
 	} else {
-		$('.animate__bigger-hex').css({'animation':'', 'opacity' : '1'});
-		$('.animate__gradients').css({'animation':'', 'opacity' : '1'});
-		$('.animate__bottom-gradients').css({'animation':'', 'opacity' : '1'});
-		$('.team-img__bigger').css({'animation':'', 'opacity' : '1'});
-		$('.team-img__smaller').css({'animation':'', 'opacity' : '1'});
-		$('.team-img__gradients').css({'animation':'', 'opacity' : '1'});
+		$('.animate__bigger-hex').css({'animation':'none', 'opacity' : '1'});
+		$('.animate__gradients').css({'animation':'none', 'opacity' : '1'});
+		$('.animate__bottom-gradients').css({'animation':'none', 'opacity' : '1'});
+		$('.team-img__bigger').css({'animation':'none', 'opacity' : '1'});
+		$('.team-img__smaller').css({'animation':'none', 'opacity' : '1'});
+		$('.team-img__gradients').css({'animation':'none', 'opacity' : '1'});
 	}
 });
 
