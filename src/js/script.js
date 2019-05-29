@@ -3257,10 +3257,3 @@ window.onresize = function() {
 		$("#background").attr({style : ""});
 	}
 };
-
-
-
-
-
-
-
