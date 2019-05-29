@@ -110,7 +110,6 @@
             background-image: linear-gradient(to right, #09a2de, #d8268d);
             border-radius: 0.1rem;
             transform: translateZ(1px);
-
           }
 
           &-item {
@@ -126,13 +125,13 @@
             cursor: pointer;
           }
           .active {
-            z-index: 1;
             padding-top: 30px;
             max-height: 5.3rem;
             color: #fff;
             overflow: hidden;
             box-sizing: border-box;
             animation: moveActive 0.5s 1 linear forwards;
+            transform: translateZ(0px);
           }
         }
         &-info {
