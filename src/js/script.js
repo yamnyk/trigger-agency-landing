@@ -3074,15 +3074,15 @@ const animateAdvantages = () => {
 	const $hexGradients = $('#advHexGradients');
 	
 	$hexBigger.css({
-		'animation': 'biggerMove 1.6s ease alternate',
+		'animation': 'biggerMove 3s ease alternate',
 		'opacity': '1'
 	});
 	$hexSmaller.css({
-		'animation': 'smallerMove 1.5s ease alternate',
+		'animation': 'smallerMove 2.7s ease alternate',
 		'opacity': '1'
 	});
 	$hexGradients.css({
-		'animation': 'gradientsMove 1.4s ease alternate',
+		'animation': 'gradientsMove 2.6s ease alternate',
 		'opacity': '1'
 	})
 };
@@ -3092,15 +3092,15 @@ const animateTeam = () => {
 	const $hexGradients = $('.team-img__gradients');
 	
 	$hexBigger.css({
-		'animation': 'teamBiggerMove 1.5s ease alternate',
+		'animation': 'teamBiggerMove 2.8s ease alternate',
 		'opacity': '1'
 	});
 	$hexSmaller.css({
-		'animation': 'teamSmallerMove 1.7s ease alternate',
+		'animation': 'teamSmallerMove 3s ease alternate',
 		'opacity': '1'
 	});
 	$hexGradients.css({
-		'animation': 'teamGradientsMove 1.9s ease alternate',
+		'animation': 'teamGradientsMove 3.1s ease alternate',
 		'opacity': '1'
 	})
 };
@@ -3110,15 +3110,15 @@ const animateHeader = () => {
 	const $hexGradientsBottom = $('.header-hex__gradients-bottom');
 	
 	$hexBigger.css({
-		'animation': 'headerBiggerMove 1.5s ease alternate',
+		'animation': 'headerBiggerMove 1.8s ease alternate',
 		'opacity': '1'
 	});
 	$hexGradients.css({
-		'animation': 'headerGeadientsMove 1.9s ease alternate',
+		'animation': 'headerGeadientsMove 2.1s ease alternate',
 		'opacity': '1'
 	});
 	$hexGradientsBottom.css({
-		'animation': 'headerGeadientsBottomMove 1.9s ease alternate',
+		'animation': 'headerGeadientsBottomMove 2.3s ease alternate',
 		'opacity': '1'
 	})
 };
@@ -3225,19 +3225,19 @@ $(document).ready(function () {
 		$('.animate__bottom-gradients').css({
 			'opacity' : '1',
 			'animation' : 'headerGeadientsBottomMove 2.3s ease alternate'
-		})
+		});
 		$(window).scroll(() => {
 			const thisScroll = $(window).scrollTop();
 			const advantagesTop = $('.advantages').offset().top;
 			const advantagesHeight = $('.advantages').outerHeight();
-			if(thisScroll > (advantagesTop + advantagesHeight - thisScroll )){
+			if(thisScroll > (advantagesTop + advantagesHeight - thisScroll - 400)){
 				animateAdvantages();
 			}
 			const teamTop = $('.team').offset().top;
 			const teamHeight = $('.team').outerHeight();
-			if(thisScroll > (teamTop + teamHeight - thisScroll - 400)){
+			if(thisScroll > (teamTop + teamHeight - thisScroll - 1700)){
 				animateTeam();
-			};
+			}
 		});
 	} else {
 		$('.animate__bigger-hex').css({'animation':'', 'opacity' : '1'});
