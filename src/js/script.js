@@ -3022,16 +3022,17 @@ const widthControl = () => {
 
 //_________________________________________TabMeny___________________
 
-let bgActiv =document.getElementsByClassName("bgActiv")[0];
-let navTable=document.getElementsByClassName("content-nav-table")[0];
-let navItem = document.querySelectorAll(".content-nav-table-item");
+let $bgActiv = $(".bgActiv");
+let $navTable = $(".content-nav-table");
 
-let navTableClick=navTable.addEventListener('click', (event)=>{
+$navTable.on('click', (event)=>{
 	if (event.target.classList.contains('content-nav-table-item')) {
-		$(".bgActiv").animate({left: event.target.offsetLeft+"px"}, 300)
-		bgActiv.style.width=event.target.offsetWidth+"px"
+		$bgActiv.animate({left: event.target.offsetLeft+"px"}, 300);
+		$bgActiv.css({
+			'width':event.target.offsetWidth+"px",
+		});
 	}
-})
+});
 
 let ansmateTablAdvantages = function () {
 	let elem = document.querySelectorAll(".content-nav-table-item");
@@ -3101,24 +3102,6 @@ const animateTeam = () => {
 	});
 	$hexGradients.css({
 		'animation': 'teamGradientsMove 3.1s ease alternate',
-		'opacity': '1'
-	})
-};
-const animateHeader = () => {
-	const $hexBigger = $('.header-hex__biger');
-	const $hexGradients = $('.header-hex__gradients');
-	const $hexGradientsBottom = $('.header-hex__gradients-bottom');
-	
-	$hexBigger.css({
-		'animation': 'headerBiggerMove 1.8s ease alternate',
-		'opacity': '1'
-	});
-	$hexGradients.css({
-		'animation': 'headerGeadientsMove 2.1s ease alternate',
-		'opacity': '1'
-	});
-	$hexGradientsBottom.css({
-		'animation': 'headerGeadientsBottomMove 2.3s ease alternate',
 		'opacity': '1'
 	})
 };
@@ -3197,22 +3180,6 @@ $(document).ready(function () {
 		});
 	});
 	
-	/*MAP INITIALISATION*/
-	mapboxgl.accessToken = 'pk.eyJ1IjoidHJpZ2dlciIsImEiOiJjanVpZHYxbDMwdXN5M3lzYXg5dzJ0Y3Y1In0.kc2qv99WmxmAf8RgZrwS4w';
-	if (!mapboxgl.supported()) {
-		alert('Your browser does not support Mapbox GL');
-	} else {
-		let map = new mapboxgl.Map({
-			container: 'map',
-			style: 'mapbox://styles/mapbox/streets-v11',
-			center: [30.5933111, 50.4284607],
-			zoom: 15
-		});
-		let marker = new mapboxgl.Marker()
-			.setLngLat([30.5933111, 50.4284607])
-			.addTo(map);
-	}
-	
 	if(window.innerWidth > 650) {
 		$('.animate__bigger-hex').css({
 			'opacity' : '1',
@@ -3246,6 +3213,23 @@ $(document).ready(function () {
 		$('.team-img__bigger').css({'animation':'none', 'opacity' : '1'});
 		$('.team-img__smaller').css({'animation':'none', 'opacity' : '1'});
 		$('.team-img__gradients').css({'animation':'none', 'opacity' : '1'});
+	}
+	
+	/*MAP INITIALISATION*/
+	mapboxgl.accessToken = 'pk.eyJ1IjoidHJpZ2dlciIsImEiOiJjanVpZHYxbDMwdXN5M3lzYXg5dzJ0Y3Y1In0.kc2qv99WmxmAf8RgZrwS4w';
+	if (!mapboxgl.supported()) {
+		alert('Your browser does not support Mapbox GL');
+	} else {
+		let map = new mapboxgl.Map({
+			container: 'map',
+			style: 'mapbox://styles/mapbox/streets-v11',
+			center: [30.5933111, 50.4284607],
+			zoom: 15
+		});
+		let marker = new mapboxgl.Marker()
+			.setLngLat([30.5933111, 50.4284607])
+			.addTo(map);
+	
 	}
 });
 

@@ -109,10 +109,10 @@
             height: 5.3rem;
             background-image: linear-gradient(to right, #09a2de, #d8268d);
             border-radius: 0.1rem;
+            transform: translateZ(1px);
           }
 
           &-item {
-            z-index: 1;
             font-family: 'Releway', sans-serif;
             font-size: 2rem;
             font-weight: 900;
@@ -127,8 +127,7 @@
           .active {
             padding-top: 30px;
             max-height: 5.3rem;
-            color: #ffffff;
-            overflow: hidden;
+            color: #fff;
             box-sizing: border-box;
             animation: moveActive 0.5s 1 linear forwards;
           }
