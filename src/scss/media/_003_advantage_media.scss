@@ -37,14 +37,6 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            .bgActiv {
-              position: absolute;
-              content: "";
-              width: 18.6rem;
-              height: 5.3rem;
-              background-image: linear-gradient(to right, #09a2de, #d8268d);
-
-            }
 
             &-item {
               z-index: 1;
@@ -58,14 +50,6 @@
               max-height: 5.3rem;
               padding: 0 1.5rem;
               cursor: pointer;
-            }
-            .active {
-              padding-top: 30px;
-              max-height: 5.3rem;
-              color: #ffffff;
-              overflow: hidden;
-              box-sizing: border-box;
-              animation: moveActive 0.5s 1 linear forwards;
             }
           }
           &-info {
@@ -85,10 +69,6 @@
               text-align: left;
               color: #07002c;
               animation: passContent 0.2s 1 linear forwards;
-            }
-
-            .active-content {
-              animation: moveContent 0.5s 1 linear forwards;
             }
           }
         }
@@ -121,8 +101,6 @@
           &-table {
             height: 4.5rem;
             .bgActiv {
-              position: absolute;
-              content: "";
               width: 14rem;
               height: 4.5rem;
 
@@ -138,24 +116,12 @@
               padding: 0 1rem;
               align-self: center;
             }
-            .active {
-              padding-top: 30px;
-              max-height: 5.3rem;
-              color: #ffffff;
-              overflow: hidden;
-              box-sizing: border-box;
-              animation: moveActive 0.5s 1 linear forwards;
-            }
           }
           &-info {
             margin: 2rem 0;
             &__elem {
               font-size: 1.4rem;
               line-height: 1.4;
-            }
-
-            .active-content {
-              animation: moveContent 0.5s 1 linear forwards;
             }
           }
         }
@@ -214,8 +180,6 @@
           &-table {
             height: 4rem;
             .bgActiv {
-              position: absolute;
-              content: "";
               width: 10rem;
               height: 3.7rem;
 
@@ -238,9 +202,6 @@
             &__elem {
               font-size: 1.2rem;
               line-height: 1.1;
-            }
-
-            .active-content {
             }
           }
         }
