@@ -3229,8 +3229,6 @@ $(document).ready(function () {
 		let marker = new mapboxgl.Marker()
 			.setLngLat([30.5933111, 50.4284607])
 			.addTo(map);
-	
-	}
 });
 if(window.location.href === "http://trigger.com.ua/en.html") {
 	$('#langSelect').val('en.html');
@@ -3265,10 +3263,3 @@ window.onresize = function() {
 		$("#background").attr({style : ""});
 	}
 };
-
-
-
-
-
-
-
