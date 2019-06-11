@@ -3232,6 +3232,14 @@ $(document).ready(function () {
 	
 	}
 });
+if(window.location.href === "http://trigger.com.ua/en.html") {
+	$('#langSelect').val('en.html');
+} else {
+	$('#langSelect').val('index.html');
+}
+$('#langSelect').change(function() {
+	window.location = $(this).val();
+});
 
 $("#nav-toggle").click(function(){
 	$(".top-menu__nav-menu").animate({
