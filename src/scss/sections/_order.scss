@@ -54,6 +54,11 @@
 .order__form-wrapper{
   width: 44%;
 
+  &__succes {
+    color: black;
+    font-size: 5rem;
+  }
+
   &__form{
     width: 41rem;
     height: 32rem;

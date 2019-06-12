@@ -3170,7 +3170,12 @@ $(document).ready(function () {
 					url: "js/email.php",
 					data: data,
 					success: function () {
-						alert(`Заявка принята`);
+						$("#orderForm").animate({opacity: 0},500,() => {
+							$("#orderForm").remove();
+							$('.order__form-wrapper').append('<h3 hidden class="order__form-wrapper__succes">Заявка успешно принята!</h3>');
+							$('.order__form-wrapper__succes').fadeIn(3000);
+						});
+						
 					}
 				});
 			} else {
