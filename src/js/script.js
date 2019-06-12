@@ -3118,6 +3118,7 @@ $(document).ready(function () {
 	slowScroll('contacts-btn');
 	slowScroll('contacts-b-btn');
 	slowScroll('more-btn');
+	slowScroll('headerLogo');
 	
 	ansmateTablAdvantages();
 	widthControl();
