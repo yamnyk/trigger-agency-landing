@@ -3229,8 +3229,14 @@ $(document).ready(function () {
 		let marker = new mapboxgl.Marker()
 			.setLngLat([30.5933111, 50.4284607])
 			.addTo(map);
-	
-	}
+});
+if(window.location.href === "http://trigger.com.ua/en.html") {
+	$('#langSelect').val('en.html');
+} else {
+	$('#langSelect').val('index.html');
+}
+$('#langSelect').change(function() {
+	window.location = $(this).val();
 });
 
 $("#nav-toggle").click(function(){
