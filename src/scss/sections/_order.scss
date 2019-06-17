@@ -44,25 +44,21 @@
   &__slogan{
     width: 97%;
     position: relative;
-    padding: 1.5rem 3rem 1.5rem 1.5rem;
+    padding: 1.5rem 3rem;
     font-size: 5.7rem;
     color: #ffffff;
     @include gradOrangePurple(to right);
-
-    &::before{
-      content: "";
-      position: absolute;
-      width: 2rem;
-      height: 8.6rem;
-      background-color: #fe7102;
-      top:0;
-      left: -2rem;
-    }
   }
 }
 
 .order__form-wrapper{
   width: 44%;
+
+  &__succes {
+    color: black;
+    font-size: 5rem;
+    margin: 10rem 0;
+  }
 
   &__form{
     width: 41rem;
@@ -107,18 +103,3 @@
   font-size: 1.7rem;
   color: red;
 }
-
-//.success{
-//  width: 20.4rem;
-//  height: 5.5rem;
-//  margin: 2rem 0;
-//  padding: 0 1rem;
-//  background-color: green;
-//  color: #ffffff;
-//  font-size: 18px;
-//  border-width: 0;
-//  border-radius: 3rem;
-//  box-shadow: 3px 1px 5px 0px $darkPink, -3px -1px 5px 0px $lightBlue;
-//  cursor: pointer;
-//}
-

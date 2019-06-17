@@ -25,7 +25,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 5%;
   }
 
   &__logo-item {
@@ -89,17 +88,24 @@
   &__languages-item {
     outline: none;
     border: none;
+    box-shadow: none;
     font-weight: 700;
     font-size: 2rem;
     background-color: transparent;
     color: #08012c;
+
+    & option {
+      outline: none;
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+    }
   }
 }
 
 .header-main {
   display: flex;
   position: relative;
-  margin-top: 5%;
   align-items: center;
 
   &__info {
@@ -225,4 +231,3 @@
 .animate__bottom-gradients {
   opacity: 0;
 }
-
