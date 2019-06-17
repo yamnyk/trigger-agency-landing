@@ -3427,7 +3427,7 @@ $(document).ready(function () {
 		$('.team-img__smaller').css({'animation':'none', 'opacity' : '1'});
 		$('.team-img__gradients').css({'animation':'none', 'opacity' : '1'});
 	}
-	
+
 	/*MAP INITIALISATION*/
 	mapboxgl.accessToken = 'pk.eyJ1IjoidHJpZ2dlciIsImEiOiJjanVpZHYxbDMwdXN5M3lzYXg5dzJ0Y3Y1In0.kc2qv99WmxmAf8RgZrwS4w';
 	if (!mapboxgl.supported()) {
@@ -3442,8 +3442,14 @@ $(document).ready(function () {
 		let marker = new mapboxgl.Marker()
 			.setLngLat([30.5933111, 50.4284607])
 			.addTo(map);
-	
-	}
+});
+if(window.location.href === "http://trigger.com.ua/en.html") {
+	$('#langSelect').val('en.html');
+} else {
+	$('#langSelect').val('index.html');
+}
+$('#langSelect').change(function() {
+	window.location = $(this).val();
 });
 if(window.location.href === "http://trigger.com.ua/en.html") {
 	$('#langSelect').val('en.html');
@@ -3478,10 +3484,3 @@ window.onresize = function() {
 		$("#background").attr({style : ""});
 	}
 };
-
-
-
-
-
-
-
